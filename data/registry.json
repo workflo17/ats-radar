@@ -1,0 +1,550 @@
+{
+ "version": 1,
+ "accounts": {
+  "figma.com": {
+   "name": "Figma",
+   "ats": "greenhouse",
+   "token": "figma",
+   "detectedAt": "2026-09-04T01:14:23.958Z",
+   "lastVerified": "2026-09-04T01:17:42.879Z",
+   "unresolvedSince": null
+  },
+  "stripe.com": {
+   "name": "Stripe",
+   "ats": "greenhouse",
+   "token": "stripe",
+   "detectedAt": "2026-09-04T01:14:23.964Z",
+   "lastVerified": "2026-09-04T01:17:43.058Z",
+   "unresolvedSince": null
+  },
+  "airtable.com": {
+   "name": "Airtable",
+   "ats": "greenhouse",
+   "token": "airtable",
+   "detectedAt": "2026-09-04T01:14:24.180Z",
+   "lastVerified": "2026-09-04T01:17:43.313Z",
+   "unresolvedSince": null
+  },
+  "ramp.com": {
+   "name": "Ramp",
+   "ats": "ashby",
+   "token": "ramp",
+   "detectedAt": "2026-09-04T01:14:26.629Z",
+   "lastVerified": "2026-09-04T01:17:43.356Z",
+   "unresolvedSince": null
+  },
+  "notion.so": {
+   "name": "Notion",
+   "ats": "ashby",
+   "token": "notion",
+   "detectedAt": "2026-09-04T01:14:27.102Z",
+   "lastVerified": "2026-09-04T01:17:43.364Z",
+   "unresolvedSince": null
+  },
+  "retool.com": {
+   "name": "Retool",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:44.513Z",
+   "unresolvedSince": "2026-09-04T01:14:27.298Z",
+   "ambiguous": [
+    "smartrecruiters:retool"
+   ]
+  },
+  "linear.app": {
+   "name": "Linear",
+   "ats": "ashby",
+   "token": "linear",
+   "detectedAt": "2026-09-04T01:14:30.965Z",
+   "lastVerified": "2026-09-04T01:17:43.114Z",
+   "unresolvedSince": null
+  },
+  "gopuff.com": {
+   "name": "Gopuff",
+   "ats": "lever",
+   "token": "gopuff",
+   "detectedAt": "2026-09-04T01:14:31.051Z",
+   "lastVerified": "2026-09-04T01:17:48.750Z",
+   "unresolvedSince": null
+  },
+  "vanta.com": {
+   "name": "Vanta",
+   "ats": "ashby",
+   "token": "vanta",
+   "detectedAt": "2026-09-04T01:14:51.161Z",
+   "lastVerified": "2026-09-04T01:17:43.589Z",
+   "unresolvedSince": null
+  },
+  "deel.com": {
+   "name": "Deel",
+   "ats": "ashby",
+   "token": "deel",
+   "detectedAt": "2026-09-04T01:14:51.350Z",
+   "lastVerified": "2026-09-04T01:17:43.656Z",
+   "unresolvedSince": null
+  },
+  "gusto.com": {
+   "name": "Gusto",
+   "ats": "greenhouse",
+   "token": "gusto",
+   "detectedAt": "2026-09-04T01:14:51.374Z",
+   "lastVerified": "2026-09-04T01:17:43.873Z",
+   "unresolvedSince": null
+  },
+  "checkr.com": {
+   "name": "Checkr",
+   "ats": "greenhouse",
+   "token": "checkr",
+   "detectedAt": "2026-09-04T01:14:51.794Z",
+   "lastVerified": "2026-09-04T01:17:43.974Z",
+   "unresolvedSince": null
+  },
+  "rippling.com": {
+   "name": "Rippling",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:44.682Z",
+   "unresolvedSince": "2026-09-04T01:14:52.033Z",
+   "ambiguous": [
+    "smartrecruiters:rippling"
+   ]
+  },
+  "brex.com": {
+   "name": "Brex",
+   "ats": "greenhouse",
+   "token": "brex",
+   "detectedAt": "2026-09-04T01:14:52.288Z",
+   "lastVerified": "2026-09-04T01:17:44.337Z",
+   "unresolvedSince": null
+  },
+  "mercury.com": {
+   "name": "Mercury",
+   "ats": "greenhouse",
+   "token": "mercury",
+   "detectedAt": "2026-09-04T01:14:52.524Z",
+   "lastVerified": "2026-09-04T01:17:44.417Z",
+   "unresolvedSince": null
+  },
+  "plaid.com": {
+   "name": "Plaid",
+   "ats": "ashby",
+   "token": "plaid",
+   "detectedAt": "2026-09-04T01:14:53.022Z",
+   "lastVerified": "2026-09-04T01:17:44.125Z",
+   "unresolvedSince": null
+  },
+  "databricks.com": {
+   "name": "Databricks",
+   "ats": "greenhouse",
+   "token": "databricks",
+   "detectedAt": "2026-09-04T01:14:53.732Z",
+   "lastVerified": "2026-09-04T01:17:44.663Z",
+   "unresolvedSince": null
+  },
+  "vercel.com": {
+   "name": "Vercel",
+   "ats": "greenhouse",
+   "token": "vercel",
+   "detectedAt": "2026-09-04T01:14:54.692Z",
+   "lastVerified": "2026-09-04T01:17:45.106Z",
+   "unresolvedSince": null
+  },
+  "netlify.com": {
+   "name": "Netlify",
+   "ats": "greenhouse",
+   "token": "netlify",
+   "detectedAt": "2026-09-04T01:14:54.990Z",
+   "lastVerified": "2026-09-04T01:17:45.105Z",
+   "unresolvedSince": null
+  },
+  "gitlab.com": {
+   "name": "GitLab",
+   "ats": "greenhouse",
+   "token": "gitlab",
+   "detectedAt": "2026-09-04T01:14:55.003Z",
+   "lastVerified": "2026-09-04T01:17:44.866Z",
+   "unresolvedSince": null
+  },
+  "hashicorp.com": {
+   "name": "HashiCorp",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:46.140Z",
+   "unresolvedSince": "2026-09-04T01:14:55.154Z",
+   "ambiguous": [
+    "smartrecruiters:hashicorp"
+   ]
+  },
+  "amplitude.com": {
+   "name": "Amplitude",
+   "ats": "greenhouse",
+   "token": "amplitude",
+   "detectedAt": "2026-09-04T01:14:55.399Z",
+   "lastVerified": "2026-09-04T01:17:45.369Z",
+   "unresolvedSince": null
+  },
+  "mixpanel.com": {
+   "name": "Mixpanel",
+   "ats": "greenhouse",
+   "token": "mixpanel",
+   "detectedAt": "2026-09-04T01:14:55.400Z",
+   "lastVerified": "2026-09-04T01:17:46.130Z",
+   "unresolvedSince": null
+  },
+  "scale.com": {
+   "name": "Scale AI",
+   "ats": "greenhouse",
+   "token": "scaleai",
+   "detectedAt": "2026-09-04T01:14:55.641Z",
+   "lastVerified": "2026-09-04T01:17:44.646Z",
+   "unresolvedSince": null
+  },
+  "sentry.io": {
+   "name": "Sentry",
+   "ats": "ashby",
+   "token": "sentry",
+   "detectedAt": "2026-09-04T01:14:55.646Z",
+   "lastVerified": "2026-09-04T01:17:45.121Z",
+   "unresolvedSince": null
+  },
+  "webflow.com": {
+   "name": "Webflow",
+   "ats": "greenhouse",
+   "token": "webflow",
+   "detectedAt": "2026-09-04T01:14:55.704Z",
+   "lastVerified": "2026-09-04T01:17:46.129Z",
+   "unresolvedSince": null
+  },
+  "contentful.com": {
+   "name": "Contentful",
+   "ats": "greenhouse",
+   "token": "contentful",
+   "detectedAt": "2026-09-04T01:14:55.874Z",
+   "lastVerified": "2026-09-04T01:17:46.896Z",
+   "unresolvedSince": null
+  },
+  "posthog.com": {
+   "name": "PostHog",
+   "ats": "ashby",
+   "token": "posthog",
+   "detectedAt": "2026-09-04T01:14:55.881Z",
+   "lastVerified": "2026-09-04T01:17:46.134Z",
+   "unresolvedSince": null
+  },
+  "algolia.com": {
+   "name": "Algolia",
+   "ats": "greenhouse",
+   "token": "algolia",
+   "detectedAt": "2026-09-04T01:14:55.993Z",
+   "lastVerified": "2026-09-04T01:17:46.901Z",
+   "unresolvedSince": null
+  },
+  "twilio.com": {
+   "name": "Twilio",
+   "ats": "greenhouse",
+   "token": "twilio",
+   "detectedAt": "2026-09-04T01:14:56.118Z",
+   "lastVerified": "2026-09-04T01:17:46.902Z",
+   "unresolvedSince": null
+  },
+  "sanity.io": {
+   "name": "Sanity",
+   "ats": "ashby",
+   "token": "sanity",
+   "detectedAt": "2026-09-04T01:14:56.125Z",
+   "lastVerified": "2026-09-04T01:17:46.907Z",
+   "unresolvedSince": null
+  },
+  "intercom.com": {
+   "name": "Intercom",
+   "ats": "greenhouse",
+   "token": "intercom",
+   "detectedAt": "2026-09-04T01:14:56.189Z",
+   "lastVerified": "2026-09-04T01:17:47.429Z",
+   "unresolvedSince": null
+  },
+  "datadoghq.com": {
+   "name": "Datadog",
+   "ats": "greenhouse",
+   "token": "datadog",
+   "detectedAt": "2026-09-04T01:14:56.201Z",
+   "lastVerified": "2026-09-04T01:17:45.390Z",
+   "unresolvedSince": null
+  },
+  "calendly.com": {
+   "name": "Calendly",
+   "ats": "greenhouse",
+   "token": "calendly",
+   "detectedAt": "2026-09-04T01:14:56.415Z",
+   "lastVerified": "2026-09-04T01:17:47.424Z",
+   "unresolvedSince": null
+  },
+  "zapier.com": {
+   "name": "Zapier",
+   "ats": "ashby",
+   "token": "zapier",
+   "detectedAt": "2026-09-04T01:14:56.547Z",
+   "lastVerified": "2026-09-04T01:17:47.428Z",
+   "unresolvedSince": null
+  },
+  "miro.com": {
+   "name": "Miro",
+   "ats": "ashby",
+   "token": "miro",
+   "detectedAt": "2026-09-04T01:14:56.649Z",
+   "lastVerified": "2026-09-04T01:17:48.196Z",
+   "unresolvedSince": null
+  },
+  "front.com": {
+   "name": "Front",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:49.179Z",
+   "unresolvedSince": "2026-09-04T01:14:56.724Z",
+   "ambiguous": [
+    "smartrecruiters:front"
+   ]
+  },
+  "loom.com": {
+   "name": "Loom",
+   "ats": "ashby",
+   "token": "loom",
+   "detectedAt": "2026-09-04T01:14:56.982Z",
+   "lastVerified": "2026-09-04T01:17:48.180Z",
+   "unresolvedSince": null
+  },
+  "duolingo.com": {
+   "name": "Duolingo",
+   "ats": "greenhouse",
+   "token": "duolingo",
+   "detectedAt": "2026-09-04T01:14:56.993Z",
+   "lastVerified": "2026-09-04T01:17:48.465Z",
+   "unresolvedSince": null
+  },
+  "discord.com": {
+   "name": "Discord",
+   "ats": "greenhouse",
+   "token": "discord",
+   "detectedAt": "2026-09-04T01:14:56.995Z",
+   "lastVerified": "2026-09-04T01:17:48.763Z",
+   "unresolvedSince": null
+  },
+  "reddit.com": {
+   "name": "Reddit",
+   "ats": "greenhouse",
+   "token": "reddit",
+   "detectedAt": "2026-09-04T01:14:57.311Z",
+   "lastVerified": "2026-09-04T01:17:49.028Z",
+   "unresolvedSince": null
+  },
+  "grammarly.com": {
+   "name": "Grammarly",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:49.181Z",
+   "unresolvedSince": "2026-09-04T01:14:57.460Z",
+   "ambiguous": [
+    "smartrecruiters:grammarly"
+   ]
+  },
+  "quora.com": {
+   "name": "Quora",
+   "ats": "ashby",
+   "token": "quora",
+   "detectedAt": "2026-09-04T01:14:57.688Z",
+   "lastVerified": "2026-09-04T01:17:49.315Z",
+   "unresolvedSince": null
+  },
+  "instacart.com": {
+   "name": "Instacart",
+   "ats": "greenhouse",
+   "token": "instacart",
+   "detectedAt": "2026-09-04T01:14:57.696Z",
+   "lastVerified": "2026-09-04T01:17:49.364Z",
+   "unresolvedSince": null
+  },
+  "robinhood.com": {
+   "name": "Robinhood",
+   "ats": "greenhouse",
+   "token": "robinhood",
+   "detectedAt": "2026-09-04T01:14:57.951Z",
+   "lastVerified": "2026-09-04T01:17:49.585Z",
+   "unresolvedSince": null
+  },
+  "coinbase.com": {
+   "name": "Coinbase",
+   "ats": "greenhouse",
+   "token": "coinbase",
+   "detectedAt": "2026-09-04T01:14:58.028Z",
+   "lastVerified": "2026-09-04T01:17:49.600Z",
+   "unresolvedSince": null
+  },
+  "eventbrite.com": {
+   "name": "Eventbrite",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:49.897Z",
+   "unresolvedSince": "2026-09-04T01:14:58.132Z",
+   "ambiguous": [
+    "smartrecruiters:eventbrite"
+   ]
+  },
+  "chime.com": {
+   "name": "Chime",
+   "ats": "greenhouse",
+   "token": "chime",
+   "detectedAt": "2026-09-04T01:14:58.204Z",
+   "lastVerified": "2026-09-04T01:17:49.808Z",
+   "unresolvedSince": null
+  },
+  "affirm.com": {
+   "name": "Affirm",
+   "ats": "greenhouse",
+   "token": "affirm",
+   "detectedAt": "2026-09-04T01:14:58.319Z",
+   "lastVerified": "2026-09-04T01:17:49.841Z",
+   "unresolvedSince": null
+  },
+  "doordash.com": {
+   "name": "DoorDash",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:18:06.946Z",
+   "unresolvedSince": "2026-09-04T01:14:58.444Z",
+   "ambiguous": [
+    "smartrecruiters:doordash"
+   ]
+  },
+  "faire.com": {
+   "name": "Faire",
+   "ats": "greenhouse",
+   "token": "faire",
+   "detectedAt": "2026-09-04T01:14:58.633Z",
+   "lastVerified": "2026-09-04T01:17:50.213Z",
+   "unresolvedSince": null
+  },
+  "benchling.com": {
+   "name": "Benchling",
+   "ats": "ashby",
+   "token": "benchling",
+   "detectedAt": "2026-09-04T01:14:58.688Z",
+   "lastVerified": "2026-09-04T01:17:50.071Z",
+   "unresolvedSince": null
+  },
+  "carta.com": {
+   "name": "Carta",
+   "ats": "greenhouse",
+   "token": "carta",
+   "detectedAt": "2026-09-04T01:14:58.860Z",
+   "lastVerified": "2026-09-04T01:17:50.309Z",
+   "unresolvedSince": null
+  },
+  "marqeta.com": {
+   "name": "Marqeta",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:50.555Z",
+   "unresolvedSince": "2026-09-04T01:14:58.903Z",
+   "ambiguous": [
+    "smartrecruiters:marqeta"
+   ]
+  },
+  "whatnot.com": {
+   "name": "Whatnot",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:50.745Z",
+   "unresolvedSince": "2026-09-04T01:14:59.173Z",
+   "ambiguous": [
+    "smartrecruiters:whatnot"
+   ]
+  },
+  "gong.io": {
+   "name": "Gong",
+   "ats": "smartrecruiters",
+   "token": "gong",
+   "detectedAt": "2026-09-04T01:14:59.545Z",
+   "lastVerified": "2026-09-04T01:17:51.254Z",
+   "unresolvedSince": null
+  },
+  "attio.com": {
+   "name": "Attio",
+   "ats": "ashby",
+   "token": "attio",
+   "detectedAt": "2026-09-04T01:14:59.694Z",
+   "lastVerified": "2026-09-04T01:17:51.265Z",
+   "unresolvedSince": null
+  },
+  "canva.com": {
+   "name": "Canva",
+   "ats": "smartrecruiters",
+   "token": "canva",
+   "detectedAt": "2026-09-04T01:14:59.908Z",
+   "lastVerified": "2026-09-04T01:17:49.923Z",
+   "unresolvedSince": null
+  },
+  "clay.com": {
+   "name": "Clay",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:51.669Z",
+   "unresolvedSince": "2026-09-04T01:15:00.199Z",
+   "ambiguous": [
+    "smartrecruiters:clay"
+   ]
+  },
+  "lever.co": {
+   "name": "Lever",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:52.426Z",
+   "unresolvedSince": "2026-09-04T01:15:00.923Z",
+   "ambiguous": [
+    "lever:lever",
+    "smartrecruiters:lever"
+   ]
+  },
+  "workable.com": {
+   "name": "Workable",
+   "ats": null,
+   "token": null,
+   "lastVerified": "2026-09-04T01:17:52.306Z",
+   "unresolvedSince": "2026-09-04T01:15:01.165Z",
+   "ambiguous": [
+    "smartrecruiters:workable"
+   ]
+  },
+  "smartrecruiters.com": {
+   "name": "SmartRecruiters",
+   "ats": "smartrecruiters",
+   "token": "smartrecruiters",
+   "detectedAt": "2026-09-04T01:15:01.165Z",
+   "lastVerified": "2026-09-04T01:17:51.854Z",
+   "unresolvedSince": null
+  },
+  "greenhouse.io": {
+   "name": "Greenhouse",
+   "ats": "greenhouse",
+   "token": "greenhouse",
+   "detectedAt": "2026-09-04T01:15:01.182Z",
+   "lastVerified": "2026-09-04T01:17:51.971Z",
+   "unresolvedSince": null
+  },
+  "ashbyhq.com": {
+   "name": "Ashby",
+   "ats": "ashby",
+   "token": "ashby",
+   "detectedAt": "2026-09-04T01:15:01.668Z",
+   "lastVerified": "2026-09-04T01:17:51.537Z",
+   "unresolvedSince": null
+  },
+  "outreach.io": {
+   "name": "Outreach",
+   "ats": "lever",
+   "token": "outreach",
+   "detectedAt": "2026-09-04T01:15:05.577Z",
+   "lastVerified": "2026-09-04T01:17:51.272Z",
+   "unresolvedSince": null
+  }
+ }
+}

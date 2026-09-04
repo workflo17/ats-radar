@@ -1,0 +1,72 @@
+# ats-radar target list
+# domain,name
+#
+# SEED LIST ONLY. Replace with your actual Greenhouse territory on day one.
+# Anything here that resolves to a non-Greenhouse ATS is a displacement target.
+domain,name
+figma.com,Figma
+stripe.com,Stripe
+ramp.com,Ramp
+linear.app,Linear
+gopuff.com,Gopuff
+notion.so,Notion
+airtable.com,Airtable
+retool.com,Retool
+vanta.com,Vanta
+deel.com,Deel
+rippling.com,Rippling
+gusto.com,Gusto
+checkr.com,Checkr
+plaid.com,Plaid
+brex.com,Brex
+mercury.com,Mercury
+scale.com,Scale AI
+databricks.com,Databricks
+hashicorp.com,HashiCorp
+gitlab.com,GitLab
+vercel.com,Vercel
+netlify.com,Netlify
+sentry.io,Sentry
+datadoghq.com,Datadog
+amplitude.com,Amplitude
+mixpanel.com,Mixpanel
+posthog.com,PostHog
+webflow.com,Webflow
+contentful.com,Contentful
+sanity.io,Sanity
+algolia.com,Algolia
+twilio.com,Twilio
+front.com,Front
+intercom.com,Intercom
+zapier.com,Zapier
+calendly.com,Calendly
+loom.com,Loom
+miro.com,Miro
+canva.com,Canva
+grammarly.com,Grammarly
+duolingo.com,Duolingo
+discord.com,Discord
+reddit.com,Reddit
+quora.com,Quora
+eventbrite.com,Eventbrite
+instacart.com,Instacart
+doordash.com,DoorDash
+robinhood.com,Robinhood
+coinbase.com,Coinbase
+chime.com,Chime
+affirm.com,Affirm
+marqeta.com,Marqeta
+benchling.com,Benchling
+faire.com,Faire
+whatnot.com,Whatnot
+carta.com,Carta
+gong.io,Gong
+outreach.io,Outreach
+clay.com,Clay
+attio.com,Attio
+# the ATS vendors themselves, including the competition
+ashbyhq.com,Ashby
+lever.co,Lever
+smartrecruiters.com,SmartRecruiters
+workable.com,Workable
+greenhouse.io,Greenhouse

@@ -1,0 +1,19 @@
+{
+  "name": "ats-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily poll of public ATS job-board APIs. Detects which ATS a company runs and tracks how their hiring changes day over day.",
+  "author": "Don Florencio",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "collect": "node src/collect.mjs",
+    "collect:force": "node src/collect.mjs --force-detect",
+    "collect:smoke": "node src/collect.mjs --limit 8",
+    "report": "node src/report.mjs",
+    "daily": "node src/collect.mjs && node src/report.mjs"
+  }
+}
