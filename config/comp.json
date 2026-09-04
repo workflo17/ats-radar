@@ -1,0 +1,20 @@
+{
+  "_comment": "From the 2026 Individual Commission Agreement. Table A puts the plain SDR tier at $2,000. Quota is NOT in the agreement — it is set by your manager in Salesforce, so fill it in once Amanda gives you the number, and use quotaByMonth for ramped months.",
+  "role": "SDR",
+  "monthlyRoleBonus": 2000,
+  "quota": 10,
+  "quotaByMonth": {
+    "2026-10": 10,
+    "2026-11": 10,
+    "2026-12": 10
+  },
+  "shortfallFloor": 0.70,
+  "accelerators": [
+    { "upToAttainment": 1.21, "multiplier": 1.5 },
+    { "upToAttainment": 1.51, "multiplier": 1.75 },
+    { "upToAttainment": null, "multiplier": 2.0 }
+  ],
+  "contractBonusPct": 0.01,
+  "contractBonusPerDealCap": 5000,
+  "contractBonusQuarterlyCap": 15000
+}

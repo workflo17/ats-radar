@@ -11,7 +11,7 @@ export class HttpError extends Error {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /**
- * GET JSON. Returns { status, json } — a 404 is a normal answer here (it means
+ * GET JSON. Returns { status, json }. A 404 is a normal answer here (it means
  * "this company is not on this ATS"), not an exception. Only network faults and
  * 5xx after retries throw.
  */

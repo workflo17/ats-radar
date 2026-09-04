@@ -14,6 +14,12 @@
     "collect:force": "node src/collect.mjs --force-detect",
     "collect:smoke": "node src/collect.mjs --limit 8",
     "report": "node src/report.mjs",
-    "daily": "node src/collect.mjs && node src/report.mjs"
+    "daily": "node src/collect.mjs && node src/report.mjs",
+    "diff": "node src/diff.mjs",
+    "brief": "node src/brief.mjs",
+    "handoff": "node src/handoff.mjs",
+    "ledger": "node src/ledger.mjs",
+    "fixture": "node test/make-fixture.mjs",
+    "test": "node test/comp-math.mjs"
   }
 }

@@ -1,2 +1,5 @@
 node_modules/
 logs/
+data/briefs/
+test/fixtures/
+data/reports/diff-*.md
