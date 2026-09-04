@@ -1,5 +1,7 @@
 # ats-radar
 
+[github.com/workflo17/ats-radar](https://github.com/workflo17/ats-radar) (private). Roadmap and the ownership deadline that orders it: [ROADMAP.md](ROADMAP.md).
+
 Four tools for the Greenhouse SDR job, built on one idea: every major ATS publishes
 its customers' job boards as a free, unauthenticated JSON API, so you can see which
 ATS a company runs and watch their hiring change day by day.
@@ -192,8 +194,14 @@ Snapshots are the asset. Never delete them; the whole point is the time series.
 
 ## Scheduling
 
-`run-daily.cmd` runs the collector then the report, appending to `logs/daily.log`.
-Registered as Windows scheduled task `ats-radar-daily` at 06:30.
+`run-daily.cmd` runs the collector, the report and the diff, appending to
+`logs/daily.log`, then commits any new snapshot and pushes it to the private GitHub
+repo. Registered as Windows scheduled task `ats-radar-daily` at 06:30.
+
+The push matters for two reasons. Snapshots are the asset, and change signals only
+exist because yesterday's file is still around, so losing the disk loses the history.
+It also keeps a continuous dated record on a third-party host, which is what makes the
+Prior Inventions build date verifiable by someone other than you.
 
 ```bash
 schtasks /query /tn ats-radar-daily        # check it
