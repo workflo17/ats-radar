@@ -91,7 +91,10 @@ function diffAccount(domain, before, after, date) {
 }
 
 async function resolvePair(a) {
-  if (a.from && a.to) return [await loadSnapshot(a.from), await loadSnapshot(a.to)];
+  // An explicit pair is an ad-hoc or fixture comparison. It must not write to the
+  // same filename as the day's real diff, or `npm run fixture` silently overwrites
+  // genuine history with synthetic events.
+  if (a.from && a.to) return [await loadSnapshot(a.from), await loadSnapshot(a.to), true];
   const files = await snapshotFiles();
   if (files.length < 2) {
     throw new Error(
@@ -110,7 +113,7 @@ async function resolvePair(a) {
 
 async function main() {
   const a = argv();
-  const [before, after] = await resolvePair(a);
+  const [before, after, adhoc] = await resolvePair(a);
 
   const domains = new Set([...Object.keys(before.accounts), ...Object.keys(after.accounts)]);
   const events = [...domains]
@@ -144,9 +147,9 @@ async function main() {
   ].join('\n');
 
   await mkdir(REPORTS, { recursive: true });
-  const out = path.join(REPORTS, `diff-${after.date}.md`);
-  await writeFile(out, md);
-  console.log(`\ndiff -> data/reports/diff-${after.date}.md`);
+  const name = adhoc ? 'diff-adhoc.md' : `diff-${after.date}.md`;
+  await writeFile(path.join(REPORTS, name), md);
+  console.log(`\ndiff -> data/reports/${name}`);
 }
 
 main().catch(e => { console.error(e.message); process.exit(1); });
