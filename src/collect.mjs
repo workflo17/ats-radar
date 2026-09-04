@@ -143,7 +143,14 @@ async function main() {
   };
 
   await mkdir(SNAPSHOTS, { recursive: true });
-  await writeFile(path.join(SNAPSHOTS, `${date}.json`), JSON.stringify(snapshot, null, 1));
+  // A limited run covers only part of the territory, so writing it as the day's
+  // snapshot would tell tomorrow's diff that every omitted account vanished
+  // overnight. Partial runs go somewhere the history never reads from.
+  const partial = limit > 0;
+  const outPath = partial
+    ? path.join(ROOT, 'data', 'partial-run.json')
+    : path.join(SNAPSHOTS, `${date}.json`);
+  await writeFile(outPath, JSON.stringify(snapshot, null, 1));
   await writeFile(REGISTRY, JSON.stringify(registry, null, 1));
 
   console.log(
@@ -159,7 +166,10 @@ async function main() {
     console.log('\n  errors:');
     for (const e of errors.slice(0, 10)) console.log(`    ${e.domain}: ${e.error}`);
   }
-  console.log(`\n  snapshot -> data/snapshots/${date}.json`);
+  console.log(partial
+    ? `\n  PARTIAL RUN (--limit ${limit}) -> data/partial-run.json`
+      + `\n  Not written to the snapshot history, so it cannot corrupt tomorrow's diff.`
+    : `\n  snapshot -> data/snapshots/${date}.json`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

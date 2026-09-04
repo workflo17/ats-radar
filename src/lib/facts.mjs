@@ -8,7 +8,15 @@
  */
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+/**
+ * True when this module is the entry point rather than an import.
+ * pathToFileURL handles Windows drive letters and separators, which hand-rolled
+ * string munging on process.argv[1] does not; and argv[1] is undefined entirely
+ * under `node -e`, so guard for that too.
+ */
+export const isMain = url => Boolean(process.argv[1]) && url === pathToFileURL(process.argv[1]).href;
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const SNAPSHOTS = path.join(ROOT, 'data', 'snapshots');

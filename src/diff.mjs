@@ -9,7 +9,7 @@
  */
 import { writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, snapshotFiles, loadSnapshot, isBuyerReq, TALENT, argv } from './lib/facts.mjs';
+import { ROOT, snapshotFiles, loadSnapshot, isBuyerReq, TALENT, argv, isMain } from './lib/facts.mjs';
 
 const REPORTS = path.join(ROOT, 'data', 'reports');
 
@@ -32,7 +32,7 @@ const EVENTS = {
 
 const addDays = (d, n) => new Date(Date.parse(d) + n * 86400000).toISOString().slice(0, 10);
 
-function diffAccount(domain, before, after, date) {
+export function diffAccount(domain, before, after, date) {
   const events = [];
   const push = (type, detail) => events.push({ type, domain, name: after?.name ?? before?.name ?? domain, ...EVENTS[type], ...detail });
 
@@ -152,4 +152,8 @@ async function main() {
   console.log(`\ndiff -> data/reports/${name}`);
 }
 
-main().catch(e => { console.error(e.message); process.exit(1); });
+// Importable by learn.mjs, which replays every consecutive snapshot pair to build
+// a signal history. Only run the CLI when invoked directly.
+if (isMain(import.meta.url)) {
+  main().catch(e => { console.error(e.message); process.exit(1); });
+}

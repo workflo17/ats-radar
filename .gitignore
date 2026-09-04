@@ -3,3 +3,5 @@ logs/
 data/briefs/
 test/fixtures/
 data/reports/diff-adhoc.md
+data/partial-run.json
+data/unresolved.csv

@@ -23,7 +23,7 @@
  */
 import { readFile, appendFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, argv } from './lib/facts.mjs';
+import { ROOT, argv, isMain } from './lib/facts.mjs';
 
 const LEDGER = path.join(ROOT, 'data', 'ledger.jsonl');
 const COMP = path.join(ROOT, 'config', 'comp.json');
@@ -33,7 +33,7 @@ const pct = n => (n * 100).toFixed(0) + '%';
 const newId = () => Math.random().toString(36).slice(2, 8);
 const quarterOf = ym => `${ym.slice(0, 4)}-Q${Math.floor((Number(ym.slice(5, 7)) - 1) / 3) + 1}`;
 
-async function readEvents() {
+export async function readEvents() {
   try {
     return (await readFile(LEDGER, 'utf8')).split(/\r?\n/).filter(Boolean).map(l => JSON.parse(l));
   } catch { return []; }
@@ -49,7 +49,7 @@ async function write(ev) {
 const on = e => (typeof e.on === 'string' ? e.on : e.ts.slice(0, 10));
 
 /** Replay the log into current state. Later events win, nothing is deleted. */
-function replay(events) {
+export function replay(events) {
   const opps = new Map();
   for (const e of events) {
     if (e.op === 'add') {
@@ -206,6 +206,6 @@ async function main() {
 }
 
 // Importable for tests without running the CLI.
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
+if (isMain(import.meta.url)) {
   main().catch(e => { console.error(e.message); process.exit(1); });
 }

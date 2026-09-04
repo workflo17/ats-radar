@@ -20,6 +20,8 @@
     "handoff": "node src/handoff.mjs",
     "ledger": "node src/ledger.mjs",
     "fixture": "node test/make-fixture.mjs",
-    "test": "node test/comp-math.mjs"
+    "test": "node test/comp-math.mjs",
+    "ingest": "node src/ingest.mjs",
+    "learn": "node src/learn.mjs"
   }
 }

@@ -5,24 +5,44 @@ const MULTI_TLD = /\.(co|com|org|net|gov|ac)\.[a-z]{2}$/i;
 // token usually drops them again (datadoghq.com -> datadog, ashbyhq.com -> ashby).
 const VANITY_SUFFIX = /(hq|app|inc|labs|io|ai|hr|tech|software)$/i;
 
-/** Ordered guesses at a company's board token, most likely first. */
+// Legal-entity suffixes, which a CRM export always carries and a board token never
+// does. Deliberately excludes descriptive words like Group, Holdings, Labs or
+// Technologies: those are often part of the real name and stripping them loses hits.
+const LEGAL_SUFFIX = /[,\s]+(inc|llc|l\.l\.c|ltd|limited|corp|corporation|plc|gmbh|b\.?v|n\.?v|s\.?a|pty|pte|ab|oy|as|co)\.?$/i;
+
+/** Strip the CRM decoration a board token will not have. */
+export function cleanCompanyName(name) {
+  let s = String(name ?? '').trim().replace(/^the\s+/i, '');
+  let prev;
+  do { prev = s; s = s.replace(LEGAL_SUFFIX, '').trim(); } while (s !== prev);
+  return s;
+}
+
+/**
+ * Ordered guesses at a company's board token, most likely first.
+ * `domain` may be empty: a CRM export often gives only a company name, and the board
+ * token is derived from the name at least as often as from the domain.
+ */
 export function candidateSlugs(domain, name = '') {
-  const host = String(domain).trim().toLowerCase()
+  const host = String(domain ?? '').trim().toLowerCase()
     .replace(/^https?:\/\//, '')
     .replace(/^www\./, '')
     .replace(/\/.*$/, '');
 
-  const label = (MULTI_TLD.test(host) ? host.replace(MULTI_TLD, '') : host.replace(/\.[a-z]+$/i, ''))
-    .split('.').pop();
+  const label = host
+    ? (MULTI_TLD.test(host) ? host.replace(MULTI_TLD, '') : host.replace(/\.[a-z]+$/i, '')).split('.').pop()
+    : '';
 
-  const fromName = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '');
-  const hyphenated = String(name).toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const clean = cleanCompanyName(name).toLowerCase();
+  const fromName = clean.replace(/[^a-z0-9]+/g, '');
+  const hyphenated = clean.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-  const out = [label];
+  const out = [];
+  if (label) out.push(label);
+  if (fromName.length >= 3) out.push(fromName);
+  if (hyphenated.includes('-')) out.push(hyphenated);
   const trimmed = label.replace(VANITY_SUFFIX, '');
   if (trimmed && trimmed !== label && trimmed.length >= 3) out.push(trimmed);
-  if (fromName && fromName.length >= 3) out.push(fromName);
-  if (hyphenated && hyphenated.includes('-')) out.push(hyphenated);
 
   return [...new Set(out.filter(Boolean))].slice(0, 4);
 }

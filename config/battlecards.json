@@ -1,0 +1,213 @@
+{
+  "_comment": "Drafted 2026-09-04 from public comparison material, before starting at Greenhouse. These are a starting point, NOT official positioning. Greenhouse enablement will have real cards with real win/loss data behind them; when they conflict, theirs win. Every card carries a 'theyWin' section on purpose: a prospect evaluating Ashby has probably already read the Ashby marketing site, and a rep who cannot name a competitor's genuine strength is not credible for the rest of the call.",
+  "_wiring": "handoff.mjs pulls the card matching the detected ATS. Deliberately NOT wired into brief.mjs, because competitive positioning is internal and does not belong in anything a prospect reads.",
+
+  "ashby": {
+    "name": "Ashby",
+    "profile": "Data-driven, engineering-led startups and scale-ups, roughly 50 to 1,000 employees. Series A through late growth. Stands up fast.",
+    "theyChoseItBecause": [
+      "Analytics. Interactive exploration, custom reports on any field, drill-down from dashboard to individual candidate. Users describe it as replacing a separate BI tool.",
+      "One platform for ATS, CRM, scheduling and analytics rather than four contracts.",
+      "Fast to implement, which matters to a small talent team with no ops headcount."
+    ],
+    "whereGreenhouseWins": [
+      "Structured hiring as a method, not a feature. Interview kits, competency-based scorecards, defined evaluation criteria applied consistently across every candidate.",
+      "Scorecard depth. Ashby users report competency data does not pull together well across interviews, so comparing two candidates on the same competency is harder than it should be.",
+      "Scale and process complexity. Greenhouse fits larger organisations running multi-stage hiring with a dedicated recruiting team; Ashby is built for leaner teams.",
+      "The interviewer experience. Structured kits mean a hiring manager who has never interviewed for this role still runs a consistent loop."
+    ],
+    "whereTheyWin": [
+      "Reporting, plainly. Greenhouse's reporting is functional but limited, and custom reporting means exporting to an external tool. Do not pretend otherwise, they will have tested both.",
+      "Ashby sells a standalone analytics product that layers on top of Greenhouse. If reporting is their only complaint, that is a real option and pretending it is not costs you credibility."
+    ],
+    "questionsThatOpenIt": [
+      "When two interviewers score the same candidate differently, how do you resolve it today?",
+      "How much of your interview process lives in the tool versus in someone's head?",
+      "Who builds your reports, and how long does a new one take?"
+    ],
+    "doNotSay": [
+      "That Ashby has no analytics. It is their strongest area and the claim ends the call.",
+      "That they are a startup tool. They serve real scale-ups and the prospect knows it."
+    ]
+  },
+
+  "lever": {
+    "name": "Lever",
+    "profile": "ATS plus CRM in one (LeverTRM). Teams focused on talent pooling, nurture campaigns and long-term candidate relationships.",
+    "theyChoseItBecause": [
+      "The CRM half. Sourcing-heavy teams that nurture passive candidates over months.",
+      "Simplicity. Easier to adopt than an enterprise system.",
+      "One vendor for pipeline and nurture."
+    ],
+    "whereGreenhouseWins": [
+      "Workflow control. Power users moving from Greenhouse find Lever rigid; scheduling, job templates and approval workflows are commonly called out as inflexible.",
+      "Reporting without a paid add-on. Lever's advanced analytics is an upsell, and teams needing executive dashboards or multi-dimensional analysis hit walls.",
+      "Approval workflows and multi-location posting, which are recurring reasons teams outgrow Lever.",
+      "Structured hiring depth. Lever's strength is relationship management, not interview rigour."
+    ],
+    "whereTheyWin": [
+      "Native candidate nurture. If they run genuine long-cycle sourcing campaigns, that is real and Greenhouse's CRM is a different shape.",
+      "Perceived simplicity. Some teams do not want the process discipline Greenhouse asks for."
+    ],
+    "questionsThatOpenIt": [
+      "What happens when you need a report nobody built before?",
+      "How many approval steps does a new req go through, and where does it get stuck?",
+      "If you post one role across four locations, how many records is that?"
+    ],
+    "doNotSay": [
+      "That Lever has no CRM. It is the product's whole identity."
+    ]
+  },
+
+  "workday": {
+    "name": "Workday Recruiting",
+    "profile": "The recruiting module inside an HCM suite. Usually already bought at the CHRO or CFO level for reasons that have nothing to do with recruiting.",
+    "theyChoseItBecause": [
+      "It came with the HCM. Nobody selected it on recruiting merit.",
+      "One system of record for employee data, and IT prefers one vendor."
+    ],
+    "whereGreenhouseWins": [
+      "This is a co-existence pitch, not a rip-and-replace. Many Workday shops run a best-of-breed front end (Greenhouse, iCIMS, SmartRecruiters) integrated into Workday, keeping the HCM and giving recruiters a tool built for recruiting.",
+      "Recruiting-specific depth. Workday has historically lagged dedicated ATS platforms; its candidate experience and recruiting analytics are described as functional but not best-in-class.",
+      "Recruiter experience. The daily user is a recruiter, and that is who Greenhouse is designed for.",
+      "Speed of change. A workflow change in Workday is a project."
+    ],
+    "whereTheyWin": [
+      "Single system of record. Data flows to payroll and HRIS without an integration, and that is genuinely valuable to the person who signed the Workday contract.",
+      "They are not going to rip out Workday. Do not ask them to."
+    ],
+    "questionsThatOpenIt": [
+      "Who actually lives in the system all day, and did they get a vote?",
+      "When you need a change to a hiring workflow, who do you ask and how long does it take?",
+      "Are you open to keeping Workday as the system of record and putting something purpose-built in front of it?"
+    ],
+    "doNotSay": [
+      "Anything that sounds like replacing Workday. It is a six-figure contract someone senior defended.",
+      "That their data is a mess. You do not know that."
+    ]
+  },
+
+  "icims": {
+    "name": "iCIMS",
+    "profile": "Enterprise ATS built for IT-managed deployments. Strong configurability, high complexity. Contracts commonly $30k to $100k+.",
+    "theyChoseItBecause": [
+      "Enterprise configurability and compliance requirements.",
+      "It scales to very large, very complex hiring operations."
+    ],
+    "whereGreenhouseWins": [
+      "Recruiter usability. iCIMS's depth comes with interface complexity, and recruiters commonly find it less intuitive than mid-market alternatives.",
+      "Time to change anything. iCIMS was architected for IT-managed deployment, so admin-heavy configuration is required for every workflow change.",
+      "Adoption. A system recruiters avoid produces bad data regardless of how configurable it is."
+    ],
+    "whereTheyWin": [
+      "Genuine enterprise compliance and configurability. If they are regulated and highly complex, iCIMS earns its place.",
+      "Scale. At very large hiring volumes it is a serious product."
+    ],
+    "questionsThatOpenIt": [
+      "How long does a workflow change take from asking to live?",
+      "What percentage of your recruiters use it the way it was configured?",
+      "Where does your team keep the spreadsheets that work around it?"
+    ],
+    "doNotSay": [
+      "That iCIMS is legacy. It is actively developed and the claim reads as lazy."
+    ]
+  },
+
+  "smartrecruiters": {
+    "name": "SmartRecruiters",
+    "profile": "Enterprise-leaning platform with a strong marketplace and a broad feature surface. Common in Europe and in high-volume hiring.",
+    "theyChoseItBecause": [
+      "Breadth of integrations and marketplace.",
+      "High-volume and multi-country hiring support."
+    ],
+    "whereGreenhouseWins": [
+      "Structured hiring method and interview kit depth.",
+      "Focus. A narrower product used well beats a broad one used partially.",
+      "The interviewer experience, which is where structured hiring compounds."
+    ],
+    "whereTheyWin": [
+      "Marketplace breadth and international job-board distribution.",
+      "High-volume hourly hiring, which is a different problem from structured knowledge-worker hiring."
+    ],
+    "questionsThatOpenIt": [
+      "Which parts of the platform do you actually use?",
+      "How consistent is your interview process between two different hiring managers?"
+    ],
+    "doNotSay": []
+  },
+
+  "workable": {
+    "name": "Workable",
+    "profile": "SMB and lower mid-market. Fast setup, broad job-board posting, low price point. Often the first real ATS a company buys.",
+    "theyChoseItBecause": [
+      "Price and speed. It was the obvious step up from a spreadsheet.",
+      "Job-board distribution out of the box."
+    ],
+    "whereGreenhouseWins": [
+      "This is usually an outgrowing story, not a displacement one. They bought Workable at 40 people and they are now 200.",
+      "Structured hiring, scorecards and interview kits, which matter once more than a handful of people interview.",
+      "Reporting and process consistency across a real recruiting team.",
+      "Approval workflows and multi-stakeholder hiring."
+    ],
+    "whereTheyWin": [
+      "Price. Greenhouse costs meaningfully more and you should not pretend the gap is small.",
+      "Simplicity for a small team. If they are still under about 50 people, they may genuinely not need Greenhouse yet, and saying so buys you the call in a year."
+    ],
+    "questionsThatOpenIt": [
+      "How many people were you when you bought it, and how many are you now?",
+      "Who owns making sure two hiring managers run the same process?",
+      "What is the thing you keep meaning to fix about hiring but never get to?"
+    ],
+    "doNotSay": [
+      "That Workable is not a real ATS. It is, and it was the right call when they bought it."
+    ]
+  },
+
+  "recruitee": {
+    "name": "Recruitee",
+    "profile": "SMB and European mid-market, part of Tellent. Collaborative hiring emphasis, straightforward setup.",
+    "theyChoseItBecause": [
+      "European presence and pricing.",
+      "Simple collaborative hiring for small teams."
+    ],
+    "whereGreenhouseWins": [
+      "Depth of structured hiring and scorecards.",
+      "Scale of recruiting operation and reporting.",
+      "US and global enterprise footprint if they are expanding into the States."
+    ],
+    "whereTheyWin": [
+      "Price and European market fit.",
+      "Simplicity for a team that is not running complex loops."
+    ],
+    "questionsThatOpenIt": [
+      "Are you hiring outside Europe yet, and how is that going?",
+      "How do you compare two candidates interviewed by different people?"
+    ],
+    "doNotSay": []
+  },
+
+  "none": {
+    "name": "No ATS detected",
+    "profile": "Either they run no ATS, or they proxy their careers page server-side so the platform is hidden. Check the careers page apply link before assuming greenfield.",
+    "theyChoseItBecause": [
+      "Genuine greenfield: hiring runs on a shared inbox, a spreadsheet and a calendar.",
+      "Or they have one and you simply cannot see it from outside."
+    ],
+    "whereGreenhouseWins": [
+      "Everything, if it is genuinely greenfield. There is no incumbent to displace and no migration to fear.",
+      "The pain is already acute: lost candidates, no audit trail, no idea why anyone dropped out.",
+      "Greenfield deals close faster because there is no switching cost argument to win."
+    ],
+    "whereTheyWin": [
+      "Free. A spreadsheet costs nothing and the status quo is the hardest competitor there is."
+    ],
+    "questionsThatOpenIt": [
+      "Where does a CV live between someone applying and someone reading it?",
+      "If I asked why you passed on a candidate three months ago, could you tell me?",
+      "Who is the one person who knows where everything is, and what happens when they are away?"
+    ],
+    "doNotSay": [
+      "That they have no process. They have one, it is just not in software."
+    ]
+  }
+}

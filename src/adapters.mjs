@@ -88,6 +88,29 @@ export const adapters = [
   },
 
   {
+    id: 'workable',
+    async fetchBoard(token) {
+      const { status, json } = await getJson(
+        `https://apply.workable.com/api/v1/widget/accounts/${encodeURIComponent(token)}`
+      );
+      if (status === 404 || !json?.jobs) return { present: false, ambiguous: false, jobs: [], total: 0 };
+      const jobs = json.jobs.map(j => ({
+        id: String(j.shortcode ?? j.id),
+        title: j.title ?? '',
+        department: j.department ?? null,
+        location: [j.city, j.country].filter(Boolean).join(', ') || null,
+        remote: Boolean(j.telecommuting),
+        url: j.url ?? j.shortlink ?? null,
+        // published_on is when it went public. created_at is when the req was opened
+        // internally, which a prospect cannot see on their own careers page.
+        postedAt: iso(j.published_on ?? j.created_at),
+        reqId: j.code || null,
+      }));
+      return { present: true, ambiguous: false, jobs, total: jobs.length };
+    },
+  },
+
+  {
     id: 'smartrecruiters',
     async fetchBoard(token) {
       const base = `https://api.smartrecruiters.com/v1/companies/${encodeURIComponent(token)}/postings`;
@@ -117,12 +140,34 @@ export const adapters = [
       return { present: true, ambiguous: false, jobs, total };
     },
   },
-];
 
-// Not yet wired: Workable and Recruitee. Every documented public endpoint for both
-// returned 404 when probed on 2026-09-03, so their real shape is unconfirmed and
-// guessing would silently misclassify accounts. Add here once verified against a
-// live board. Both skew SMB/Europe, so this mostly costs coverage below the
-// mid-market line.
+  {
+    id: 'recruitee',
+    async fetchBoard(token) {
+      // Recruitee addresses boards by subdomain, not path, so the token has to be
+      // host-safe. A subdomain that does not exist 404s, which makes an empty board
+      // a real answer rather than an ambiguous one.
+      if (!/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(token)) {
+        return { present: false, ambiguous: false, jobs: [], total: 0 };
+      }
+      const { status, json } = await getJson(`https://${token}.recruitee.com/api/offers/`);
+      if (status === 404 || !json?.offers) return { present: false, ambiguous: false, jobs: [], total: 0 };
+      const jobs = json.offers
+        .filter(o => o.status === 'published')
+        .map(o => ({
+          id: String(o.id),
+          title: o.title ?? '',
+          department: o.department ?? null,
+          location: o.location ?? ([o.city, o.country].filter(Boolean).join(', ') || null),
+          remote: Boolean(o.remote),
+          url: o.careers_url ?? null,
+          // Recruitee stamps "2026-09-01 12:17:30 UTC", which is not ISO 8601.
+          postedAt: iso(String(o.published_at ?? o.created_at ?? '').replace(' UTC', 'Z').replace(' ', 'T') || null),
+          reqId: null,
+        }));
+      return { present: true, ambiguous: false, jobs, total: jobs.length };
+    },
+  },
+];
 
 export const adapterById = Object.fromEntries(adapters.map(a => [a.id, a]));

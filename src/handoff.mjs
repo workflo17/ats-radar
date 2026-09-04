@@ -11,12 +11,24 @@
  *                      --trigger "Posted Head of Talent Ops req 3 weeks ago" \
  *                      --notes "Currently on Ashby. Said reporting is the pain."
  */
-import { writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT, findAccount, argv, STALE_DAYS, daysOld } from './lib/facts.mjs';
 
 const OUT = path.join(ROOT, 'data', 'briefs');
+const CARDS = path.join(ROOT, 'config', 'battlecards.json');
 const pct = n => `${Math.round(n * 100)}%`;
+
+/** The radar already knows the incumbent. This is what to do with that. */
+async function battlecard(ats) {
+  try {
+    const all = JSON.parse(await readFile(CARDS, 'utf8'));
+    return all[ats] ?? all.none ?? null;
+  } catch { return null; }
+}
+
+const bullets = (heading, items) =>
+  items?.length ? [``, `**${heading}**`, ``, ...items.map(s => `- ${s}`)] : [];
 
 /** Questions worth asking, chosen from what their board actually shows. */
 function questions(f) {
@@ -52,6 +64,7 @@ async function main() {
   }
   const f = await findAccount(a.account);
   const company = f.name || f.domain;
+  const card = await battlecard(f.ats);
 
   const md = [
     `# Handoff: ${company}`,
@@ -92,6 +105,21 @@ async function main() {
     ``,
     ...questions(f).map((q, i) => `${i + 1}. ${q}`),
     ``,
+    ...(card ? [
+      `## Competitive read: ${card.name}`,
+      ``,
+      card.profile,
+      ...bullets('Why they picked it', card.theyChoseItBecause),
+      ...bullets('Where we win', card.whereGreenhouseWins),
+      ...bullets('Where they genuinely win, say it before they do', card.whereTheyWin),
+      ...bullets('Openers', card.questionsThatOpenIt),
+      ...bullets('Do not say', card.doNotSay),
+      ``,
+      `_Card drafted from public comparison material before start date. Greenhouse`,
+      `enablement has real cards with win/loss data behind them; where they conflict,`,
+      `theirs win. Edit in \`config/battlecards.json\`._`,
+      ``,
+    ] : []),
     `---`,
     `_Board data pulled ${f.snapshot.date} from ${company}'s public ${f.ats} feed. All of it is`,
     `verifiable on their careers page, so it is safe to quote back to them directly._`,

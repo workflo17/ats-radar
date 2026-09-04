@@ -6,12 +6,14 @@ Four tools for the Greenhouse SDR job, built on one idea: every major ATS publis
 its customers' job boards as a free, unauthenticated JSON API, so you can see which
 ATS a company runs and watch their hiring change day by day.
 
-| | Tool | Command |
-|---|---|---|
-| 1 | Displacement radar: who runs a competitor ATS, and what changed | `npm run collect`, `npm run report`, `npm run diff` |
-| 2 | Show-rate pack: the three touches that get a prospect to actually attend | `npm run brief` |
-| 3 | AE handoff brief: the page that gets a meeting moved to Develop | `npm run handoff` |
-| 4 | Attribution ledger: your own record, with the comp plan's math in it | `npm run ledger` |
+| Tool | Command |
+|---|---|
+| Displacement radar: who runs a competitor ATS, and what changed | `npm run collect` `report` `diff` |
+| Territory ingest: any CRM export to a resolved target list | `npm run ingest` |
+| Show-rate pack: the three touches that get a prospect to actually attend | `npm run brief` |
+| AE handoff brief: the page that gets a meeting moved to Develop | `npm run handoff` |
+| Attribution ledger: your own record, with the comp plan's math in it | `npm run ledger` |
+| Loop closing: which signals actually convert | `npm run learn` |
 
 They map to the four terms your pay actually runs through. A Stage Two Opportunity
 is a meeting you booked, **that the prospect attended**, **that the AE advanced**.
@@ -57,6 +59,8 @@ time, so a hit usually costs one round of probes rather than a full cross produc
 |---|---|---|
 | Greenhouse | 404 | yes |
 | Ashby | 404 | yes |
+| Workable | 404 | yes |
+| Recruitee | 404 (subdomain does not resolve) | yes |
 | Lever | 200 with `[]` | **no**, require count > 0 |
 | SmartRecruiters | 200 with `totalFound: 0` | **no**, require count > 0 |
 
@@ -176,6 +180,39 @@ conversation and a shrug.
 
 ---
 
+## Territory ingest
+
+```bash
+npm run ingest -- --file territory.csv --dry-run
+npm run ingest -- --file territory.csv --replace
+```
+
+A CRM export gives company names, sometimes a website column, rarely a clean domain,
+and never a board token. This reads any CSV shape, works out which columns matter,
+strips legal suffixes ("Hugging Face, Inc." to `huggingface`), resolves each company
+to its ATS and appends the hits to `config/targets.csv`. Failures go to
+`data/unresolved.csv` with the original row intact.
+
+**A domain is not required.** Board tokens are derived from the company name at least
+as often as from the domain, so a bare list of names resolves most of the way. Tested
+against a Salesforce-shaped export: "Gopuff" with an empty website column still
+resolved to Lever.
+
+## Loop closing
+
+```bash
+npm run learn
+npm run learn -- --window 30
+```
+
+Replays every consecutive snapshot pair into a dated signal history, joins it against
+the ledger, and reports advance rate by preceding signal, whether the 35-day call-on
+delay is right, where the funnel leaks, and per-AE accept rate.
+
+It refuses to show a percentage below n=5, because a rate computed on four rows is
+noise wearing a suit. With an empty ledger it says so and explains what it will report
+once there is data, rather than printing an empty table.
+
 ## Data layout
 
 ```
@@ -231,10 +268,6 @@ under CIIA 2.3(b) and triggers a written-notice duty, but ownership stays here.
 
 ## Not done
 
-- **Workable and Recruitee adapters.** Every documented public endpoint for both
-  returned 404 when probed on 2026-09-03, so their real shape is unconfirmed and
-  guessing would silently misclassify accounts. Both skew SMB and Europe, so the gap
-  mostly costs coverage below the mid-market line.
 - **Department data for Greenhouse accounts.** The basic feed omits it and the
   `/departments` endpoint would double the request count, so the talent-role signal
   reads job titles instead.
