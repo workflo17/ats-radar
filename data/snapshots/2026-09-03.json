@@ -1,12 +1,12 @@
 {
  "date": "2026-09-03",
- "collectedAt": "2026-09-04T01:18:07.135Z",
+ "collectedAt": "2026-09-04T02:39:31.239Z",
  "stats": {
   "targets": 65,
   "resolved": 53,
   "unresolved": 12,
   "errors": 0,
-  "totalJobs": 6552,
+  "totalJobs": 6555,
   "byAts": {
    "greenhouse": 32,
    "ashby": 16,
@@ -14,7 +14,7 @@
    "unresolved": 12,
    "smartrecruiters": 3
   },
-  "durationSec": 25
+  "durationSec": 21
  },
  "migrations": [],
  "errors": [],
@@ -1601,7 +1601,7 @@
    "name": "Stripe",
    "ats": "greenhouse",
    "token": "stripe",
-   "jobCount": 611,
+   "jobCount": 612,
    "jobs": [
     {
      "id": "8172487",
@@ -1804,6 +1804,16 @@
      "reqId": "See Opening ID"
     },
     {
+     "id": "8077971",
+     "title": "Account Executive, Enterprise Platforms, Hunter",
+     "department": null,
+     "location": "Chicago, IL",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8077971",
+     "postedAt": "2026-08-06T19:27:48.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
      "id": "7961609",
      "title": "Account Executive, Enterprise Platforms, Hunter",
      "department": null,
@@ -1814,13 +1824,13 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8077971",
-     "title": "Account Executive, Enterprise Platforms, Hunter",
+     "id": "8138042",
+     "title": "Account Executive, Enterprise Platforms, Tier 2 Grower",
      "department": null,
-     "location": "Chicago, IL",
+     "location": "New York, NY; San Francisco, CA",
      "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8077971",
-     "postedAt": "2026-08-06T19:27:48.000Z",
+     "url": "https://stripe.com/jobs/search?gh_jid=8138042",
+     "postedAt": "2026-08-25T19:53:39.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -1841,16 +1851,6 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8075473",
      "postedAt": "2026-07-27T19:52:01.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
-     "id": "8138042",
-     "title": "Account Executive, Enterprise Platforms, Tier 2 Grower",
-     "department": null,
-     "location": "New York, NY; San Francisco, CA",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8138042",
-     "postedAt": "2026-08-25T19:53:39.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -2154,16 +2154,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8156996",
-     "title": "Account Executive, SMB (Grower)",
-     "department": null,
-     "location": "Chicago",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8156996",
-     "postedAt": "2026-08-25T16:56:13.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8128772",
      "title": "Account Executive, SMB (Grower)",
      "department": null,
@@ -2171,6 +2161,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8128772",
      "postedAt": "2026-08-17T19:45:44.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8156996",
+     "title": "Account Executive, SMB (Grower)",
+     "department": null,
+     "location": "Chicago",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8156996",
+     "postedAt": "2026-08-25T16:56:13.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -2204,16 +2204,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8128552",
-     "title": "Account Executive, Startups (Grower)",
-     "department": null,
-     "location": "San Francisco",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8128552",
-     "postedAt": "2026-08-18T22:44:24.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8068565",
      "title": "Account Executive, Startups (Grower)",
      "department": null,
@@ -2221,6 +2211,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8068565",
      "postedAt": "2026-08-13T00:12:11.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8128552",
+     "title": "Account Executive, Startups (Grower)",
+     "department": null,
+     "location": "San Francisco",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8128552",
+     "postedAt": "2026-08-18T22:44:24.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -2404,16 +2404,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "6176758",
-     "title": "Backend/API Engineer, Money as a Service",
-     "department": null,
-     "location": "US",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=6176758",
-     "postedAt": "2024-08-25T12:36:49.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7369543",
      "title": "Backend/API Engineer, Money as a Service",
      "department": null,
@@ -2421,6 +2411,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7369543",
      "postedAt": "2025-11-03T10:28:42.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "6176758",
+     "title": "Backend/API Engineer, Money as a Service",
+     "department": null,
+     "location": "US",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=6176758",
+     "postedAt": "2024-08-25T12:36:49.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -2444,16 +2444,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "6042172",
-     "title": "Backend Engineer, Core Technology",
-     "department": null,
-     "location": "US-Remote, Chicago, Seattle, San Francisco",
-     "remote": true,
-     "url": "https://stripe.com/jobs/search?gh_jid=6042172",
-     "postedAt": "2024-06-14T22:04:50.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "6686634",
      "title": "Backend Engineer, Core Technology",
      "department": null,
@@ -2461,6 +2451,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=6686634",
      "postedAt": "2025-04-07T10:48:48.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "6042172",
+     "title": "Backend Engineer, Core Technology",
+     "department": null,
+     "location": "US-Remote, Chicago, Seattle, San Francisco",
+     "remote": true,
+     "url": "https://stripe.com/jobs/search?gh_jid=6042172",
+     "postedAt": "2024-06-14T22:04:50.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -2984,16 +2984,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "5416444",
-     "title": "Data Analyst",
-     "department": null,
-     "location": "Canada",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=5416444",
-     "postedAt": "2023-11-01T17:50:50.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7978488",
      "title": "Data Analyst",
      "department": null,
@@ -3001,6 +2991,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7978488",
      "postedAt": "2026-06-03T19:13:13.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "5416444",
+     "title": "Data Analyst",
+     "department": null,
+     "location": "Canada",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=5416444",
+     "postedAt": "2023-11-01T17:50:50.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -3244,16 +3244,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8165515",
-     "title": "Engineering Manager, Billing Configuration",
-     "department": null,
-     "location": "N/A",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8165515",
-     "postedAt": "2026-08-29T14:45:19.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8172601",
      "title": "Engineering Manager, Billing Configuration",
      "department": null,
@@ -3261,6 +3251,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8172601",
      "postedAt": "2026-09-02T17:37:46.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8165515",
+     "title": "Engineering Manager, Billing Configuration",
+     "department": null,
+     "location": "N/A",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8165515",
+     "postedAt": "2026-08-29T14:45:19.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -3574,16 +3574,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8055930",
-     "title": "Forward Deployed AI Accelerator, Marketing",
-     "department": null,
-     "location": "Remote in the US, Remote in Canada",
-     "remote": true,
-     "url": "https://stripe.com/jobs/search?gh_jid=8055930",
-     "postedAt": "2026-07-13T23:29:13.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7747640",
      "title": "Forward Deployed AI Accelerator, Marketing",
      "department": null,
@@ -3591,6 +3581,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7747640",
      "postedAt": "2026-03-26T14:40:17.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8055930",
+     "title": "Forward Deployed AI Accelerator, Marketing",
+     "department": null,
+     "location": "Remote in the US, Remote in Canada",
+     "remote": true,
+     "url": "https://stripe.com/jobs/search?gh_jid=8055930",
+     "postedAt": "2026-07-13T23:29:13.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -3604,16 +3604,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8075577",
-     "title": "Forward Deployed Engineer, Professional Services",
-     "department": null,
-     "location": "United States or Canada",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8075577",
-     "postedAt": "2026-07-29T21:11:49.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8075570",
      "title": "Forward Deployed Engineer, Professional Services",
      "department": null,
@@ -3621,6 +3611,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8075570",
      "postedAt": "2026-07-29T20:55:28.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8075577",
+     "title": "Forward Deployed Engineer, Professional Services",
+     "department": null,
+     "location": "United States or Canada",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8075577",
+     "postedAt": "2026-07-29T21:11:49.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4364,16 +4364,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8137997",
-     "title": "Machine Learning Engineer",
-     "department": null,
-     "location": "South San Francisco, CA",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8137997",
-     "postedAt": "2026-08-17T22:06:29.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8014859",
      "title": "Machine Learning Engineer",
      "department": null,
@@ -4381,6 +4371,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8014859",
      "postedAt": "2026-07-10T21:00:11.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8137997",
+     "title": "Machine Learning Engineer",
+     "department": null,
+     "location": "South San Francisco, CA",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8137997",
+     "postedAt": "2026-08-17T22:06:29.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4444,16 +4444,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "7896538",
-     "title": "Manager, Sales Development",
-     "department": null,
-     "location": "Chicago, Illinois",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=7896538",
-     "postedAt": "2026-05-11T15:19:11.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7337544",
      "title": "Manager, Sales Development",
      "department": null,
@@ -4461,6 +4451,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7337544",
      "postedAt": "2025-10-28T08:53:42.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "7896538",
+     "title": "Manager, Sales Development",
+     "department": null,
+     "location": "Chicago, Illinois",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=7896538",
+     "postedAt": "2026-05-11T15:19:11.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4494,16 +4494,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "7664667",
-     "title": "Manager, Technical Account Management",
-     "department": null,
-     "location": "Sydney or Melbourne",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=7664667",
-     "postedAt": "2026-03-25T07:09:49.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7767222",
      "title": "Manager, Technical Account Management",
      "department": null,
@@ -4511,6 +4501,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7767222",
      "postedAt": "2026-03-31T11:03:09.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "7664667",
+     "title": "Manager, Technical Account Management",
+     "department": null,
+     "location": "Sydney or Melbourne",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=7664667",
+     "postedAt": "2026-03-25T07:09:49.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4554,16 +4554,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8109554",
-     "title": "Monetization Operations Analyst",
-     "department": null,
-     "location": "Seattle, WA",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8109554",
-     "postedAt": "2026-08-05T18:17:51.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8021192",
      "title": "Monetization Operations Analyst",
      "department": null,
@@ -4571,6 +4561,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8021192",
      "postedAt": "2026-06-24T09:29:11.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8109554",
+     "title": "Monetization Operations Analyst",
+     "department": null,
+     "location": "Seattle, WA",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8109554",
+     "postedAt": "2026-08-05T18:17:51.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4614,16 +4614,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8102597",
-     "title": "Operations Associate, Financial Crimes EDD/PEP",
-     "department": null,
-     "location": "Bangalore ",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8102597",
-     "postedAt": "2026-08-26T09:59:47.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7202953",
      "title": "Operations Associate, Financial Crimes EDD/PEP",
      "department": null,
@@ -4631,6 +4621,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7202953",
      "postedAt": "2025-08-29T17:10:20.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8102597",
+     "title": "Operations Associate, Financial Crimes EDD/PEP",
+     "department": null,
+     "location": "Bangalore ",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8102597",
+     "postedAt": "2026-08-26T09:59:47.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4784,16 +4784,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "7973002",
-     "title": "Partner Development Manager, Strategic Partnerships",
-     "department": null,
-     "location": "US-San Francisco; US-New York City; US-Seattle; US-Remote; US-Chicago; CA-Toronto; CA-Remote",
-     "remote": true,
-     "url": "https://stripe.com/jobs/search?gh_jid=7973002",
-     "postedAt": "2026-06-03T13:48:20.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8094869",
      "title": "Partner Development Manager, Strategic Partnerships",
      "department": null,
@@ -4801,6 +4791,16 @@
      "remote": true,
      "url": "https://stripe.com/jobs/search?gh_jid=8094869",
      "postedAt": "2026-07-29T19:07:53.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "7973002",
+     "title": "Partner Development Manager, Strategic Partnerships",
+     "department": null,
+     "location": "US-San Francisco; US-New York City; US-Seattle; US-Remote; US-Chicago; CA-Toronto; CA-Remote",
+     "remote": true,
+     "url": "https://stripe.com/jobs/search?gh_jid=7973002",
+     "postedAt": "2026-06-03T13:48:20.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4924,16 +4924,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "7773621",
-     "title": "People Consultant",
-     "department": null,
-     "location": "Mexico City",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=7773621",
-     "postedAt": "2026-04-02T15:57:31.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7866374",
      "title": "People Consultant",
      "department": null,
@@ -4941,6 +4931,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7866374",
      "postedAt": "2026-05-04T14:43:21.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "7773621",
+     "title": "People Consultant",
+     "department": null,
+     "location": "Mexico City",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=7773621",
+     "postedAt": "2026-04-02T15:57:31.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -4984,16 +4984,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8053517",
-     "title": "Privacy Operations Program Manager",
-     "department": null,
-     "location": "US Remote",
-     "remote": true,
-     "url": "https://stripe.com/jobs/search?gh_jid=8053517",
-     "postedAt": "2026-07-22T15:59:39.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8094087",
      "title": "Privacy Operations Program Manager",
      "department": null,
@@ -5001,6 +4991,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8094087",
      "postedAt": "2026-07-31T14:11:17.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8053517",
+     "title": "Privacy Operations Program Manager",
+     "department": null,
+     "location": "US Remote",
+     "remote": true,
+     "url": "https://stripe.com/jobs/search?gh_jid=8053517",
+     "postedAt": "2026-07-22T15:59:39.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -5894,6 +5894,16 @@
      "reqId": "See Opening ID"
     },
     {
+     "id": "8155378",
+     "title": "Sales Manager, Enterprise Platforms, Hunter Team",
+     "department": null,
+     "location": "New York, NY",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8155378",
+     "postedAt": "2026-09-04T02:24:22.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
      "id": "8125729",
      "title": "Sales Manager, Funded Startups",
      "department": null,
@@ -5934,16 +5944,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8089882",
-     "title": "Sales Strategy & Operations Business Partner",
-     "department": null,
-     "location": "(San Francisco, Chicago, NYC)",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8089882",
-     "postedAt": "2026-07-30T14:01:13.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8106775",
      "title": "Sales Strategy & Operations Business Partner",
      "department": null,
@@ -5951,6 +5951,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8106775",
      "postedAt": "2026-08-11T16:02:42.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8089882",
+     "title": "Sales Strategy & Operations Business Partner",
+     "department": null,
+     "location": "(San Francisco, Chicago, NYC)",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8089882",
+     "postedAt": "2026-07-30T14:01:13.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6084,16 +6094,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8175099",
-     "title": "Senior Software Engineer",
-     "department": null,
-     "location": "South San Francisco, CA",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8175099",
-     "postedAt": "2026-09-02T21:34:08.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8026511",
      "title": "Senior Software Engineer",
      "department": null,
@@ -6101,6 +6101,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8026511",
      "postedAt": "2026-06-24T16:49:40.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8175099",
+     "title": "Senior Software Engineer",
+     "department": null,
+     "location": "South San Francisco, CA",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8175099",
+     "postedAt": "2026-09-02T21:34:08.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6204,16 +6214,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8137972",
-     "title": "Software Engineer",
-     "department": null,
-     "location": "Chicago, IL",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8137972",
-     "postedAt": "2026-08-17T21:52:22.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8174105",
      "title": "Software Engineer",
      "department": null,
@@ -6221,6 +6221,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8174105",
      "postedAt": "2026-09-02T16:57:08.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8137972",
+     "title": "Software Engineer",
+     "department": null,
+     "location": "Chicago, IL",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8137972",
+     "postedAt": "2026-08-17T21:52:22.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6334,16 +6344,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8097801",
-     "title": "Software Engineer, Intern (Summer or Winter)",
-     "department": null,
-     "location": "Dublin",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8097801",
-     "postedAt": "2026-08-17T13:46:14.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8130805",
      "title": "Software Engineer, Intern (Summer or Winter)",
      "department": null,
@@ -6351,6 +6351,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8130805",
      "postedAt": "2026-08-31T23:21:48.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8097801",
+     "title": "Software Engineer, Intern (Summer or Winter)",
+     "department": null,
+     "location": "Dublin",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8097801",
+     "postedAt": "2026-08-17T13:46:14.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6384,23 +6394,13 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8130881",
+     "id": "8157838",
      "title": "Software Engineer, New Grad",
      "department": null,
-     "location": "Dublin",
+     "location": "Toronto",
      "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8130881",
-     "postedAt": "2026-08-31T23:07:03.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
-     "id": "8130930",
-     "title": "Software Engineer, New Grad",
-     "department": null,
-     "location": "London",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8130930",
-     "postedAt": "2026-08-31T22:32:53.000Z",
+     "url": "https://stripe.com/jobs/search?gh_jid=8157838",
+     "postedAt": "2026-08-31T23:16:04.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6414,16 +6414,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8157838",
-     "title": "Software Engineer, New Grad",
-     "department": null,
-     "location": "Toronto",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8157838",
-     "postedAt": "2026-08-31T23:16:04.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8160776",
      "title": "Software Engineer, New Grad",
      "department": null,
@@ -6431,6 +6421,26 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8160776",
      "postedAt": "2026-09-03T03:28:52.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8130930",
+     "title": "Software Engineer, New Grad",
+     "department": null,
+     "location": "London",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+     "postedAt": "2026-08-31T22:32:53.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8130881",
+     "title": "Software Engineer, New Grad",
+     "department": null,
+     "location": "Dublin",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+     "postedAt": "2026-08-31T23:07:03.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -6944,16 +6954,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8142649",
-     "title": "Staff Product Manager, Local Payment Methods Growth",
-     "department": null,
-     "location": "London",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8142649",
-     "postedAt": "2026-08-19T19:50:49.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "7737526",
      "title": "Staff Product Manager, Local Payment Methods Growth",
      "department": null,
@@ -6961,6 +6961,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=7737526",
      "postedAt": "2026-08-19T19:50:48.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8142649",
+     "title": "Staff Product Manager, Local Payment Methods Growth",
+     "department": null,
+     "location": "London",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8142649",
+     "postedAt": "2026-08-19T19:50:49.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -7314,16 +7324,6 @@
      "reqId": "See Opening ID"
     },
     {
-     "id": "8044158",
-     "title": "Technical Account Manager",
-     "department": null,
-     "location": "Sydney",
-     "remote": false,
-     "url": "https://stripe.com/jobs/search?gh_jid=8044158",
-     "postedAt": "2026-07-13T08:55:49.000Z",
-     "reqId": "See Opening ID"
-    },
-    {
      "id": "8023524",
      "title": "Technical Account Manager",
      "department": null,
@@ -7331,6 +7331,16 @@
      "remote": false,
      "url": "https://stripe.com/jobs/search?gh_jid=8023524",
      "postedAt": "2026-06-23T23:38:52.000Z",
+     "reqId": "See Opening ID"
+    },
+    {
+     "id": "8044158",
+     "title": "Technical Account Manager",
+     "department": null,
+     "location": "Sydney",
+     "remote": false,
+     "url": "https://stripe.com/jobs/search?gh_jid=8044158",
+     "postedAt": "2026-07-13T08:55:49.000Z",
      "reqId": "See Opening ID"
     },
     {
@@ -27562,7 +27572,7 @@
    "name": "Databricks",
    "ats": "greenhouse",
    "token": "databricks",
-   "jobCount": 862,
+   "jobCount": 863,
    "jobs": [
     {
      "id": "8559344002",
@@ -29526,7 +29536,7 @@
     },
     {
      "id": "8644006002",
-     "title": "Lead GTM Enablement & Scale Architect, Field Engineering - Customer Skills",
+     "title": "Lead GTM Enablement & Scale Architect, Product Enablement",
      "department": null,
      "location": "United States",
      "remote": false,
@@ -29725,14 +29735,14 @@
      "reqId": "FEQ327R116"
     },
     {
-     "id": "8535419002",
+     "id": "8629997002",
      "title": "Manager, Forward Deployed Engineering",
      "department": null,
-     "location": "Tokyo, Japan",
+     "location": "Singapore",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8535419002",
-     "postedAt": "2026-07-28T02:40:05.000Z",
-     "reqId": "CSQ427R97"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8629997002",
+     "postedAt": "2026-07-15T03:18:53.000Z",
+     "reqId": "CSQ427R211"
     },
     {
      "id": "8445817002",
@@ -29743,6 +29753,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8445817002",
      "postedAt": "2026-03-04T01:21:53.000Z",
      "reqId": "CSQ327R50"
+    },
+    {
+     "id": "8535419002",
+     "title": "Manager, Forward Deployed Engineering",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8535419002",
+     "postedAt": "2026-07-28T02:40:05.000Z",
+     "reqId": "CSQ427R97"
     },
     {
      "id": "8613192002",
@@ -29763,16 +29783,6 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8503068002",
      "postedAt": "2026-04-14T03:20:55.000Z",
      "reqId": "CSQ227R28"
-    },
-    {
-     "id": "8629997002",
-     "title": "Manager, Forward Deployed Engineering",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8629997002",
-     "postedAt": "2026-07-15T03:18:53.000Z",
-     "reqId": "CSQ427R211"
     },
     {
      "id": "8585019002",
@@ -30635,16 +30645,6 @@
      "reqId": "P-1494"
     },
     {
-     "id": "7734812002",
-     "title": "Senior Manager, Infrastructure Data Science",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7734812002",
-     "postedAt": "2024-11-18T21:36:04.000Z",
-     "reqId": "RDQ225R487"
-    },
-    {
      "id": "7641390002",
      "title": "Senior Manager, Infrastructure Data Science",
      "department": null,
@@ -30652,6 +30652,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7641390002",
      "postedAt": "2024-11-18T21:34:14.000Z",
+     "reqId": "RDQ225R487"
+    },
+    {
+     "id": "7734812002",
+     "title": "Senior Manager, Infrastructure Data Science",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7734812002",
+     "postedAt": "2024-11-18T21:36:04.000Z",
      "reqId": "RDQ225R487"
     },
     {
@@ -30715,16 +30725,6 @@
      "reqId": "P-1428"
     },
     {
-     "id": "8210383002",
-     "title": "Senior Software Engineer (App-Framework)",
-     "department": null,
-     "location": "Bengaluru, India",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8210383002",
-     "postedAt": "2025-10-14T08:07:02.000Z",
-     "reqId": "P-926"
-    },
-    {
      "id": "8294304002",
      "title": "Senior Software Engineer (App-Framework)",
      "department": null,
@@ -30733,6 +30733,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8294304002",
      "postedAt": "2025-11-18T08:36:08.000Z",
      "reqId": "P-1492"
+    },
+    {
+     "id": "8210383002",
+     "title": "Senior Software Engineer (App-Framework)",
+     "department": null,
+     "location": "Bengaluru, India",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8210383002",
+     "postedAt": "2025-10-14T08:07:02.000Z",
+     "reqId": "P-926"
     },
     {
      "id": "8183195002",
@@ -30745,36 +30755,6 @@
      "reqId": "P-78"
     },
     {
-     "id": "7477087002",
-     "title": "Senior Software Engineer - Backend",
-     "department": null,
-     "location": "Berlin, Germany",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7477087002",
-     "postedAt": "2024-10-22T14:42:51.000Z",
-     "reqId": "P-1327"
-    },
-    {
-     "id": "8012803002",
-     "title": "Senior Software Engineer - Backend",
-     "department": null,
-     "location": "Belgrade, Serbia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012803002",
-     "postedAt": "2025-05-28T13:57:50.000Z",
-     "reqId": "P-1415"
-    },
-    {
-     "id": "8093295002",
-     "title": "Senior Software Engineer - Backend",
-     "department": null,
-     "location": "Vancouver, Canada",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8093295002",
-     "postedAt": "2025-07-25T21:07:40.000Z",
-     "reqId": "P-1440"
-    },
-    {
      "id": "6544435002",
      "title": "Senior Software Engineer - Backend",
      "department": null,
@@ -30783,16 +30763,6 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544435002",
      "postedAt": "2022-12-20T23:48:04.000Z",
      "reqId": "P-78"
-    },
-    {
-     "id": "8029671002",
-     "title": "Senior Software Engineer - Backend",
-     "department": null,
-     "location": "Amsterdam, Netherlands",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029671002",
-     "postedAt": "2025-06-08T22:54:05.000Z",
-     "reqId": "P-1318"
     },
     {
      "id": "6779084002",
@@ -30805,6 +30775,16 @@
      "reqId": "P-939"
     },
     {
+     "id": "8093295002",
+     "title": "Senior Software Engineer - Backend",
+     "department": null,
+     "location": "Vancouver, Canada",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8093295002",
+     "postedAt": "2025-07-25T21:07:40.000Z",
+     "reqId": "P-1440"
+    },
+    {
      "id": "4799387002",
      "title": "Senior Software Engineer - Backend",
      "department": null,
@@ -30813,6 +30793,36 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=4799387002",
      "postedAt": "2021-10-21T18:07:28.000Z",
      "reqId": "P-78"
+    },
+    {
+     "id": "8012803002",
+     "title": "Senior Software Engineer - Backend",
+     "department": null,
+     "location": "Belgrade, Serbia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012803002",
+     "postedAt": "2025-05-28T13:57:50.000Z",
+     "reqId": "P-1415"
+    },
+    {
+     "id": "7477087002",
+     "title": "Senior Software Engineer - Backend",
+     "department": null,
+     "location": "Berlin, Germany",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7477087002",
+     "postedAt": "2024-10-22T14:42:51.000Z",
+     "reqId": "P-1327"
+    },
+    {
+     "id": "8029671002",
+     "title": "Senior Software Engineer - Backend",
+     "department": null,
+     "location": "Amsterdam, Netherlands",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029671002",
+     "postedAt": "2025-06-08T22:54:05.000Z",
+     "reqId": "P-1318"
     },
     {
      "id": "6709301002",
@@ -30845,16 +30855,6 @@
      "reqId": "P-1385"
     },
     {
-     "id": "8012809002",
-     "title": "Senior Software Engineer - Database Engine Internals",
-     "department": null,
-     "location": "Belgrade, Serbia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012809002",
-     "postedAt": "2025-05-28T13:57:51.000Z",
-     "reqId": "P-1415"
-    },
-    {
      "id": "6544383002",
      "title": "Senior Software Engineer - Database Engine Internals",
      "department": null,
@@ -30863,6 +30863,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544383002",
      "postedAt": "2023-06-23T22:47:21.000Z",
      "reqId": "P-97"
+    },
+    {
+     "id": "8012809002",
+     "title": "Senior Software Engineer - Database Engine Internals",
+     "department": null,
+     "location": "Belgrade, Serbia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012809002",
+     "postedAt": "2025-05-28T13:57:51.000Z",
+     "reqId": "P-1415"
     },
     {
      "id": "5048461002",
@@ -30885,23 +30895,13 @@
      "reqId": "P-1348"
     },
     {
-     "id": "6936994002",
+     "id": "4513122002",
      "title": "Senior Software Engineer - Distributed Data Systems",
      "department": null,
-     "location": "Bellevue, Washington",
+     "location": "San Francisco, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6936994002",
-     "postedAt": "2023-12-11T20:48:06.000Z",
-     "reqId": "P-987"
-    },
-    {
-     "id": "6544325002",
-     "title": "Senior Software Engineer - Distributed Data Systems",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544325002",
-     "postedAt": "2023-06-23T22:46:50.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=4513122002",
+     "postedAt": "2019-11-14T22:28:57.000Z",
      "reqId": "P-59"
     },
     {
@@ -30915,34 +30915,24 @@
      "reqId": "P-1415"
     },
     {
-     "id": "4513122002",
+     "id": "6544325002",
      "title": "Senior Software Engineer - Distributed Data Systems",
      "department": null,
-     "location": "San Francisco, California",
+     "location": "Mountain View, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=4513122002",
-     "postedAt": "2019-11-14T22:28:57.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544325002",
+     "postedAt": "2023-06-23T22:46:50.000Z",
      "reqId": "P-59"
     },
     {
-     "id": "5445641002",
-     "title": "Senior Software Engineer - Fullstack",
+     "id": "6936994002",
+     "title": "Senior Software Engineer - Distributed Data Systems",
      "department": null,
-     "location": "Mountain View, California; San Francisco, California",
+     "location": "Bellevue, Washington",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
-     "postedAt": "2022-02-28T20:09:37.000Z",
-     "reqId": "P-160"
-    },
-    {
-     "id": "8099342002",
-     "title": "Senior Software Engineer - Fullstack",
-     "department": null,
-     "location": "Vancouver, Canada",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099342002",
-     "postedAt": "2025-07-31T02:38:03.000Z",
-     "reqId": "P-1443"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6936994002",
+     "postedAt": "2023-12-11T20:48:06.000Z",
+     "reqId": "P-987"
     },
     {
      "id": "7898766002",
@@ -30952,6 +30942,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002",
      "postedAt": "2025-03-06T22:58:22.000Z",
+     "reqId": "P-160"
+    },
+    {
+     "id": "6544403002",
+     "title": "Senior Software Engineer - Fullstack",
+     "department": null,
+     "location": "Seattle, Washington",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
+     "postedAt": "2022-12-20T23:20:50.000Z",
      "reqId": "P-160"
     },
     {
@@ -30965,13 +30965,23 @@
      "reqId": "P-1321"
     },
     {
-     "id": "6544403002",
+     "id": "8099342002",
      "title": "Senior Software Engineer - Fullstack",
      "department": null,
-     "location": "Seattle, Washington",
+     "location": "Vancouver, Canada",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
-     "postedAt": "2022-12-20T23:20:50.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099342002",
+     "postedAt": "2025-07-31T02:38:03.000Z",
+     "reqId": "P-1443"
+    },
+    {
+     "id": "5445641002",
+     "title": "Senior Software Engineer - Fullstack",
+     "department": null,
+     "location": "Mountain View, California; San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
+     "postedAt": "2022-02-28T20:09:37.000Z",
      "reqId": "P-160"
     },
     {
@@ -31115,6 +31125,16 @@
      "reqId": "P-1443"
     },
     {
+     "id": "8620637002",
+     "title": "Senior Solutions Architect",
+     "department": null,
+     "location": "Mumbai, India",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620637002",
+     "postedAt": "2026-08-12T05:04:57.000Z",
+     "reqId": "FEQ427R111"
+    },
+    {
      "id": "8567957002",
      "title": "Senior Solutions Architect",
      "department": null,
@@ -31135,16 +31155,6 @@
      "reqId": "FEQ427R299"
     },
     {
-     "id": "8509683002",
-     "title": "Senior Solutions Architect",
-     "department": null,
-     "location": "Stockholm, Sweden",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8509683002",
-     "postedAt": "2026-04-20T19:18:21.000Z",
-     "reqId": "FEQ427R299"
-    },
-    {
      "id": "8652984002",
      "title": "Senior Solutions Architect",
      "department": null,
@@ -31155,14 +31165,14 @@
      "reqId": "FEQ227R223"
     },
     {
-     "id": "8620637002",
+     "id": "8509683002",
      "title": "Senior Solutions Architect",
      "department": null,
-     "location": "Mumbai, India",
+     "location": "Stockholm, Sweden",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620637002",
-     "postedAt": "2026-08-12T05:04:57.000Z",
-     "reqId": "FEQ427R111"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8509683002",
+     "postedAt": "2026-04-20T19:18:21.000Z",
+     "reqId": "FEQ427R299"
     },
     {
      "id": "8661245002",
@@ -31195,23 +31205,13 @@
      "reqId": "FEQ227R117"
     },
     {
-     "id": "8720253002",
+     "id": "8720251002",
      "title": "Senior Solutions Architect (EDW Enterprise Data Warehouse Migrations)",
      "department": null,
-     "location": "Berlin, Germany; Munich, Germany",
+     "location": "Paris, France",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720253002",
-     "postedAt": "2026-08-17T07:55:20.000Z",
-     "reqId": "FEQ427R348"
-    },
-    {
-     "id": "8720254002",
-     "title": "Senior Solutions Architect (EDW Enterprise Data Warehouse Migrations)",
-     "department": null,
-     "location": "Milan, Italy",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720254002",
-     "postedAt": "2026-08-17T07:55:20.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720251002",
+     "postedAt": "2026-08-17T07:49:59.000Z",
      "reqId": "FEQ427R348"
     },
     {
@@ -31235,13 +31235,23 @@
      "reqId": "FEQ427R348"
     },
     {
-     "id": "8720251002",
+     "id": "8720254002",
      "title": "Senior Solutions Architect (EDW Enterprise Data Warehouse Migrations)",
      "department": null,
-     "location": "Paris, France",
+     "location": "Milan, Italy",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720251002",
-     "postedAt": "2026-08-17T07:49:59.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720254002",
+     "postedAt": "2026-08-17T07:55:20.000Z",
+     "reqId": "FEQ427R348"
+    },
+    {
+     "id": "8720253002",
+     "title": "Senior Solutions Architect (EDW Enterprise Data Warehouse Migrations)",
+     "department": null,
+     "location": "Berlin, Germany; Munich, Germany",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720253002",
+     "postedAt": "2026-08-17T07:55:20.000Z",
      "reqId": "FEQ427R348"
     },
     {
@@ -31375,16 +31385,6 @@
      "reqId": "P-1385"
     },
     {
-     "id": "7651326002",
-     "title": "Senior Staff Software Engineer (Backend)",
-     "department": null,
-     "location": "Bengaluru, India",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7651326002",
-     "postedAt": "2024-09-22T15:34:25.000Z",
-     "reqId": "P-1174"
-    },
-    {
      "id": "7651345002",
      "title": "Senior Staff Software Engineer (Backend)",
      "department": null,
@@ -31395,13 +31395,23 @@
      "reqId": "P-375"
     },
     {
-     "id": "8303020002",
+     "id": "7651326002",
+     "title": "Senior Staff Software Engineer (Backend)",
+     "department": null,
+     "location": "Bengaluru, India",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7651326002",
+     "postedAt": "2024-09-22T15:34:25.000Z",
+     "reqId": "P-1174"
+    },
+    {
+     "id": "8303015002",
      "title": "Senior Staff Software Engineer - Delta",
      "department": null,
-     "location": "London, United Kingdom",
+     "location": "Amsterdam, Netherlands",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303020002",
-     "postedAt": "2025-11-21T14:43:23.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303015002",
+     "postedAt": "2025-11-21T14:42:45.000Z",
      "reqId": "P-1127"
     },
     {
@@ -31415,23 +31425,13 @@
      "reqId": "P-1127"
     },
     {
-     "id": "8303015002",
+     "id": "8303020002",
      "title": "Senior Staff Software Engineer - Delta",
      "department": null,
-     "location": "Amsterdam, Netherlands",
+     "location": "London, United Kingdom",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303015002",
-     "postedAt": "2025-11-21T14:42:45.000Z",
-     "reqId": "P-1127"
-    },
-    {
-     "id": "8303014002",
-     "title": "Senior Staff Software Engineer - Delta",
-     "department": null,
-     "location": "Aarhus, Denmark",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303014002",
-     "postedAt": "2025-11-21T14:41:27.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303020002",
+     "postedAt": "2025-11-21T14:43:23.000Z",
      "reqId": "P-1127"
     },
     {
@@ -31445,6 +31445,16 @@
      "reqId": "P-1127"
     },
     {
+     "id": "8303014002",
+     "title": "Senior Staff Software Engineer - Delta",
+     "department": null,
+     "location": "Aarhus, Denmark",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8303014002",
+     "postedAt": "2025-11-21T14:41:27.000Z",
+     "reqId": "P-1127"
+    },
+    {
      "id": "7934466002",
      "title": "Senior Staff Software Engineer - Enzyme",
      "department": null,
@@ -31455,16 +31465,6 @@
      "reqId": "P-1183"
     },
     {
-     "id": "7274557002",
-     "title": "Senior Staff Software Engineer - IAM",
-     "department": null,
-     "location": "Seattle, Washington",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7274557002",
-     "postedAt": "2024-03-06T18:53:28.000Z",
-     "reqId": "P-1126"
-    },
-    {
      "id": "7274563002",
      "title": "Senior Staff Software Engineer - IAM",
      "department": null,
@@ -31472,6 +31472,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7274563002",
      "postedAt": "2024-03-06T18:54:59.000Z",
+     "reqId": "P-1126"
+    },
+    {
+     "id": "7274557002",
+     "title": "Senior Staff Software Engineer - IAM",
+     "department": null,
+     "location": "Seattle, Washington",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7274557002",
+     "postedAt": "2024-03-06T18:53:28.000Z",
      "reqId": "P-1126"
     },
     {
@@ -31575,16 +31585,6 @@
      "reqId": "RDQ127R176"
     },
     {
-     "id": "8012650002",
-     "title": "Software Engineer - Backend",
-     "department": null,
-     "location": "Belgrade, Serbia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
-     "postedAt": "2025-05-28T13:57:24.000Z",
-     "reqId": "P-1414"
-    },
-    {
      "id": "8029666002",
      "title": "Software Engineer - Backend",
      "department": null,
@@ -31593,6 +31593,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
      "postedAt": "2025-06-08T22:46:35.000Z",
      "reqId": "P-1317"
+    },
+    {
+     "id": "8012650002",
+     "title": "Software Engineer - Backend",
+     "department": null,
+     "location": "Belgrade, Serbia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
+     "postedAt": "2025-05-28T13:57:24.000Z",
+     "reqId": "P-1414"
     },
     {
      "id": "8012658002",
@@ -31625,16 +31635,6 @@
      "reqId": "P-1588"
     },
     {
-     "id": "8560779002",
-     "title": "Software Engineer, Web Products",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002",
-     "postedAt": "2026-06-23T18:22:46.000Z",
-     "reqId": "GAQ327R227"
-    },
-    {
      "id": "8635225002",
      "title": "Software Engineer, Web Products",
      "department": null,
@@ -31645,104 +31645,14 @@
      "reqId": "P-1581"
     },
     {
-     "id": "5898477002",
-     "title": "Solutions Architect",
+     "id": "8560779002",
+     "title": "Software Engineer, Web Products",
      "department": null,
-     "location": "Toronto, Canada",
+     "location": "Mountain View, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5898477002",
-     "postedAt": "2022-04-05T14:16:17.000Z",
-     "reqId": "P-225"
-    },
-    {
-     "id": "7896350002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Mexico City",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7896350002",
-     "postedAt": "2025-03-07T02:01:14.000Z",
-     "reqId": "P-1383"
-    },
-    {
-     "id": "8559339002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8559339002",
-     "postedAt": "2026-07-08T05:56:56.000Z",
-     "reqId": "FEQ327R201"
-    },
-    {
-     "id": "8633227002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Central - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8633227002",
-     "postedAt": "2026-07-20T19:38:56.000Z",
-     "reqId": "FEQ327R403"
-    },
-    {
-     "id": "8633225002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Central - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8633225002",
-     "postedAt": "2026-07-20T18:38:55.000Z",
-     "reqId": "FEQ327R402"
-    },
-    {
-     "id": "8531153002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Stockholm, Sweden",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8531153002",
-     "postedAt": "2026-06-18T08:43:12.000Z",
-     "reqId": "FEQ427R66"
-    },
-    {
-     "id": "8605160002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Arizona; California; Utah",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8605160002",
-     "postedAt": "2026-06-29T04:43:06.000Z",
-     "reqId": "FEQ327R385"
-    },
-    {
-     "id": "8608603002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Munich, Germany",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8608603002",
-     "postedAt": "2026-07-01T13:43:01.000Z",
-     "reqId": "FEQ427R153"
-    },
-    {
-     "id": "8568031002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568031002",
-     "postedAt": "2026-08-26T18:47:55.000Z",
-     "reqId": "FEQ327R249"
-    },
-    {
-     "id": "8641892002",
-     "title": "Solutions Architect",
-     "department": null,
-     "location": "Pune, India",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8641892002",
-     "postedAt": "2026-07-23T04:34:18.000Z",
-     "reqId": "FEQ327R324"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002",
+     "postedAt": "2026-06-23T18:22:46.000Z",
+     "reqId": "GAQ327R227"
     },
     {
      "id": "8607718002",
@@ -31755,24 +31665,24 @@
      "reqId": "P-1570"
     },
     {
-     "id": "8603684002",
+     "id": "8568031002",
      "title": "Solutions Architect",
      "department": null,
-     "location": "Auckland, New Zealand",
+     "location": "San Francisco, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8603684002",
-     "postedAt": "2026-07-14T00:30:01.000Z",
-     "reqId": "FEQ327R342"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568031002",
+     "postedAt": "2026-08-26T18:47:55.000Z",
+     "reqId": "FEQ327R249"
     },
     {
-     "id": "8783421002",
+     "id": "8608603002",
      "title": "Solutions Architect",
      "department": null,
-     "location": "Singapore",
+     "location": "Munich, Germany",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783421002",
-     "postedAt": "2026-09-04T00:46:57.000Z",
-     "reqId": "FEQ427R137"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8608603002",
+     "postedAt": "2026-07-01T13:43:01.000Z",
+     "reqId": "FEQ427R153"
     },
     {
      "id": "8783431002",
@@ -31785,14 +31695,14 @@
      "reqId": "FEQ327R555"
     },
     {
-     "id": "8697987002",
+     "id": "8783421002",
      "title": "Solutions Architect",
      "department": null,
-     "location": "Atlanta, Georgia; Chicago, Illinois",
+     "location": "Singapore",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8697987002",
-     "postedAt": "2026-08-18T05:56:59.000Z",
-     "reqId": "FEQ427R379"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783421002",
+     "postedAt": "2026-09-04T00:46:57.000Z",
+     "reqId": "FEQ427R137"
     },
     {
      "id": "8697993002",
@@ -31815,6 +31725,36 @@
      "reqId": "FEQ427R64"
     },
     {
+     "id": "8605160002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Arizona; California; Utah",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8605160002",
+     "postedAt": "2026-06-29T04:43:06.000Z",
+     "reqId": "FEQ327R385"
+    },
+    {
+     "id": "8603684002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Auckland, New Zealand",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8603684002",
+     "postedAt": "2026-07-14T00:30:01.000Z",
+     "reqId": "FEQ327R342"
+    },
+    {
+     "id": "5898477002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Toronto, Canada",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5898477002",
+     "postedAt": "2022-04-05T14:16:17.000Z",
+     "reqId": "P-225"
+    },
+    {
      "id": "8595160002",
      "title": "Solutions Architect",
      "department": null,
@@ -31823,6 +31763,76 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8595160002",
      "postedAt": "2026-06-19T09:35:24.000Z",
      "reqId": "FEQ427R98"
+    },
+    {
+     "id": "8633225002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Central - United States",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8633225002",
+     "postedAt": "2026-07-20T18:38:55.000Z",
+     "reqId": "FEQ327R402"
+    },
+    {
+     "id": "8633227002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Central - United States",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8633227002",
+     "postedAt": "2026-07-20T19:38:56.000Z",
+     "reqId": "FEQ327R403"
+    },
+    {
+     "id": "8531153002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Stockholm, Sweden",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8531153002",
+     "postedAt": "2026-06-18T08:43:12.000Z",
+     "reqId": "FEQ427R66"
+    },
+    {
+     "id": "8697987002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Atlanta, Georgia; Chicago, Illinois",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8697987002",
+     "postedAt": "2026-08-18T05:56:59.000Z",
+     "reqId": "FEQ427R379"
+    },
+    {
+     "id": "7896350002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Mexico City",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7896350002",
+     "postedAt": "2025-03-07T02:01:14.000Z",
+     "reqId": "P-1383"
+    },
+    {
+     "id": "8641892002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Pune, India",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8641892002",
+     "postedAt": "2026-07-23T04:34:18.000Z",
+     "reqId": "FEQ327R324"
+    },
+    {
+     "id": "8559339002",
+     "title": "Solutions Architect",
+     "department": null,
+     "location": "Singapore",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8559339002",
+     "postedAt": "2026-07-08T05:56:56.000Z",
+     "reqId": "FEQ327R201"
     },
     {
      "id": "6356702002",
@@ -31845,16 +31855,6 @@
      "reqId": "FEQ327R409"
     },
     {
-     "id": "8755482002",
-     "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-     "department": null,
-     "location": "Remote - Pennsylvania",
-     "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755482002",
-     "postedAt": "2026-08-27T13:51:05.000Z",
-     "reqId": "FEQ227R273"
-    },
-    {
      "id": "8755474002",
      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
      "department": null,
@@ -31865,14 +31865,14 @@
      "reqId": "FEQ227R273"
     },
     {
-     "id": "8755476002",
+     "id": "8569633002",
      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
      "department": null,
-     "location": "Remote - New York",
+     "location": "Colorado; Denver, Colorado; Remote - Colorado",
      "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002",
-     "postedAt": "2026-08-27T13:51:08.000Z",
-     "reqId": "FEQ227R273"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002",
+     "postedAt": "2026-07-27T18:35:57.000Z",
+     "reqId": "FEQ327R208"
     },
     {
      "id": "8755492002",
@@ -31895,14 +31895,24 @@
      "reqId": "FEQ227R273"
     },
     {
-     "id": "8569633002",
+     "id": "8755482002",
      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
      "department": null,
-     "location": "Colorado; Denver, Colorado; Remote - Colorado",
+     "location": "Remote - Pennsylvania",
      "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002",
-     "postedAt": "2026-07-27T18:35:57.000Z",
-     "reqId": "FEQ327R208"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755482002",
+     "postedAt": "2026-08-27T13:51:05.000Z",
+     "reqId": "FEQ227R273"
+    },
+    {
+     "id": "8755476002",
+     "title": "Solutions Architect - Communications, Media, Entertainment and Games",
+     "department": null,
+     "location": "Remote - New York",
+     "remote": true,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002",
+     "postedAt": "2026-08-27T13:51:08.000Z",
+     "reqId": "FEQ227R273"
     },
     {
      "id": "6117756002",
@@ -32045,14 +32055,14 @@
      "reqId": "FEQ427R106"
     },
     {
-     "id": "8568015002",
+     "id": "8567993002",
      "title": "Solutions Architect - Lakebase",
      "department": null,
-     "location": "London, United Kingdom",
+     "location": "Sao Paulo, Brazil",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568015002",
-     "postedAt": "2026-06-10T13:20:54.000Z",
-     "reqId": "FEQ327R241"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8567993002",
+     "postedAt": "2026-07-20T19:22:57.000Z",
+     "reqId": "FEQ327R230"
     },
     {
      "id": "8568009002",
@@ -32065,14 +32075,14 @@
      "reqId": "FEQ327R238"
     },
     {
-     "id": "8567993002",
+     "id": "8568015002",
      "title": "Solutions Architect - Lakebase",
      "department": null,
-     "location": "Sao Paulo, Brazil",
+     "location": "London, United Kingdom",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8567993002",
-     "postedAt": "2026-07-20T19:22:57.000Z",
-     "reqId": "FEQ327R230"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568015002",
+     "postedAt": "2026-06-10T13:20:54.000Z",
+     "reqId": "FEQ327R241"
     },
     {
      "id": "8568023002",
@@ -32095,16 +32105,6 @@
      "reqId": "FEQ327R226"
     },
     {
-     "id": "6545547002",
-     "title": "Solutions Architect - Manufacturing",
-     "department": null,
-     "location": "Chicago, Illinois",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6545547002",
-     "postedAt": "2022-12-21T18:06:44.000Z",
-     "reqId": "P-295"
-    },
-    {
      "id": "8661758002",
      "title": "Solutions Architect - Manufacturing",
      "department": null,
@@ -32113,6 +32113,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8661758002",
      "postedAt": "2026-08-13T18:47:27.000Z",
      "reqId": "FEQ427R286"
+    },
+    {
+     "id": "6545547002",
+     "title": "Solutions Architect - Manufacturing",
+     "department": null,
+     "location": "Chicago, Illinois",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6545547002",
+     "postedAt": "2022-12-21T18:06:44.000Z",
+     "reqId": "P-295"
     },
     {
      "id": "8567961002",
@@ -32285,6 +32295,16 @@
      "reqId": "FEQ427R57"
     },
     {
+     "id": "8755462002",
+     "title": "Solutions Architect - Strat Media ",
+     "department": null,
+     "location": "Remote - California",
+     "remote": true,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755462002",
+     "postedAt": "2026-08-27T13:39:17.000Z",
+     "reqId": "FEQ327R527"
+    },
+    {
      "id": "8755466002",
      "title": "Solutions Architect - Strat Media ",
      "department": null,
@@ -32292,16 +32312,6 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755466002",
      "postedAt": "2026-08-27T13:39:22.000Z",
-     "reqId": "FEQ327R527"
-    },
-    {
-     "id": "8755463002",
-     "title": "Solutions Architect - Strat Media ",
-     "department": null,
-     "location": "Los Angeles, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755463002",
-     "postedAt": "2026-08-27T13:39:20.000Z",
      "reqId": "FEQ327R527"
     },
     {
@@ -32315,26 +32325,6 @@
      "reqId": "FEQ327R527"
     },
     {
-     "id": "8755461002",
-     "title": "Solutions Architect - Strat Media ",
-     "department": null,
-     "location": "West Coast - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755461002",
-     "postedAt": "2026-08-27T13:39:14.000Z",
-     "reqId": "FEQ327R527"
-    },
-    {
-     "id": "8755462002",
-     "title": "Solutions Architect - Strat Media ",
-     "department": null,
-     "location": "Remote - California",
-     "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755462002",
-     "postedAt": "2026-08-27T13:39:17.000Z",
-     "reqId": "FEQ327R527"
-    },
-    {
      "id": "8629113002",
      "title": "Solutions Architect - Strat Media ",
      "department": null,
@@ -32345,14 +32335,24 @@
      "reqId": "FEQ327R527"
     },
     {
-     "id": "8593505002",
-     "title": "Specialist Solutions Architect - AI/ML",
+     "id": "8755463002",
+     "title": "Solutions Architect - Strat Media ",
      "department": null,
-     "location": "Mumbai, India",
+     "location": "Los Angeles, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8593505002",
-     "postedAt": "2026-06-16T05:58:24.000Z",
-     "reqId": "FEQ327R299"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755463002",
+     "postedAt": "2026-08-27T13:39:20.000Z",
+     "reqId": "FEQ327R527"
+    },
+    {
+     "id": "8755461002",
+     "title": "Solutions Architect - Strat Media ",
+     "department": null,
+     "location": "West Coast - United States",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755461002",
+     "postedAt": "2026-08-27T13:39:14.000Z",
+     "reqId": "FEQ327R527"
     },
     {
      "id": "8585164002",
@@ -32365,6 +32365,16 @@
      "reqId": "FEQ327R299"
     },
     {
+     "id": "7811355002",
+     "title": "Specialist Solutions Architect - AI/ML",
+     "department": null,
+     "location": "Sao Paulo, Brazil",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7811355002",
+     "postedAt": "2025-01-14T03:28:25.000Z",
+     "reqId": "P-226"
+    },
+    {
      "id": "8697991002",
      "title": "Specialist Solutions Architect - AI/ML",
      "department": null,
@@ -32375,14 +32385,14 @@
      "reqId": "FEQ427R382"
     },
     {
-     "id": "7811355002",
+     "id": "8593505002",
      "title": "Specialist Solutions Architect - AI/ML",
      "department": null,
-     "location": "Sao Paulo, Brazil",
+     "location": "Mumbai, India",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7811355002",
-     "postedAt": "2025-01-14T03:28:25.000Z",
-     "reqId": "P-226"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8593505002",
+     "postedAt": "2026-06-16T05:58:24.000Z",
+     "reqId": "FEQ327R299"
     },
     {
      "id": "8739506002",
@@ -32545,16 +32555,6 @@
      "reqId": "CSQ427R47"
     },
     {
-     "id": "8465963002",
-     "title": "Sr. Delivery Solutions Architect",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8465963002",
-     "postedAt": "2026-03-23T07:11:47.000Z",
-     "reqId": "CSQ427R20"
-    },
-    {
      "id": "8583353002",
      "title": "Sr. Delivery Solutions Architect",
      "department": null,
@@ -32563,6 +32563,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8583353002",
      "postedAt": "2026-08-26T10:24:07.000Z",
      "reqId": "CSQ327R249"
+    },
+    {
+     "id": "8465963002",
+     "title": "Sr. Delivery Solutions Architect",
+     "department": null,
+     "location": "Singapore",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8465963002",
+     "postedAt": "2026-03-23T07:11:47.000Z",
+     "reqId": "CSQ427R20"
     },
     {
      "id": "8646549002",
@@ -32735,16 +32745,6 @@
      "reqId": "MKTQ327R37"
     },
     {
-     "id": "8487325002",
-     "title": "Sr. Executive Assistant",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8487325002",
-     "postedAt": "2026-03-31T22:31:33.000Z",
-     "reqId": "RDQ427R337"
-    },
-    {
      "id": "8523677002",
      "title": "Sr. Executive Assistant",
      "department": null,
@@ -32753,6 +32753,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8523677002",
      "postedAt": "2026-04-30T18:32:43.000Z",
      "reqId": "GAQ327R186"
+    },
+    {
+     "id": "8487325002",
+     "title": "Sr. Executive Assistant",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8487325002",
+     "postedAt": "2026-03-31T22:31:33.000Z",
+     "reqId": "RDQ427R337"
     },
     {
      "id": "8586857002",
@@ -32795,53 +32805,13 @@
      "reqId": "CSQ227R29"
     },
     {
-     "id": "8568173002",
+     "id": "8739474002",
      "title": "Sr. Forward Deployed Engineer",
      "department": null,
-     "location": "Tokyo, Japan",
+     "location": "San Francisco, California",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568173002",
-     "postedAt": "2026-06-12T11:40:34.000Z",
-     "reqId": "CSQ327R52"
-    },
-    {
-     "id": "8657065002",
-     "title": "Sr. Forward Deployed Engineer",
-     "department": null,
-     "location": "Austin, Texas",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8657065002",
-     "postedAt": "2026-08-22T00:23:25.000Z",
-     "reqId": "CSQ427R94"
-    },
-    {
-     "id": "8578144002",
-     "title": "Sr. Forward Deployed Engineer",
-     "department": null,
-     "location": "Sydney, Australia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8578144002",
-     "postedAt": "2026-06-04T05:39:46.000Z",
-     "reqId": "CSQ327R248"
-    },
-    {
-     "id": "8739458002",
-     "title": "Sr. Forward Deployed Engineer",
-     "department": null,
-     "location": "Chicago, Illinois",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739458002",
-     "postedAt": "2026-08-22T00:23:27.000Z",
-     "reqId": "CSQ427R94"
-    },
-    {
-     "id": "8739462002",
-     "title": "Sr. Forward Deployed Engineer",
-     "department": null,
-     "location": "New York City, New York",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739462002",
-     "postedAt": "2026-08-22T00:23:29.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739474002",
+     "postedAt": "2026-08-22T00:23:36.000Z",
      "reqId": "CSQ427R94"
     },
     {
@@ -32855,13 +32825,13 @@
      "reqId": "CSQ427R94"
     },
     {
-     "id": "8739474002",
+     "id": "8739462002",
      "title": "Sr. Forward Deployed Engineer",
      "department": null,
-     "location": "San Francisco, California",
+     "location": "New York City, New York",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739474002",
-     "postedAt": "2026-08-22T00:23:36.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739462002",
+     "postedAt": "2026-08-22T00:23:29.000Z",
      "reqId": "CSQ427R94"
     },
     {
@@ -32875,6 +32845,16 @@
      "reqId": "CSQ327R142"
     },
     {
+     "id": "8645054002",
+     "title": "Sr. Forward Deployed Engineer",
+     "department": null,
+     "location": "Stockholm, Sweden",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645054002",
+     "postedAt": "2026-07-28T08:57:18.000Z",
+     "reqId": "CSQ427R155"
+    },
+    {
      "id": "8739484002",
      "title": "Sr. Forward Deployed Engineer",
      "department": null,
@@ -32883,6 +32863,36 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739484002",
      "postedAt": "2026-08-22T00:23:39.000Z",
      "reqId": "CSQ427R94"
+    },
+    {
+     "id": "8578144002",
+     "title": "Sr. Forward Deployed Engineer",
+     "department": null,
+     "location": "Sydney, Australia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8578144002",
+     "postedAt": "2026-06-04T05:39:46.000Z",
+     "reqId": "CSQ327R248"
+    },
+    {
+     "id": "8657065002",
+     "title": "Sr. Forward Deployed Engineer",
+     "department": null,
+     "location": "Austin, Texas",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8657065002",
+     "postedAt": "2026-08-22T00:23:25.000Z",
+     "reqId": "CSQ427R94"
+    },
+    {
+     "id": "8568173002",
+     "title": "Sr. Forward Deployed Engineer",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8568173002",
+     "postedAt": "2026-06-12T11:40:34.000Z",
+     "reqId": "CSQ327R52"
     },
     {
      "id": "8514430002",
@@ -32895,14 +32905,14 @@
      "reqId": "CSQ327R141"
     },
     {
-     "id": "8645054002",
+     "id": "8739458002",
      "title": "Sr. Forward Deployed Engineer",
      "department": null,
-     "location": "Stockholm, Sweden",
+     "location": "Chicago, Illinois",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645054002",
-     "postedAt": "2026-07-28T08:57:18.000Z",
-     "reqId": "CSQ427R155"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739458002",
+     "postedAt": "2026-08-22T00:23:27.000Z",
+     "reqId": "CSQ427R94"
     },
     {
      "id": "8656207002",
@@ -32915,23 +32925,13 @@
      "reqId": "CSQ327R269"
     },
     {
-     "id": "8461243002",
+     "id": "8461220002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
      "department": null,
-     "location": "Denver, Colorado",
+     "location": "Chicago, Illinois",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002",
-     "postedAt": "2026-03-12T20:06:18.000Z",
-     "reqId": "CSQ127R318"
-    },
-    {
-     "id": "8461241002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-     "department": null,
-     "location": "Washington, D.C.",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002",
-     "postedAt": "2026-03-12T20:04:26.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461220002",
+     "postedAt": "2026-03-12T19:57:01.000Z",
      "reqId": "CSQ127R318"
     },
     {
@@ -32942,6 +32942,56 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002",
      "postedAt": "2026-04-03T21:42:48.000Z",
+     "reqId": "CSQ127R318"
+    },
+    {
+     "id": "8461226002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+     "department": null,
+     "location": "New York City, New York",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002",
+     "postedAt": "2026-03-12T20:01:21.000Z",
+     "reqId": "CSQ127R318"
+    },
+    {
+     "id": "8461239002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+     "department": null,
+     "location": "Atlanta, Georgia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461239002",
+     "postedAt": "2026-03-12T20:04:21.000Z",
+     "reqId": "CSQ127R318"
+    },
+    {
+     "id": "8461258002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+     "department": null,
+     "location": "Raleigh, North Carolina",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461258002",
+     "postedAt": "2026-03-12T20:30:58.000Z",
+     "reqId": "CSQ127R318"
+    },
+    {
+     "id": "8461251002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002",
+     "postedAt": "2026-03-12T20:06:59.000Z",
+     "reqId": "CSQ127R318"
+    },
+    {
+     "id": "8461243002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+     "department": null,
+     "location": "Denver, Colorado",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002",
+     "postedAt": "2026-03-12T20:06:18.000Z",
      "reqId": "CSQ127R318"
     },
     {
@@ -32995,13 +33045,13 @@
      "reqId": "CSQ127R318"
     },
     {
-     "id": "8461220002",
+     "id": "8461241002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
      "department": null,
-     "location": "Chicago, Illinois",
+     "location": "Washington, D.C.",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461220002",
-     "postedAt": "2026-03-12T19:57:01.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002",
+     "postedAt": "2026-03-12T20:04:26.000Z",
      "reqId": "CSQ127R318"
     },
     {
@@ -33015,46 +33065,6 @@
      "reqId": "CSQ127R318"
     },
     {
-     "id": "8461226002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-     "department": null,
-     "location": "New York City, New York",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002",
-     "postedAt": "2026-03-12T20:01:21.000Z",
-     "reqId": "CSQ127R318"
-    },
-    {
-     "id": "8461239002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-     "department": null,
-     "location": "Atlanta, Georgia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461239002",
-     "postedAt": "2026-03-12T20:04:21.000Z",
-     "reqId": "CSQ127R318"
-    },
-    {
-     "id": "8461258002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-     "department": null,
-     "location": "Raleigh, North Carolina",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461258002",
-     "postedAt": "2026-03-12T20:30:58.000Z",
-     "reqId": "CSQ127R318"
-    },
-    {
-     "id": "8461251002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002",
-     "postedAt": "2026-03-12T20:06:59.000Z",
-     "reqId": "CSQ127R318"
-    },
-    {
      "id": "8488399002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
      "department": null,
@@ -33063,36 +33073,6 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002",
      "postedAt": "2026-04-07T21:20:43.000Z",
      "reqId": "CSQ227R258"
-    },
-    {
-     "id": "8438791002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-     "department": null,
-     "location": "Central - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438791002",
-     "postedAt": "2026-06-22T15:56:16.000Z",
-     "reqId": "CSQ327R59"
-    },
-    {
-     "id": "8592939002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-     "department": null,
-     "location": "Philadelphia, Pennsylvania",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592939002",
-     "postedAt": "2026-06-22T15:56:25.000Z",
-     "reqId": "CSQ327R59"
-    },
-    {
-     "id": "8592942002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-     "department": null,
-     "location": "New York City, New York",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592942002",
-     "postedAt": "2026-06-22T15:56:26.000Z",
-     "reqId": "CSQ327R59"
     },
     {
      "id": "8592938002",
@@ -33112,6 +33092,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592908002",
      "postedAt": "2026-06-22T15:56:18.000Z",
+     "reqId": "CSQ327R59"
+    },
+    {
+     "id": "8592939002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+     "department": null,
+     "location": "Philadelphia, Pennsylvania",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592939002",
+     "postedAt": "2026-06-22T15:56:25.000Z",
      "reqId": "CSQ327R59"
     },
     {
@@ -33135,13 +33125,23 @@
      "reqId": "CSQ327R59"
     },
     {
-     "id": "8592937002",
+     "id": "8438791002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
      "department": null,
-     "location": "Boston, Massachusetts",
+     "location": "Central - United States",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592937002",
-     "postedAt": "2026-06-22T15:56:22.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438791002",
+     "postedAt": "2026-06-22T15:56:16.000Z",
+     "reqId": "CSQ327R59"
+    },
+    {
+     "id": "8592942002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+     "department": null,
+     "location": "New York City, New York",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592942002",
+     "postedAt": "2026-06-22T15:56:26.000Z",
      "reqId": "CSQ327R59"
     },
     {
@@ -33155,6 +33155,16 @@
      "reqId": "CSQ327R59"
     },
     {
+     "id": "8592937002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+     "department": null,
+     "location": "Boston, Massachusetts",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592937002",
+     "postedAt": "2026-06-22T15:56:22.000Z",
+     "reqId": "CSQ327R59"
+    },
+    {
      "id": "8645052002",
      "title": "Sr. Forward Deployed Engineer - FDE (Fullstack)",
      "department": null,
@@ -33163,16 +33173,6 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645052002",
      "postedAt": "2026-07-29T10:01:05.000Z",
      "reqId": "CSQ427R34"
-    },
-    {
-     "id": "8494148002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
-     "department": null,
-     "location": "Philadelphia, Pennsylvania",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494148002",
-     "postedAt": "2026-04-03T21:40:42.000Z",
-     "reqId": "CSQ127R310"
     },
     {
      "id": "8371312002",
@@ -33235,6 +33235,16 @@
      "reqId": "CSQ127R310"
     },
     {
+     "id": "8494148002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
+     "department": null,
+     "location": "Philadelphia, Pennsylvania",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494148002",
+     "postedAt": "2026-04-03T21:40:42.000Z",
+     "reqId": "CSQ127R310"
+    },
+    {
      "id": "8494156002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Manufacturing",
      "department": null,
@@ -33242,6 +33252,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494156002",
      "postedAt": "2026-04-03T21:46:43.000Z",
+     "reqId": "CSQ127R319"
+    },
+    {
+     "id": "8341313002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Manufacturing",
+     "department": null,
+     "location": "New York City, New York",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8341313002",
+     "postedAt": "2025-12-17T18:09:09.000Z",
      "reqId": "CSQ127R319"
     },
     {
@@ -33265,26 +33285,6 @@
      "reqId": "CSQ127R319"
     },
     {
-     "id": "8341313002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Manufacturing",
-     "department": null,
-     "location": "New York City, New York",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8341313002",
-     "postedAt": "2025-12-17T18:09:09.000Z",
-     "reqId": "CSQ127R319"
-    },
-    {
-     "id": "8494108002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Public Sector",
-     "department": null,
-     "location": "Maryland",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494108002",
-     "postedAt": "2026-04-03T21:12:45.000Z",
-     "reqId": "CSQ227R175"
-    },
-    {
      "id": "8356289002",
      "title": "Sr. Forward Deployed Engineer (FDE) - Public Sector",
      "department": null,
@@ -33305,14 +33305,14 @@
      "reqId": "CSQ227R175"
     },
     {
-     "id": "8423310002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Public Sector ",
+     "id": "8494108002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Public Sector",
      "department": null,
-     "location": "Delaware; Maryland; Remote - Pennsylvania; Remote - Virginia; Remote - Washington D.C.; West Virginia",
-     "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8423310002",
-     "postedAt": "2026-08-10T17:01:52.000Z",
-     "reqId": "CSQ127R311"
+     "location": "Maryland",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494108002",
+     "postedAt": "2026-04-03T21:12:45.000Z",
+     "reqId": "CSQ227R175"
     },
     {
      "id": "8657488002",
@@ -33325,14 +33325,14 @@
      "reqId": "CSQ327R224"
     },
     {
-     "id": "8647677002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+     "id": "8423310002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Public Sector ",
      "department": null,
-     "location": "Remote - California",
+     "location": "Delaware; Maryland; Remote - Pennsylvania; Remote - Virginia; Remote - Washington D.C.; West Virginia",
      "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647677002",
-     "postedAt": "2026-07-23T18:32:25.000Z",
-     "reqId": "CSQ427R168"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8423310002",
+     "postedAt": "2026-08-10T17:01:52.000Z",
+     "reqId": "CSQ127R311"
     },
     {
      "id": "8643895002",
@@ -33342,16 +33342,6 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8643895002",
      "postedAt": "2026-07-22T15:17:53.000Z",
-     "reqId": "CSQ427R168"
-    },
-    {
-     "id": "8647667002",
-     "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
-     "department": null,
-     "location": "Central - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647667002",
-     "postedAt": "2026-07-23T18:30:03.000Z",
      "reqId": "CSQ427R168"
     },
     {
@@ -33392,6 +33382,26 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647675002",
      "postedAt": "2026-07-23T18:31:50.000Z",
+     "reqId": "CSQ427R168"
+    },
+    {
+     "id": "8647677002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+     "department": null,
+     "location": "Remote - California",
+     "remote": true,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647677002",
+     "postedAt": "2026-07-23T18:32:25.000Z",
+     "reqId": "CSQ427R168"
+    },
+    {
+     "id": "8647667002",
+     "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+     "department": null,
+     "location": "Central - United States",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647667002",
+     "postedAt": "2026-07-23T18:30:03.000Z",
      "reqId": "CSQ427R168"
     },
     {
@@ -33535,26 +33545,6 @@
      "reqId": "RDQ426R193"
     },
     {
-     "id": "8438767002",
-     "title": "Sr. Manager, Field Engineering",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438767002",
-     "postedAt": "2026-03-24T13:57:04.000Z",
-     "reqId": "FEQ427R257"
-    },
-    {
-     "id": "8736179002",
-     "title": "Sr. Manager, Field Engineering",
-     "department": null,
-     "location": "Seoul, South Korea",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736179002",
-     "postedAt": "2026-08-25T00:03:58.000Z",
-     "reqId": "FEQ427R422"
-    },
-    {
      "id": "8732052002",
      "title": "Sr. Manager, Field Engineering",
      "department": null,
@@ -33575,6 +33565,16 @@
      "reqId": "FEQ427R364"
     },
     {
+     "id": "8438767002",
+     "title": "Sr. Manager, Field Engineering",
+     "department": null,
+     "location": "Singapore",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438767002",
+     "postedAt": "2026-03-24T13:57:04.000Z",
+     "reqId": "FEQ427R257"
+    },
+    {
      "id": "8572876002",
      "title": "Sr. Manager, Field Engineering",
      "department": null,
@@ -33583,6 +33583,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8572876002",
      "postedAt": "2026-06-01T13:39:00.000Z",
      "reqId": "FEQ427R180"
+    },
+    {
+     "id": "8736179002",
+     "title": "Sr. Manager, Field Engineering",
+     "department": null,
+     "location": "Seoul, South Korea",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8736179002",
+     "postedAt": "2026-08-25T00:03:58.000Z",
+     "reqId": "FEQ427R422"
     },
     {
      "id": "8496009002",
@@ -33845,22 +33855,22 @@
      "reqId": "P-8"
     },
     {
-     "id": "7863365002",
-     "title": "Sr. Product Manager, Data Governance",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7863365002",
-     "postedAt": "2025-02-14T04:21:53.000Z",
-     "reqId": "RDQ226R497"
-    },
-    {
      "id": "7863522002",
      "title": "Sr. Product Manager, Data Governance",
      "department": null,
      "location": "Seattle, Washington",
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7863522002",
+     "postedAt": "2025-02-14T04:21:53.000Z",
+     "reqId": "RDQ226R497"
+    },
+    {
+     "id": "7863365002",
+     "title": "Sr. Product Manager, Data Governance",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7863365002",
      "postedAt": "2025-02-14T04:21:53.000Z",
      "reqId": "RDQ226R497"
     },
@@ -33995,16 +34005,6 @@
      "reqId": "GAQ127R41"
     },
     {
-     "id": "8211450002",
-     "title": "Sr Software Engineer-Networking",
-     "department": null,
-     "location": "Bellevue, Washington",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8211450002",
-     "postedAt": "2025-10-14T19:50:01.000Z",
-     "reqId": "P-1286"
-    },
-    {
      "id": "8211452002",
      "title": "Sr Software Engineer-Networking",
      "department": null,
@@ -34012,6 +34012,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8211452002",
      "postedAt": "2025-10-14T19:51:17.000Z",
+     "reqId": "P-1286"
+    },
+    {
+     "id": "8211450002",
+     "title": "Sr Software Engineer-Networking",
+     "department": null,
+     "location": "Bellevue, Washington",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8211450002",
+     "postedAt": "2025-10-14T19:50:01.000Z",
      "reqId": "P-1286"
     },
     {
@@ -34035,43 +34045,13 @@
      "reqId": "P-1366"
     },
     {
-     "id": "8620285002",
+     "id": "8769768002",
      "title": "Sr. Solutions Architect",
      "department": null,
-     "location": "Western Australia, Australia",
+     "location": "Denver, Colorado",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620285002",
-     "postedAt": "2026-07-27T03:17:45.000Z",
-     "reqId": "FEQ425R198"
-    },
-    {
-     "id": "8620635002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "Melbourne, Australia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620635002",
-     "postedAt": "2026-07-07T11:13:00.000Z",
-     "reqId": "FEQ327R87"
-    },
-    {
-     "id": "8622162002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8622162002",
-     "postedAt": "2026-07-08T06:00:05.000Z",
-     "reqId": "FEQ427R338"
-    },
-    {
-     "id": "8614977002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8614977002",
-     "postedAt": "2026-08-13T18:32:41.000Z",
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8769768002",
+     "postedAt": "2026-09-01T17:10:13.000Z",
      "reqId": "FEQ327R503"
     },
     {
@@ -34085,14 +34065,14 @@
      "reqId": "FEQ427R344"
     },
     {
-     "id": "8476064002",
+     "id": "8622162002",
      "title": "Sr. Solutions Architect",
      "department": null,
-     "location": "Bengaluru, India",
+     "location": "Singapore",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8476064002",
-     "postedAt": "2026-04-13T07:55:18.000Z",
-     "reqId": "FEQ227R53"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8622162002",
+     "postedAt": "2026-07-08T06:00:05.000Z",
+     "reqId": "FEQ427R338"
     },
     {
      "id": "8675570002",
@@ -34105,6 +34085,46 @@
      "reqId": "FEQ427R341"
     },
     {
+     "id": "8620635002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "Melbourne, Australia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620635002",
+     "postedAt": "2026-07-07T11:13:00.000Z",
+     "reqId": "FEQ327R87"
+    },
+    {
+     "id": "8417656002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "Remote - Texas",
+     "remote": true,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8417656002",
+     "postedAt": "2026-02-12T20:17:27.000Z",
+     "reqId": "FEQ327R52"
+    },
+    {
+     "id": "8614977002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8614977002",
+     "postedAt": "2026-08-13T18:32:41.000Z",
+     "reqId": "FEQ327R503"
+    },
+    {
+     "id": "8537033002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "Queensland, Australia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8537033002",
+     "postedAt": "2026-05-06T03:35:29.000Z",
+     "reqId": "FEQ427R64"
+    },
+    {
      "id": "8632383002",
      "title": "Sr. Solutions Architect",
      "department": null,
@@ -34113,6 +34133,26 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8632383002",
      "postedAt": "2026-07-21T05:01:52.000Z",
      "reqId": "FEQ327R608"
+    },
+    {
+     "id": "8620285002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "Western Australia, Australia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8620285002",
+     "postedAt": "2026-07-27T03:17:45.000Z",
+     "reqId": "FEQ425R198"
+    },
+    {
+     "id": "8476064002",
+     "title": "Sr. Solutions Architect",
+     "department": null,
+     "location": "Bengaluru, India",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8476064002",
+     "postedAt": "2026-04-13T07:55:18.000Z",
+     "reqId": "FEQ227R53"
     },
     {
      "id": "8769750002",
@@ -34135,36 +34175,6 @@
      "reqId": "FEQ327R503"
     },
     {
-     "id": "8417656002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "Remote - Texas",
-     "remote": true,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8417656002",
-     "postedAt": "2026-02-12T20:17:27.000Z",
-     "reqId": "FEQ327R52"
-    },
-    {
-     "id": "8769768002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "Denver, Colorado",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8769768002",
-     "postedAt": "2026-09-01T17:10:13.000Z",
-     "reqId": "FEQ327R503"
-    },
-    {
-     "id": "8537033002",
-     "title": "Sr. Solutions Architect",
-     "department": null,
-     "location": "Queensland, Australia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8537033002",
-     "postedAt": "2026-05-06T03:35:29.000Z",
-     "reqId": "FEQ427R64"
-    },
-    {
      "id": "8758645002",
      "title": "Sr. Solutions Architect - Agencies ",
      "department": null,
@@ -34183,6 +34193,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8721003002",
      "postedAt": "2026-09-01T14:49:28.000Z",
      "reqId": "FEQ327R414"
+    },
+    {
+     "id": "8762366002",
+     "title": "Sr. Solutions Architect (CustomerLake) ",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8762366002",
+     "postedAt": "2026-09-04T02:25:38.000Z",
+     "reqId": "FEQ427R110"
     },
     {
      "id": "8762360002",
@@ -34395,16 +34415,6 @@
      "reqId": "FEQ427R441"
     },
     {
-     "id": "8783420002",
-     "title": "Sr. Solutions Engineer",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783420002",
-     "postedAt": "2026-09-04T00:44:58.000Z",
-     "reqId": "FEQ427R137"
-    },
-    {
      "id": "8742382002",
      "title": "Sr. Solutions Engineer",
      "department": null,
@@ -34425,26 +34435,6 @@
      "reqId": "FEQ327R2"
     },
     {
-     "id": "8783430002",
-     "title": "Sr. Solutions Engineer",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783430002",
-     "postedAt": "2026-09-04T00:50:03.000Z",
-     "reqId": "FEQ327R555"
-    },
-    {
-     "id": "8609866002",
-     "title": "Sr. Solutions Engineer",
-     "department": null,
-     "location": "Stockholm, Sweden",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8609866002",
-     "postedAt": "2026-06-29T09:54:39.000Z",
-     "reqId": "FEQ427R34"
-    },
-    {
      "id": "8593371002",
      "title": "Sr. Solutions Engineer",
      "department": null,
@@ -34455,14 +34445,14 @@
      "reqId": "FEQ427R319"
     },
     {
-     "id": "8721005002",
+     "id": "8783420002",
      "title": "Sr. Solutions Engineer",
      "department": null,
-     "location": "Munich, Germany",
+     "location": "Singapore",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8721005002",
-     "postedAt": "2026-08-18T09:55:48.000Z",
-     "reqId": "FEQ327R416"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783420002",
+     "postedAt": "2026-09-04T00:44:58.000Z",
+     "reqId": "FEQ427R137"
     },
     {
      "id": "8606312002",
@@ -34483,6 +34473,36 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8589187002",
      "postedAt": "2026-07-22T14:06:52.000Z",
      "reqId": "FEQ427R268"
+    },
+    {
+     "id": "8783430002",
+     "title": "Sr. Solutions Engineer",
+     "department": null,
+     "location": "Singapore",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8783430002",
+     "postedAt": "2026-09-04T00:50:03.000Z",
+     "reqId": "FEQ327R555"
+    },
+    {
+     "id": "8721005002",
+     "title": "Sr. Solutions Engineer",
+     "department": null,
+     "location": "Munich, Germany",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8721005002",
+     "postedAt": "2026-08-18T09:55:48.000Z",
+     "reqId": "FEQ327R416"
+    },
+    {
+     "id": "8609866002",
+     "title": "Sr. Solutions Engineer",
+     "department": null,
+     "location": "Stockholm, Sweden",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8609866002",
+     "postedAt": "2026-06-29T09:54:39.000Z",
+     "reqId": "FEQ427R34"
     },
     {
      "id": "8646516002",
@@ -34925,16 +34945,6 @@
      "reqId": "P-925"
     },
     {
-     "id": "8220840002",
-     "title": "Staff Fullstack Engineer, Agentic Applications",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8220840002",
-     "postedAt": "2026-06-04T17:25:54.000Z",
-     "reqId": "P-1477"
-    },
-    {
      "id": "8220836002",
      "title": "Staff Fullstack Engineer, Agentic Applications",
      "department": null,
@@ -34942,6 +34952,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8220836002",
      "postedAt": "2025-10-29T19:58:06.000Z",
+     "reqId": "P-1477"
+    },
+    {
+     "id": "8220840002",
+     "title": "Staff Fullstack Engineer, Agentic Applications",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8220840002",
+     "postedAt": "2026-06-04T17:25:54.000Z",
      "reqId": "P-1477"
     },
     {
@@ -35005,16 +35025,6 @@
      "reqId": "P-1603"
     },
     {
-     "id": "7649411002",
-     "title": "Staff Product Manager",
-     "department": null,
-     "location": "Berlin, Germany",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7649411002",
-     "postedAt": "2024-09-20T17:05:47.000Z",
-     "reqId": "P-1345"
-    },
-    {
      "id": "7649409002",
      "title": "Staff Product Manager",
      "department": null,
@@ -35022,6 +35032,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7649409002",
      "postedAt": "2024-09-20T17:05:36.000Z",
+     "reqId": "P-1345"
+    },
+    {
+     "id": "7649411002",
+     "title": "Staff Product Manager",
+     "department": null,
+     "location": "Berlin, Germany",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7649411002",
+     "postedAt": "2024-09-20T17:05:47.000Z",
      "reqId": "P-1345"
     },
     {
@@ -35065,16 +35085,6 @@
      "reqId": "P-1016"
     },
     {
-     "id": "8420607002",
-     "title": "Staff Product Manager, Serverless Workspaces",
-     "department": null,
-     "location": "San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8420607002",
-     "postedAt": "2026-02-18T20:21:20.000Z",
-     "reqId": "RDQ427R275"
-    },
-    {
      "id": "8427954002",
      "title": "Staff Product Manager, Serverless Workspaces",
      "department": null,
@@ -35082,6 +35092,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8427954002",
      "postedAt": "2026-02-18T20:21:21.000Z",
+     "reqId": "RDQ427R275"
+    },
+    {
+     "id": "8420607002",
+     "title": "Staff Product Manager, Serverless Workspaces",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8420607002",
+     "postedAt": "2026-02-18T20:21:20.000Z",
      "reqId": "RDQ427R275"
     },
     {
@@ -35175,16 +35195,6 @@
      "reqId": "P-1215"
     },
     {
-     "id": "8560783002",
-     "title": "Staff Software Engineer, AI Native Web Platform",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8560783002",
-     "postedAt": "2026-06-11T16:06:33.000Z",
-     "reqId": "GAQ327R228"
-    },
-    {
      "id": "8635188002",
      "title": "Staff Software Engineer, AI Native Web Platform",
      "department": null,
@@ -35193,6 +35203,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8635188002",
      "postedAt": "2026-07-15T20:30:46.000Z",
      "reqId": "P-1579"
+    },
+    {
+     "id": "8560783002",
+     "title": "Staff Software Engineer, AI Native Web Platform",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8560783002",
+     "postedAt": "2026-06-11T16:06:33.000Z",
+     "reqId": "GAQ327R228"
     },
     {
      "id": "8509536002",
@@ -35205,16 +35225,6 @@
      "reqId": "P-1607"
     },
     {
-     "id": "8552484002",
-     "title": "Staff Software Engineer - AI Research Infrastructure",
-     "department": null,
-     "location": "New York City, New York; San Francisco, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8552484002",
-     "postedAt": "2026-05-15T18:58:23.000Z",
-     "reqId": "P-1215"
-    },
-    {
      "id": "8532682002",
      "title": "Staff Software Engineer - AI Research Infrastructure",
      "department": null,
@@ -35223,6 +35233,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8532682002",
      "postedAt": "2026-05-01T00:33:13.000Z",
      "reqId": "P-1183"
+    },
+    {
+     "id": "8552484002",
+     "title": "Staff Software Engineer - AI Research Infrastructure",
+     "department": null,
+     "location": "New York City, New York; San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8552484002",
+     "postedAt": "2026-05-15T18:58:23.000Z",
+     "reqId": "P-1215"
     },
     {
      "id": "8582271002",
@@ -35245,34 +35265,14 @@
      "reqId": "P-1930"
     },
     {
-     "id": "6779233002",
+     "id": "8012814002",
      "title": "Staff Software Engineer - Backend",
      "department": null,
-     "location": "Bellevue, Washington",
+     "location": "Belgrade, Serbia",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6779233002",
-     "postedAt": "2023-06-01T00:30:35.000Z",
-     "reqId": "P-940"
-    },
-    {
-     "id": "6779232002",
-     "title": "Staff Software Engineer - Backend",
-     "department": null,
-     "location": "Seattle, Washington",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6779232002",
-     "postedAt": "2024-07-03T18:45:00.000Z",
-     "reqId": "P-940"
-    },
-    {
-     "id": "6544443002",
-     "title": "Staff Software Engineer - Backend",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544443002",
-     "postedAt": "2022-12-27T21:26:04.000Z",
-     "reqId": "P-150"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012814002",
+     "postedAt": "2025-05-28T13:58:11.000Z",
+     "reqId": "P-1416"
     },
     {
      "id": "7984907002",
@@ -35285,24 +35285,14 @@
      "reqId": "P-1328"
     },
     {
-     "id": "5408888002",
+     "id": "6779233002",
      "title": "Staff Software Engineer - Backend",
      "department": null,
-     "location": "San Francisco, California",
+     "location": "Bellevue, Washington",
      "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5408888002",
-     "postedAt": "2022-12-27T21:26:03.000Z",
-     "reqId": "P-150"
-    },
-    {
-     "id": "8012814002",
-     "title": "Staff Software Engineer - Backend",
-     "department": null,
-     "location": "Belgrade, Serbia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012814002",
-     "postedAt": "2025-05-28T13:58:11.000Z",
-     "reqId": "P-1416"
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6779233002",
+     "postedAt": "2023-06-01T00:30:35.000Z",
+     "reqId": "P-940"
     },
     {
      "id": "8320187002",
@@ -35313,6 +35303,36 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8320187002",
      "postedAt": "2025-12-03T05:14:44.000Z",
      "reqId": "P-1385"
+    },
+    {
+     "id": "6779232002",
+     "title": "Staff Software Engineer - Backend",
+     "department": null,
+     "location": "Seattle, Washington",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6779232002",
+     "postedAt": "2024-07-03T18:45:00.000Z",
+     "reqId": "P-940"
+    },
+    {
+     "id": "5408888002",
+     "title": "Staff Software Engineer - Backend",
+     "department": null,
+     "location": "San Francisco, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5408888002",
+     "postedAt": "2022-12-27T21:26:03.000Z",
+     "reqId": "P-150"
+    },
+    {
+     "id": "6544443002",
+     "title": "Staff Software Engineer - Backend",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544443002",
+     "postedAt": "2022-12-27T21:26:04.000Z",
+     "reqId": "P-150"
     },
     {
      "id": "8029674002",
@@ -35465,16 +35485,6 @@
      "reqId": "P-1348"
     },
     {
-     "id": "8012831002",
-     "title": "Staff Software Engineer - Distributed Data Systems",
-     "department": null,
-     "location": "Belgrade, Serbia",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012831002",
-     "postedAt": "2025-05-28T13:58:13.000Z",
-     "reqId": "P-1416"
-    },
-    {
      "id": "6937001002",
      "title": "Staff Software Engineer - Distributed Data Systems",
      "department": null,
@@ -35485,16 +35495,6 @@
      "reqId": "P-988"
     },
     {
-     "id": "6544364002",
-     "title": "Staff Software Engineer - Distributed Data Systems",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544364002",
-     "postedAt": "2023-04-13T21:55:08.000Z",
-     "reqId": "P-186"
-    },
-    {
      "id": "5646855002",
      "title": "Staff Software Engineer - Distributed Data Systems",
      "department": null,
@@ -35502,6 +35502,26 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5646855002",
      "postedAt": "2023-04-13T21:55:06.000Z",
+     "reqId": "P-186"
+    },
+    {
+     "id": "8012831002",
+     "title": "Staff Software Engineer - Distributed Data Systems",
+     "department": null,
+     "location": "Belgrade, Serbia",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012831002",
+     "postedAt": "2025-05-28T13:58:13.000Z",
+     "reqId": "P-1416"
+    },
+    {
+     "id": "6544364002",
+     "title": "Staff Software Engineer - Distributed Data Systems",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544364002",
+     "postedAt": "2023-04-13T21:55:08.000Z",
      "reqId": "P-186"
     },
     {
@@ -35545,16 +35565,6 @@
      "reqId": "P-1980"
     },
     {
-     "id": "8099343002",
-     "title": "Staff Software Engineer - Fullstack",
-     "department": null,
-     "location": "Vancouver, Canada",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099343002",
-     "postedAt": "2025-07-31T02:40:25.000Z",
-     "reqId": "P-1444"
-    },
-    {
      "id": "8037500002",
      "title": "Staff Software Engineer - Fullstack",
      "department": null,
@@ -35563,6 +35573,16 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8037500002",
      "postedAt": "2025-06-16T07:10:48.000Z",
      "reqId": "P-1430"
+    },
+    {
+     "id": "8099343002",
+     "title": "Staff Software Engineer - Fullstack",
+     "department": null,
+     "location": "Vancouver, Canada",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099343002",
+     "postedAt": "2025-07-31T02:40:25.000Z",
+     "reqId": "P-1444"
     },
     {
      "id": "8509534002",
@@ -35595,16 +35615,6 @@
      "reqId": "P-1285"
     },
     {
-     "id": "7994801002",
-     "title": "Staff Software Engineer - IAM",
-     "department": null,
-     "location": "Mountain View, California",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7994801002",
-     "postedAt": "2025-05-13T15:41:24.000Z",
-     "reqId": "P-1126"
-    },
-    {
      "id": "7994790002",
      "title": "Staff Software Engineer - IAM",
      "department": null,
@@ -35612,6 +35622,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7994790002",
      "postedAt": "2025-05-13T15:39:37.000Z",
+     "reqId": "P-1126"
+    },
+    {
+     "id": "7994801002",
+     "title": "Staff Software Engineer - IAM",
+     "department": null,
+     "location": "Mountain View, California",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7994801002",
+     "postedAt": "2025-05-13T15:41:24.000Z",
      "reqId": "P-1126"
     },
     {
@@ -36025,16 +36045,6 @@
      "reqId": "SLSQ227R448"
     },
     {
-     "id": "8585188002",
-     "title": "Strategic DNB Hunter Account Executive (China)",
-     "department": null,
-     "location": "Singapore",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8585188002",
-     "postedAt": "2026-06-11T07:07:24.000Z",
-     "reqId": "SLSQ327R457"
-    },
-    {
      "id": "8644185002",
      "title": "Strategic DNB Hunter Account Executive (China)",
      "department": null,
@@ -36042,6 +36052,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8644185002",
      "postedAt": "2026-07-22T04:21:19.000Z",
+     "reqId": "SLSQ327R457"
+    },
+    {
+     "id": "8585188002",
+     "title": "Strategic DNB Hunter Account Executive (China)",
+     "department": null,
+     "location": "Singapore",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8585188002",
+     "postedAt": "2026-06-11T07:07:24.000Z",
      "reqId": "SLSQ327R457"
     },
     {
@@ -36065,6 +36085,16 @@
      "reqId": "SLSQ327R435"
     },
     {
+     "id": "8599138002",
+     "title": "Strategic Enterprise Account Executive, Life Sciences",
+     "department": null,
+     "location": "Northeast - United States",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8599138002",
+     "postedAt": "2026-08-03T16:49:25.000Z",
+     "reqId": "SLSQ327R494"
+    },
+    {
      "id": "8648999002",
      "title": "Strategic Enterprise Account Executive, Life Sciences",
      "department": null,
@@ -36083,16 +36113,6 @@
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645718002",
      "postedAt": "2026-08-03T16:43:24.000Z",
      "reqId": "SLSQ327R816"
-    },
-    {
-     "id": "8599138002",
-     "title": "Strategic Enterprise Account Executive, Life Sciences",
-     "department": null,
-     "location": "Northeast - United States",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8599138002",
-     "postedAt": "2026-08-03T16:49:25.000Z",
-     "reqId": "SLSQ327R494"
     },
     {
      "id": "8438124002",
@@ -36115,16 +36135,6 @@
      "reqId": "SLSQ327R484"
     },
     {
-     "id": "8482086002",
-     "title": "Systems PhD - Software Engineer ",
-     "department": null,
-     "location": "Bellevue, Washington; Seattle, Washington",
-     "remote": false,
-     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002",
-     "postedAt": "2026-03-26T20:18:09.000Z",
-     "reqId": "P-1299"
-    },
-    {
      "id": "8482037002",
      "title": "Systems PhD - Software Engineer ",
      "department": null,
@@ -36132,6 +36142,16 @@
      "remote": false,
      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002",
      "postedAt": "2026-03-26T19:59:09.000Z",
+     "reqId": "P-1299"
+    },
+    {
+     "id": "8482086002",
+     "title": "Systems PhD - Software Engineer ",
+     "department": null,
+     "location": "Bellevue, Washington; Seattle, Washington",
+     "remote": false,
+     "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002",
+     "postedAt": "2026-03-26T20:18:09.000Z",
      "reqId": "P-1299"
     },
     {
@@ -36166,7 +36186,7 @@
     },
     {
      "id": "8603390002",
-     "title": "Workplace Manager",
+     "title": "Workplace Services Manager",
      "department": null,
      "location": "San Francisco, California",
      "remote": false,
@@ -39822,7 +39842,7 @@
    "name": "Datadog",
    "ats": "greenhouse",
    "token": "datadog",
-   "jobCount": 443,
+   "jobCount": 444,
    "jobs": [
     {
      "id": "7194969",
@@ -39865,36 +39885,6 @@
      "reqId": "R18533"
     },
     {
-     "id": "6512326",
-     "title": "Commercial Account Executive",
-     "department": null,
-     "location": "Seoul, South Korea",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6512326/?gh_jid=6512326",
-     "postedAt": "2025-01-08T00:49:07.000Z",
-     "reqId": "R11611"
-    },
-    {
-     "id": "6512321",
-     "title": "Commercial Account Executive",
-     "department": null,
-     "location": "Bangalore, India",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6512321/?gh_jid=6512321",
-     "postedAt": "2025-01-08T02:10:37.000Z",
-     "reqId": "R11612"
-    },
-    {
-     "id": "5798241",
-     "title": "Commercial Account Executive",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/5798241/?gh_jid=5798241",
-     "postedAt": "2024-03-13T04:29:38.000Z",
-     "reqId": "R7154"
-    },
-    {
      "id": "6009777",
      "title": "Commercial Account Executive",
      "department": null,
@@ -39925,6 +39915,16 @@
      "reqId": "R16981"
     },
     {
+     "id": "5798241",
+     "title": "Commercial Account Executive",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/5798241/?gh_jid=5798241",
+     "postedAt": "2024-03-13T04:29:38.000Z",
+     "reqId": "R7154"
+    },
+    {
      "id": "6512586",
      "title": "Commercial Account Executive",
      "department": null,
@@ -39933,6 +39933,26 @@
      "url": "https://careers.datadoghq.com/detail/6512586/?gh_jid=6512586",
      "postedAt": "2025-01-08T00:49:08.000Z",
      "reqId": "R11611"
+    },
+    {
+     "id": "6512326",
+     "title": "Commercial Account Executive",
+     "department": null,
+     "location": "Seoul, South Korea",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6512326/?gh_jid=6512326",
+     "postedAt": "2025-01-08T00:49:07.000Z",
+     "reqId": "R11611"
+    },
+    {
+     "id": "6512321",
+     "title": "Commercial Account Executive",
+     "department": null,
+     "location": "Bangalore, India",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6512321/?gh_jid=6512321",
+     "postedAt": "2025-01-08T02:10:37.000Z",
+     "reqId": "R11612"
     },
     {
      "id": "1497543",
@@ -40235,16 +40255,6 @@
      "reqId": "R20747"
     },
     {
-     "id": "7790098",
-     "title": "Customer Success Manager",
-     "department": null,
-     "location": "Seoul, South Korea",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7790098/?gh_jid=7790098",
-     "postedAt": "2026-04-15T06:53:17.000Z",
-     "reqId": "R18705"
-    },
-    {
      "id": "7790048",
      "title": "Customer Success Manager",
      "department": null,
@@ -40252,6 +40262,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/7790048/?gh_jid=7790048",
      "postedAt": "2026-04-15T06:53:16.000Z",
+     "reqId": "R18705"
+    },
+    {
+     "id": "7790098",
+     "title": "Customer Success Manager",
+     "department": null,
+     "location": "Seoul, South Korea",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7790098/?gh_jid=7790098",
+     "postedAt": "2026-04-15T06:53:17.000Z",
      "reqId": "R18705"
     },
     {
@@ -40565,24 +40585,14 @@
      "reqId": "R17777"
     },
     {
-     "id": "7794297",
+     "id": "8147614",
      "title": "Enterprise Customer Success Manager",
      "department": null,
-     "location": "Jakarta, Indonesia",
+     "location": "Seoul, South Korea",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7794297/?gh_jid=7794297",
-     "postedAt": "2026-04-10T06:07:43.000Z",
-     "reqId": "R18725"
-    },
-    {
-     "id": "7794029",
-     "title": "Enterprise Customer Success Manager",
-     "department": null,
-     "location": "Singapore, Singapore",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7794029/?gh_jid=7794029",
-     "postedAt": "2026-04-10T06:07:42.000Z",
-     "reqId": "R18725"
+     "url": "https://careers.datadoghq.com/detail/8147614/?gh_jid=8147614",
+     "postedAt": "2026-09-03T02:45:29.000Z",
+     "reqId": "R20751"
     },
     {
      "id": "7436312",
@@ -40605,14 +40615,24 @@
      "reqId": "R16841"
     },
     {
-     "id": "8147614",
+     "id": "7794029",
      "title": "Enterprise Customer Success Manager",
      "department": null,
-     "location": "Seoul, South Korea",
+     "location": "Singapore, Singapore",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8147614/?gh_jid=8147614",
-     "postedAt": "2026-09-03T02:45:29.000Z",
-     "reqId": "R20751"
+     "url": "https://careers.datadoghq.com/detail/7794029/?gh_jid=7794029",
+     "postedAt": "2026-04-10T06:07:42.000Z",
+     "reqId": "R18725"
+    },
+    {
+     "id": "7794297",
+     "title": "Enterprise Customer Success Manager",
+     "department": null,
+     "location": "Jakarta, Indonesia",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7794297/?gh_jid=7794297",
+     "postedAt": "2026-04-10T06:07:43.000Z",
+     "reqId": "R18725"
     },
     {
      "id": "8052114",
@@ -40665,26 +40685,6 @@
      "reqId": "R19751"
     },
     {
-     "id": "7868421",
-     "title": "Enterprise Sales Engineer",
-     "department": null,
-     "location": "Singapore, Singapore",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7868421/?gh_jid=7868421",
-     "postedAt": "2026-05-04T03:20:19.000Z",
-     "reqId": "R18944"
-    },
-    {
-     "id": "6430289",
-     "title": "Enterprise Sales Engineer",
-     "department": null,
-     "location": "Osaka, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6430289/?gh_jid=6430289",
-     "postedAt": "2024-11-28T04:41:34.000Z",
-     "reqId": "R11169"
-    },
-    {
      "id": "7721005",
      "title": "Enterprise Sales Engineer",
      "department": null,
@@ -40695,6 +40695,16 @@
      "reqId": "R17901"
     },
     {
+     "id": "7868421",
+     "title": "Enterprise Sales Engineer",
+     "department": null,
+     "location": "Singapore, Singapore",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7868421/?gh_jid=7868421",
+     "postedAt": "2026-05-04T03:20:19.000Z",
+     "reqId": "R18944"
+    },
+    {
      "id": "6703351",
      "title": "Enterprise Sales Engineer",
      "department": null,
@@ -40702,6 +40712,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/6703351/?gh_jid=6703351",
      "postedAt": "2025-03-12T09:33:51.000Z",
+     "reqId": "R11169"
+    },
+    {
+     "id": "6430289",
+     "title": "Enterprise Sales Engineer",
+     "department": null,
+     "location": "Osaka, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6430289/?gh_jid=6430289",
+     "postedAt": "2024-11-28T04:41:34.000Z",
      "reqId": "R11169"
     },
     {
@@ -40775,46 +40795,6 @@
      "reqId": "R17084"
     },
     {
-     "id": "7410254",
-     "title": "Enterprise Sales Executive",
-     "department": null,
-     "location": "Boston, Massachusetts, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7410254/?gh_jid=7410254",
-     "postedAt": "2025-12-02T20:46:08.000Z",
-     "reqId": "R6160"
-    },
-    {
-     "id": "7465857",
-     "title": "Enterprise Sales Executive",
-     "department": null,
-     "location": "North Carolina, USA, Remote; Tennessee, USA, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/7465857/?gh_jid=7465857",
-     "postedAt": "2025-12-17T14:05:19.000Z",
-     "reqId": "958"
-    },
-    {
-     "id": "4828332",
-     "title": "Enterprise Sales Executive",
-     "department": null,
-     "location": "Montreal, Canada; Quebec City, Quebec, Canada",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/4828332/?gh_jid=4828332",
-     "postedAt": "2023-02-15T14:19:11.000Z",
-     "reqId": "R4080"
-    },
-    {
-     "id": "7703288",
-     "title": "Enterprise Sales Executive",
-     "department": null,
-     "location": "Seoul, South Korea",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7703288/?gh_jid=7703288",
-     "postedAt": "2026-03-12T23:10:43.000Z",
-     "reqId": "R18311"
-    },
-    {
      "id": "7405831",
      "title": "Enterprise Sales Executive",
      "department": null,
@@ -40845,14 +40825,44 @@
      "reqId": "944"
     },
     {
-     "id": "7405822",
+     "id": "7703288",
      "title": "Enterprise Sales Executive",
      "department": null,
-     "location": "Georgia, USA, Remote",
+     "location": "Seoul, South Korea",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7703288/?gh_jid=7703288",
+     "postedAt": "2026-03-12T23:10:43.000Z",
+     "reqId": "R18311"
+    },
+    {
+     "id": "4828332",
+     "title": "Enterprise Sales Executive",
+     "department": null,
+     "location": "Montreal, Canada; Quebec City, Quebec, Canada",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/4828332/?gh_jid=4828332",
+     "postedAt": "2023-02-15T14:19:11.000Z",
+     "reqId": "R4080"
+    },
+    {
+     "id": "7465857",
+     "title": "Enterprise Sales Executive",
+     "department": null,
+     "location": "North Carolina, USA, Remote; Tennessee, USA, Remote",
      "remote": true,
-     "url": "https://careers.datadoghq.com/detail/7405822/?gh_jid=7405822",
-     "postedAt": "2025-12-02T17:57:46.000Z",
-     "reqId": "930"
+     "url": "https://careers.datadoghq.com/detail/7465857/?gh_jid=7465857",
+     "postedAt": "2025-12-17T14:05:19.000Z",
+     "reqId": "958"
+    },
+    {
+     "id": "7410254",
+     "title": "Enterprise Sales Executive",
+     "department": null,
+     "location": "Boston, Massachusetts, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7410254/?gh_jid=7410254",
+     "postedAt": "2025-12-02T20:46:08.000Z",
+     "reqId": "R6160"
     },
     {
      "id": "8113520",
@@ -40863,6 +40873,16 @@
      "url": "https://careers.datadoghq.com/detail/8113520/?gh_jid=8113520",
      "postedAt": "2026-08-28T05:25:23.000Z",
      "reqId": "R20310"
+    },
+    {
+     "id": "7405822",
+     "title": "Enterprise Sales Executive",
+     "department": null,
+     "location": "Georgia, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/7405822/?gh_jid=7405822",
+     "postedAt": "2025-12-02T17:57:46.000Z",
+     "reqId": "930"
     },
     {
      "id": "6185452",
@@ -40965,6 +40985,16 @@
      "reqId": "R20684"
     },
     {
+     "id": "8163359",
+     "title": "Executive Assistant II",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8163359/?gh_jid=8163359",
+     "postedAt": "2026-09-04T01:33:45.000Z",
+     "reqId": "R20833"
+    },
+    {
      "id": "7997846",
      "title": "Federal Support Engineer 3",
      "department": null,
@@ -40975,16 +41005,6 @@
      "reqId": "R19468"
     },
     {
-     "id": "7703553",
-     "title": "Field CTO (Japan)",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7703553/?gh_jid=7703553",
-     "postedAt": "2026-03-11T09:34:29.000Z",
-     "reqId": "R17390"
-    },
-    {
      "id": "7526356",
      "title": "Field CTO (Japan)",
      "department": null,
@@ -40992,6 +41012,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/7526356/?gh_jid=7526356",
      "postedAt": "2026-01-13T02:18:47.000Z",
+     "reqId": "R17390"
+    },
+    {
+     "id": "7703553",
+     "title": "Field CTO (Japan)",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7703553/?gh_jid=7703553",
+     "postedAt": "2026-03-11T09:34:29.000Z",
      "reqId": "R17390"
     },
     {
@@ -41235,16 +41265,6 @@
      "reqId": "R19797"
     },
     {
-     "id": "7463769",
-     "title": "Manager, Commercial Sales",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7463769/?gh_jid=7463769",
-     "postedAt": "2025-12-16T05:04:32.000Z",
-     "reqId": "R17021"
-    },
-    {
      "id": "7463989",
      "title": "Manager, Commercial Sales",
      "department": null,
@@ -41252,6 +41272,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/7463989/?gh_jid=7463989",
      "postedAt": "2025-12-16T05:33:29.000Z",
+     "reqId": "R17021"
+    },
+    {
+     "id": "7463769",
+     "title": "Manager, Commercial Sales",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7463769/?gh_jid=7463769",
+     "postedAt": "2025-12-16T05:04:32.000Z",
      "reqId": "R17021"
     },
     {
@@ -41615,16 +41645,6 @@
      "reqId": "R19578"
     },
     {
-     "id": "6163246",
-     "title": "Mid Market Account Executive",
-     "department": null,
-     "location": "Denver, Colorado, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6163246/?gh_jid=6163246",
-     "postedAt": "2024-08-26T20:44:46.000Z",
-     "reqId": "R9033"
-    },
-    {
      "id": "6523631",
      "title": "Mid Market Account Executive",
      "department": null,
@@ -41635,14 +41655,14 @@
      "reqId": "R11608"
     },
     {
-     "id": "6665385",
+     "id": "6163246",
      "title": "Mid Market Account Executive",
      "department": null,
-     "location": "New York, New York, USA",
+     "location": "Denver, Colorado, USA",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6665385/?gh_jid=6665385",
-     "postedAt": "2025-03-03T18:31:19.000Z",
-     "reqId": "R12653"
+     "url": "https://careers.datadoghq.com/detail/6163246/?gh_jid=6163246",
+     "postedAt": "2024-08-26T20:44:46.000Z",
+     "reqId": "R9033"
     },
     {
      "id": "7785319",
@@ -41653,6 +41673,16 @@
      "url": "https://careers.datadoghq.com/detail/7785319/?gh_jid=7785319",
      "postedAt": "2026-04-09T04:59:12.000Z",
      "reqId": "R18677"
+    },
+    {
+     "id": "6665385",
+     "title": "Mid Market Account Executive",
+     "department": null,
+     "location": "New York, New York, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6665385/?gh_jid=6665385",
+     "postedAt": "2025-03-03T18:31:19.000Z",
+     "reqId": "R12653"
     },
     {
      "id": "6522009",
@@ -41915,16 +41945,6 @@
      "reqId": "R20675"
     },
     {
-     "id": "7582679",
-     "title": "Principal Partner Manager - Channels (GSI)",
-     "department": null,
-     "location": "Boston, Massachusetts, USA; Denver, Colorado, USA; New York, New York, USA; San Francisco, California, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7582679/?gh_jid=7582679",
-     "postedAt": "2026-02-23T17:46:38.000Z",
-     "reqId": "R17668"
-    },
-    {
      "id": "7584250",
      "title": "Principal Partner Manager - Channels (GSI)",
      "department": null,
@@ -41932,6 +41952,16 @@
      "remote": true,
      "url": "https://careers.datadoghq.com/detail/7584250/?gh_jid=7584250",
      "postedAt": "2026-05-13T14:14:32.000Z",
+     "reqId": "R17668"
+    },
+    {
+     "id": "7582679",
+     "title": "Principal Partner Manager - Channels (GSI)",
+     "department": null,
+     "location": "Boston, Massachusetts, USA; Denver, Colorado, USA; New York, New York, USA; San Francisco, California, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7582679/?gh_jid=7582679",
+     "postedAt": "2026-02-23T17:46:38.000Z",
      "reqId": "R17668"
     },
     {
@@ -41965,16 +41995,6 @@
      "reqId": "1062"
     },
     {
-     "id": "7982288",
-     "title": "Product Manager II, AI & Data Security",
-     "department": null,
-     "location": "Boston, Massachusetts, USA; New York, New York, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7982288/?gh_jid=7982288",
-     "postedAt": "2026-06-04T13:44:45.000Z",
-     "reqId": "R19371"
-    },
-    {
      "id": "8012549",
      "title": "Product Manager II, AI & Data Security",
      "department": null,
@@ -41983,6 +42003,16 @@
      "url": "https://careers.datadoghq.com/detail/8012549/?gh_jid=8012549",
      "postedAt": "2026-06-19T11:26:14.000Z",
      "reqId": "1044"
+    },
+    {
+     "id": "7982288",
+     "title": "Product Manager II, AI & Data Security",
+     "department": null,
+     "location": "Boston, Massachusetts, USA; New York, New York, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7982288/?gh_jid=7982288",
+     "postedAt": "2026-06-04T13:44:45.000Z",
+     "reqId": "R19371"
     },
     {
      "id": "8021327",
@@ -42115,16 +42145,6 @@
      "reqId": "R20863"
     },
     {
-     "id": "8113562",
-     "title": "Regional Manager, Sales Engineering - Public Sector",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8113562/?gh_jid=8113562",
-     "postedAt": "2026-08-07T06:44:51.000Z",
-     "reqId": "R19512"
-    },
-    {
      "id": "8003531",
      "title": "Regional Manager, Sales Engineering - Public Sector",
      "department": null,
@@ -42132,6 +42152,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8003531/?gh_jid=8003531",
      "postedAt": "2026-06-18T02:24:45.000Z",
+     "reqId": "R19512"
+    },
+    {
+     "id": "8113562",
+     "title": "Regional Manager, Sales Engineering - Public Sector",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8113562/?gh_jid=8113562",
+     "postedAt": "2026-08-07T06:44:51.000Z",
      "reqId": "R19512"
     },
     {
@@ -42165,16 +42195,6 @@
      "reqId": "R20802"
     },
     {
-     "id": "7806043",
-     "title": "Sales Development Representative",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7806043/?gh_jid=7806043",
-     "postedAt": "2026-04-17T05:57:06.000Z",
-     "reqId": "R18739"
-    },
-    {
      "id": "7806117",
      "title": "Sales Development Representative",
      "department": null,
@@ -42193,6 +42213,16 @@
      "url": "https://careers.datadoghq.com/detail/8042600/?gh_jid=8042600",
      "postedAt": "2026-07-02T05:35:32.000Z",
      "reqId": "R19807"
+    },
+    {
+     "id": "7806043",
+     "title": "Sales Development Representative",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7806043/?gh_jid=7806043",
+     "postedAt": "2026-04-17T05:57:06.000Z",
+     "reqId": "R18739"
     },
     {
      "id": "8152975",
@@ -42265,16 +42295,6 @@
      "reqId": "R20690"
     },
     {
-     "id": "8139396",
-     "title": "Sales Development Representative (LATAM - Portuguese Speaking)",
-     "department": null,
-     "location": "Boston, Massachusetts, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8139396/?gh_jid=8139396",
-     "postedAt": "2026-08-20T15:54:14.000Z",
-     "reqId": "R20678"
-    },
-    {
      "id": "6685931",
      "title": "Sales Development Representative (LATAM - Portuguese Speaking)",
      "department": null,
@@ -42283,6 +42303,16 @@
      "url": "https://careers.datadoghq.com/detail/6685931/?gh_jid=6685931",
      "postedAt": "2025-03-28T23:09:44.000Z",
      "reqId": "R12751"
+    },
+    {
+     "id": "8139396",
+     "title": "Sales Development Representative (LATAM - Portuguese Speaking)",
+     "department": null,
+     "location": "Boston, Massachusetts, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8139396/?gh_jid=8139396",
+     "postedAt": "2026-08-20T15:54:14.000Z",
+     "reqId": "R20678"
     },
     {
      "id": "7003239",
@@ -42325,16 +42355,6 @@
      "reqId": "R19846"
     },
     {
-     "id": "8090275",
-     "title": "Sales Engineer - Enterprise",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8090275/?gh_jid=8090275",
-     "postedAt": "2026-08-24T02:52:00.000Z",
-     "reqId": "R20142"
-    },
-    {
      "id": "8088095",
      "title": "Sales Engineer - Enterprise",
      "department": null,
@@ -42342,6 +42362,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8088095/?gh_jid=8088095",
      "postedAt": "2026-08-24T02:52:02.000Z",
+     "reqId": "R20142"
+    },
+    {
+     "id": "8090275",
+     "title": "Sales Engineer - Enterprise",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8090275/?gh_jid=8090275",
+     "postedAt": "2026-08-24T02:52:00.000Z",
      "reqId": "R20142"
     },
     {
@@ -42355,13 +42385,13 @@
      "reqId": "R17576"
     },
     {
-     "id": "8141240",
+     "id": "8141243",
      "title": "Security Sales Engineer",
      "department": null,
-     "location": "Florida, USA, Remote; Georgia, USA, Remote; Massachusetts, USA, Remote; New York, USA, Remote",
+     "location": "California, USA, Remote; Colorado, USA, Remote; Washington, USA, Remote",
      "remote": true,
-     "url": "https://careers.datadoghq.com/detail/8141240/?gh_jid=8141240",
-     "postedAt": "2026-08-19T08:42:26.000Z",
+     "url": "https://careers.datadoghq.com/detail/8141243/?gh_jid=8141243",
+     "postedAt": "2026-08-19T08:42:27.000Z",
      "reqId": "R17509"
     },
     {
@@ -42375,13 +42405,13 @@
      "reqId": "R17509"
     },
     {
-     "id": "8141243",
+     "id": "8141240",
      "title": "Security Sales Engineer",
      "department": null,
-     "location": "California, USA, Remote; Colorado, USA, Remote; Washington, USA, Remote",
+     "location": "Florida, USA, Remote; Georgia, USA, Remote; Massachusetts, USA, Remote; New York, USA, Remote",
      "remote": true,
-     "url": "https://careers.datadoghq.com/detail/8141243/?gh_jid=8141243",
-     "postedAt": "2026-08-19T08:42:27.000Z",
+     "url": "https://careers.datadoghq.com/detail/8141240/?gh_jid=8141240",
+     "postedAt": "2026-08-19T08:42:26.000Z",
      "reqId": "R17509"
     },
     {
@@ -42545,16 +42575,6 @@
      "reqId": "R20758"
     },
     {
-     "id": "8054902",
-     "title": "Senior Enterprise Customer Success Manager",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8054902/?gh_jid=8054902",
-     "postedAt": "2026-07-24T05:10:20.000Z",
-     "reqId": "R19922"
-    },
-    {
      "id": "8054774",
      "title": "Senior Enterprise Customer Success Manager",
      "department": null,
@@ -42562,6 +42582,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8054774/?gh_jid=8054774",
      "postedAt": "2026-07-24T05:10:19.000Z",
+     "reqId": "R19922"
+    },
+    {
+     "id": "8054902",
+     "title": "Senior Enterprise Customer Success Manager",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8054902/?gh_jid=8054902",
+     "postedAt": "2026-07-24T05:10:20.000Z",
      "reqId": "R19922"
     },
     {
@@ -42615,16 +42645,6 @@
      "reqId": "R19265"
     },
     {
-     "id": "8007394",
-     "title": "Senior Partner Enablement Manager",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8007394/?gh_jid=8007394",
-     "postedAt": "2026-06-15T22:05:39.000Z",
-     "reqId": "R19516"
-    },
-    {
      "id": "8003723",
      "title": "Senior Partner Enablement Manager",
      "department": null,
@@ -42632,6 +42652,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8003723/?gh_jid=8003723",
      "postedAt": "2026-06-15T22:05:38.000Z",
+     "reqId": "R19516"
+    },
+    {
+     "id": "8007394",
+     "title": "Senior Partner Enablement Manager",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8007394/?gh_jid=8007394",
+     "postedAt": "2026-06-15T22:05:39.000Z",
      "reqId": "R19516"
     },
     {
@@ -42735,16 +42765,6 @@
      "reqId": "R19733"
     },
     {
-     "id": "8099069",
-     "title": "Senior People Business Partner",
-     "department": null,
-     "location": "Sao Paulo, Brazil",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8099069/?gh_jid=8099069",
-     "postedAt": "2026-08-12T14:16:25.000Z",
-     "reqId": "R20239"
-    },
-    {
      "id": "7461043",
      "title": "Senior People Business Partner",
      "department": null,
@@ -42753,6 +42773,16 @@
      "url": "https://careers.datadoghq.com/detail/7461043/?gh_jid=7461043",
      "postedAt": "2025-12-15T03:24:07.000Z",
      "reqId": "R16897"
+    },
+    {
+     "id": "8099069",
+     "title": "Senior People Business Partner",
+     "department": null,
+     "location": "Sao Paulo, Brazil",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8099069/?gh_jid=8099069",
+     "postedAt": "2026-08-12T14:16:25.000Z",
+     "reqId": "R20239"
     },
     {
      "id": "7947683",
@@ -42915,16 +42945,6 @@
      "reqId": "R19986"
     },
     {
-     "id": "8037749",
-     "title": "Senior Regional Content Manager (APJ)",
-     "department": null,
-     "location": "Sydney, Australia",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8037749/?gh_jid=8037749",
-     "postedAt": "2026-08-28T06:22:55.000Z",
-     "reqId": "R19752"
-    },
-    {
      "id": "8035726",
      "title": "Senior Regional Content Manager (APJ)",
      "department": null,
@@ -42932,6 +42952,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8035726/?gh_jid=8035726",
      "postedAt": "2026-07-09T10:06:48.000Z",
+     "reqId": "R19752"
+    },
+    {
+     "id": "8037749",
+     "title": "Senior Regional Content Manager (APJ)",
+     "department": null,
+     "location": "Sydney, Australia",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8037749/?gh_jid=8037749",
+     "postedAt": "2026-08-28T06:22:55.000Z",
      "reqId": "R19752"
     },
     {
@@ -43165,13 +43195,13 @@
      "reqId": "R20186"
     },
     {
-     "id": "7959967",
+     "id": "7959962",
      "title": "Senior Software Engineer - REDAPL Graph Engine",
      "department": null,
-     "location": "Lisbon, Portugal",
+     "location": "Dublin, Ireland; Madrid, Spain; Paris, France",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7959967/?gh_jid=7959967",
-     "postedAt": "2026-05-27T10:42:01.000Z",
+     "url": "https://careers.datadoghq.com/detail/7959962/?gh_jid=7959962",
+     "postedAt": "2026-05-27T10:41:59.000Z",
      "reqId": "R19260"
     },
     {
@@ -43185,24 +43215,14 @@
      "reqId": "R19260"
     },
     {
-     "id": "7959962",
+     "id": "7959967",
      "title": "Senior Software Engineer - REDAPL Graph Engine",
      "department": null,
-     "location": "Dublin, Ireland; Madrid, Spain; Paris, France",
+     "location": "Lisbon, Portugal",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7959962/?gh_jid=7959962",
-     "postedAt": "2026-05-27T10:41:59.000Z",
+     "url": "https://careers.datadoghq.com/detail/7959967/?gh_jid=7959967",
+     "postedAt": "2026-05-27T10:42:01.000Z",
      "reqId": "R19260"
-    },
-    {
-     "id": "8081477",
-     "title": "Senior Software Engineer - Security Libraries",
-     "department": null,
-     "location": "Bordeaux, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8081477/?gh_jid=8081477",
-     "postedAt": "2026-07-23T15:00:48.000Z",
-     "reqId": "R20109"
     },
     {
      "id": "8088590",
@@ -43212,6 +43232,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8088590/?gh_jid=8088590",
      "postedAt": "2026-07-27T14:39:54.000Z",
+     "reqId": "R20109"
+    },
+    {
+     "id": "8081477",
+     "title": "Senior Software Engineer - Security Libraries",
+     "department": null,
+     "location": "Bordeaux, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8081477/?gh_jid=8081477",
+     "postedAt": "2026-07-23T15:00:48.000Z",
      "reqId": "R20109"
     },
     {
@@ -43545,16 +43575,6 @@
      "reqId": "R5868"
     },
     {
-     "id": "8105372",
-     "title": "Staff Software Engineer - Corporate Development",
-     "department": null,
-     "location": "New York, New York, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8105372/?gh_jid=8105372",
-     "postedAt": "2026-08-04T13:30:24.000Z",
-     "reqId": "R20185"
-    },
-    {
      "id": "8094106",
      "title": "Staff Software Engineer - Corporate Development",
      "department": null,
@@ -43562,6 +43582,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8094106/?gh_jid=8094106",
      "postedAt": "2026-07-29T13:32:47.000Z",
+     "reqId": "R20185"
+    },
+    {
+     "id": "8105372",
+     "title": "Staff Software Engineer - Corporate Development",
+     "department": null,
+     "location": "New York, New York, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8105372/?gh_jid=8105372",
+     "postedAt": "2026-08-04T13:30:24.000Z",
      "reqId": "R20185"
     },
     {
@@ -43605,16 +43635,6 @@
      "reqId": "R11404"
     },
     {
-     "id": "8007606",
-     "title": "Staff Software Engineer - Security Agent",
-     "department": null,
-     "location": "Portugal, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/8007606/?gh_jid=8007606",
-     "postedAt": "2026-06-15T13:48:43.000Z",
-     "reqId": "R11404"
-    },
-    {
      "id": "8007589",
      "title": "Staff Software Engineer - Security Agent",
      "department": null,
@@ -43622,6 +43642,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/8007589/?gh_jid=8007589",
      "postedAt": "2026-06-15T13:46:14.000Z",
+     "reqId": "R11404"
+    },
+    {
+     "id": "8007606",
+     "title": "Staff Software Engineer - Security Agent",
+     "department": null,
+     "location": "Portugal, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/8007606/?gh_jid=8007606",
+     "postedAt": "2026-06-15T13:48:43.000Z",
      "reqId": "R11404"
     },
     {
@@ -43635,64 +43665,14 @@
      "reqId": "R17212"
     },
     {
-     "id": "7057036",
+     "id": "7131404",
      "title": "Strategic Account Executive",
      "department": null,
-     "location": "District of Columbia, USA, Remote; Maryland, USA, Remote; Virginia, USA, Remote",
+     "location": "Chile, Remote",
      "remote": true,
-     "url": "https://careers.datadoghq.com/detail/7057036/?gh_jid=7057036",
-     "postedAt": "2025-08-27T13:39:29.000Z",
-     "reqId": "R14577"
-    },
-    {
-     "id": "6873775",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "Denver, Colorado, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6873775/?gh_jid=6873775",
-     "postedAt": "2025-06-13T20:25:26.000Z",
-     "reqId": "R13661"
-    },
-    {
-     "id": "7131495",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "Washington, USA, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/7131495/?gh_jid=7131495",
-     "postedAt": "2026-01-23T21:04:00.000Z",
-     "reqId": "907"
-    },
-    {
-     "id": "7131386",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "New York, New York, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7131386/?gh_jid=7131386",
-     "postedAt": "2025-11-03T18:03:18.000Z",
-     "reqId": "902"
-    },
-    {
-     "id": "6522747",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "Minnesota, USA, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/6522747/?gh_jid=6522747",
-     "postedAt": "2025-02-04T22:25:03.000Z",
-     "reqId": "R11622"
-    },
-    {
-     "id": "7131726",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "Jakarta, Indonesia",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7131726/?gh_jid=7131726",
-     "postedAt": "2025-08-15T01:54:04.000Z",
-     "reqId": "900"
+     "url": "https://careers.datadoghq.com/detail/7131404/?gh_jid=7131404",
+     "postedAt": "2026-01-22T15:52:50.000Z",
+     "reqId": "904"
     },
     {
      "id": "7131396",
@@ -43705,14 +43685,14 @@
      "reqId": "903"
     },
     {
-     "id": "7131404",
+     "id": "7131386",
      "title": "Strategic Account Executive",
      "department": null,
-     "location": "Chile, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/7131404/?gh_jid=7131404",
-     "postedAt": "2026-01-22T15:52:50.000Z",
-     "reqId": "904"
+     "location": "New York, New York, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7131386/?gh_jid=7131386",
+     "postedAt": "2025-11-03T18:03:18.000Z",
+     "reqId": "902"
     },
     {
      "id": "7131363",
@@ -43725,16 +43705,6 @@
      "reqId": "901"
     },
     {
-     "id": "7117086",
-     "title": "Strategic Account Executive",
-     "department": null,
-     "location": "Boston, Massachusetts, USA",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7117086/?gh_jid=7117086",
-     "postedAt": "2025-08-21T18:23:15.000Z",
-     "reqId": "R14860"
-    },
-    {
      "id": "7142205",
      "title": "Strategic Account Executive",
      "department": null,
@@ -43745,14 +43715,14 @@
      "reqId": "R15007"
     },
     {
-     "id": "8157360",
+     "id": "7131726",
      "title": "Strategic Account Executive",
      "department": null,
-     "location": "Florida, USA, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/8157360/?gh_jid=8157360",
-     "postedAt": "2026-08-28T21:02:48.000Z",
-     "reqId": "1079"
+     "location": "Jakarta, Indonesia",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7131726/?gh_jid=7131726",
+     "postedAt": "2025-08-15T01:54:04.000Z",
+     "reqId": "900"
     },
     {
      "id": "7134079",
@@ -43775,6 +43745,26 @@
      "reqId": "R16849"
     },
     {
+     "id": "7117086",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "Boston, Massachusetts, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7117086/?gh_jid=7117086",
+     "postedAt": "2025-08-21T18:23:15.000Z",
+     "reqId": "R14860"
+    },
+    {
+     "id": "7057036",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "District of Columbia, USA, Remote; Maryland, USA, Remote; Virginia, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/7057036/?gh_jid=7057036",
+     "postedAt": "2025-08-27T13:39:29.000Z",
+     "reqId": "R14577"
+    },
+    {
      "id": "7055008",
      "title": "Strategic Account Executive",
      "department": null,
@@ -43783,6 +43773,26 @@
      "url": "https://careers.datadoghq.com/detail/7055008/?gh_jid=7055008",
      "postedAt": "2025-07-15T20:03:12.000Z",
      "reqId": "R14565"
+    },
+    {
+     "id": "6873775",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "Denver, Colorado, USA",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6873775/?gh_jid=6873775",
+     "postedAt": "2025-06-13T20:25:26.000Z",
+     "reqId": "R13661"
+    },
+    {
+     "id": "7131495",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "Washington, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/7131495/?gh_jid=7131495",
+     "postedAt": "2026-01-23T21:04:00.000Z",
+     "reqId": "907"
     },
     {
      "id": "6522865",
@@ -43795,6 +43805,16 @@
      "reqId": "R11678"
     },
     {
+     "id": "6522747",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "Minnesota, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/6522747/?gh_jid=6522747",
+     "postedAt": "2025-02-04T22:25:03.000Z",
+     "reqId": "R11622"
+    },
+    {
      "id": "6522720",
      "title": "Strategic Account Executive",
      "department": null,
@@ -43803,6 +43823,16 @@
      "url": "https://careers.datadoghq.com/detail/6522720/?gh_jid=6522720",
      "postedAt": "2025-03-04T18:45:14.000Z",
      "reqId": "R11675"
+    },
+    {
+     "id": "8157360",
+     "title": "Strategic Account Executive",
+     "department": null,
+     "location": "Florida, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/8157360/?gh_jid=8157360",
+     "postedAt": "2026-08-28T21:02:48.000Z",
+     "reqId": "1079"
     },
     {
      "id": "5511968",
@@ -43815,16 +43845,6 @@
      "reqId": "R5307"
     },
     {
-     "id": "8021535",
-     "title": "Strategic Account Executive (FED)",
-     "department": null,
-     "location": "Maryland, USA, Remote; Virginia, USA, Remote; Washington, District of Columbia, USA",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/8021535/?gh_jid=8021535",
-     "postedAt": "2026-08-19T16:07:25.000Z",
-     "reqId": "1047"
-    },
-    {
      "id": "7645709",
      "title": "Strategic Account Executive (FED)",
      "department": null,
@@ -43833,6 +43853,16 @@
      "url": "https://careers.datadoghq.com/detail/7645709/?gh_jid=7645709",
      "postedAt": "2026-04-08T22:57:29.000Z",
      "reqId": "R17983"
+    },
+    {
+     "id": "8021535",
+     "title": "Strategic Account Executive (FED)",
+     "department": null,
+     "location": "Maryland, USA, Remote; Virginia, USA, Remote; Washington, District of Columbia, USA",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/8021535/?gh_jid=8021535",
+     "postedAt": "2026-08-19T16:07:25.000Z",
+     "reqId": "1047"
     },
     {
      "id": "7442122",
@@ -43855,16 +43885,6 @@
      "reqId": "R14744"
     },
     {
-     "id": "7439569",
-     "title": "Strategic Account Executive, Public Sector Japan, FED",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7439569/?gh_jid=7439569",
-     "postedAt": "2026-01-07T06:00:53.000Z",
-     "reqId": "R16845"
-    },
-    {
      "id": "7439149",
      "title": "Strategic Account Executive, Public Sector Japan, FED",
      "department": null,
@@ -43875,14 +43895,14 @@
      "reqId": "R16845"
     },
     {
-     "id": "7439573",
-     "title": "Strategic Account Executive, Public Sector Japan, SLED",
+     "id": "7439569",
+     "title": "Strategic Account Executive, Public Sector Japan, FED",
      "department": null,
      "location": "Tokyo, Japan",
      "remote": false,
-     "url": "https://careers.datadoghq.com/detail/7439573/?gh_jid=7439573",
-     "postedAt": "2025-12-05T09:18:59.000Z",
-     "reqId": "R16844"
+     "url": "https://careers.datadoghq.com/detail/7439569/?gh_jid=7439569",
+     "postedAt": "2026-01-07T06:00:53.000Z",
+     "reqId": "R16845"
     },
     {
      "id": "7439152",
@@ -43892,6 +43912,16 @@
      "remote": false,
      "url": "https://careers.datadoghq.com/detail/7439152/?gh_jid=7439152",
      "postedAt": "2025-12-08T03:34:58.000Z",
+     "reqId": "R16844"
+    },
+    {
+     "id": "7439573",
+     "title": "Strategic Account Executive, Public Sector Japan, SLED",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/7439573/?gh_jid=7439573",
+     "postedAt": "2025-12-05T09:18:59.000Z",
      "reqId": "R16844"
     },
     {
@@ -43915,14 +43945,14 @@
      "reqId": "918"
     },
     {
-     "id": "6430945",
+     "id": "8043036",
      "title": "Strategic Account Executive (SLED)",
      "department": null,
-     "location": "California, USA, Remote; Oregon, USA, Remote; Washington, USA, Remote",
-     "remote": true,
-     "url": "https://careers.datadoghq.com/detail/6430945/?gh_jid=6430945",
-     "postedAt": "2025-02-04T22:04:13.000Z",
-     "reqId": "R11178"
+     "location": "Sydney, Australia",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8043036/?gh_jid=8043036",
+     "postedAt": "2026-07-07T01:34:07.000Z",
+     "reqId": "R19817"
     },
     {
      "id": "7453034",
@@ -43935,6 +43965,16 @@
      "reqId": "952"
     },
     {
+     "id": "6430945",
+     "title": "Strategic Account Executive (SLED)",
+     "department": null,
+     "location": "California, USA, Remote; Oregon, USA, Remote; Washington, USA, Remote",
+     "remote": true,
+     "url": "https://careers.datadoghq.com/detail/6430945/?gh_jid=6430945",
+     "postedAt": "2025-02-04T22:04:13.000Z",
+     "reqId": "R11178"
+    },
+    {
      "id": "7314667",
      "title": "Strategic Account Executive (SLED)",
      "department": null,
@@ -43943,16 +43983,6 @@
      "url": "https://careers.datadoghq.com/detail/7314667/?gh_jid=7314667",
      "postedAt": "2025-12-03T19:43:04.000Z",
      "reqId": "R14653"
-    },
-    {
-     "id": "8043036",
-     "title": "Strategic Account Executive (SLED)",
-     "department": null,
-     "location": "Sydney, Australia",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8043036/?gh_jid=8043036",
-     "postedAt": "2026-07-07T01:34:07.000Z",
-     "reqId": "R19817"
     },
     {
      "id": "5622381",
@@ -44025,16 +44055,6 @@
      "reqId": "R19604"
     },
     {
-     "id": "8143320",
-     "title": "Technical Account Manager 2",
-     "department": null,
-     "location": "Singapore, Singapore",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8143320/?gh_jid=8143320",
-     "postedAt": "2026-09-01T01:44:20.000Z",
-     "reqId": "R20709"
-    },
-    {
      "id": "8026835",
      "title": "Technical Account Manager 2 - Boston",
      "department": null,
@@ -44095,6 +44115,16 @@
      "reqId": "R19606"
     },
     {
+     "id": "8143320",
+     "title": "Technical Account Manager II",
+     "department": null,
+     "location": "Singapore, Singapore",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8143320/?gh_jid=8143320",
+     "postedAt": "2026-09-01T01:44:20.000Z",
+     "reqId": "R20709"
+    },
+    {
      "id": "8046399",
      "title": "Technical Enablement Manager 2/3 (Italian Speaking)",
      "department": null,
@@ -44135,16 +44165,6 @@
      "reqId": "R19963"
     },
     {
-     "id": "8095826",
-     "title": "Technical Escalations Engineer 2 (Revenue and Cost Management) - APJ",
-     "department": null,
-     "location": "Seoul, South Korea; Sydney, Australia; Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8095826/?gh_jid=8095826",
-     "postedAt": "2026-07-31T01:38:28.000Z",
-     "reqId": "R20211"
-    },
-    {
      "id": "8154643",
      "title": "Technical Escalations Engineer 2 (Revenue and Cost Management) - US-East",
      "department": null,
@@ -44155,16 +44175,6 @@
      "reqId": "R20784"
     },
     {
-     "id": "8138482",
-     "title": "Technical Escalations Engineer 2 (RUM) - APJ",
-     "department": null,
-     "location": "Seoul, South Korea; Sydney, Australia; Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/8138482/?gh_jid=8138482",
-     "postedAt": "2026-08-20T03:56:22.000Z",
-     "reqId": "R20672"
-    },
-    {
      "id": "8130723",
      "title": "Technical Escalations Engineer 2 (Web Platform) - US-West",
      "department": null,
@@ -44173,6 +44183,26 @@
      "url": "https://careers.datadoghq.com/detail/8130723/?gh_jid=8130723",
      "postedAt": "2026-08-18T13:04:40.000Z",
      "reqId": "R20650"
+    },
+    {
+     "id": "8095826",
+     "title": "Technical Escalations Engineer II (Revenue and Cost Management) - APJ",
+     "department": null,
+     "location": "Seoul, South Korea; Sydney, Australia; Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8095826/?gh_jid=8095826",
+     "postedAt": "2026-07-31T01:38:28.000Z",
+     "reqId": "R20211"
+    },
+    {
+     "id": "8138482",
+     "title": "Technical Escalations Engineer II (RUM) - APJ",
+     "department": null,
+     "location": "Seoul, South Korea; Sydney, Australia; Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/8138482/?gh_jid=8138482",
+     "postedAt": "2026-08-20T03:56:22.000Z",
+     "reqId": "R20672"
     },
     {
      "id": "8030837",
@@ -44193,26 +44223,6 @@
      "url": "https://careers.datadoghq.com/detail/8144018/?gh_jid=8144018",
      "postedAt": "2026-08-20T15:36:25.000Z",
      "reqId": "R20713"
-    },
-    {
-     "id": "6761448",
-     "title": "Technical Support Engineer 2",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6761448/?gh_jid=6761448",
-     "postedAt": "2025-04-14T00:15:47.000Z",
-     "reqId": "R13117"
-    },
-    {
-     "id": "6759702",
-     "title": "Technical Support Engineer 2",
-     "department": null,
-     "location": "Tokyo, Japan",
-     "remote": false,
-     "url": "https://careers.datadoghq.com/detail/6759702/?gh_jid=6759702",
-     "postedAt": "2025-04-14T00:15:47.000Z",
-     "reqId": "R13117"
     },
     {
      "id": "8109441",
@@ -44253,6 +44263,26 @@
      "url": "https://careers.datadoghq.com/detail/7758574/?gh_jid=7758574",
      "postedAt": "2026-03-30T14:06:45.000Z",
      "reqId": "R18490"
+    },
+    {
+     "id": "6759702",
+     "title": "Technical Support Engineer II",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6759702/?gh_jid=6759702",
+     "postedAt": "2025-04-14T00:15:47.000Z",
+     "reqId": "R13117"
+    },
+    {
+     "id": "6761448",
+     "title": "Technical Support Engineer II",
+     "department": null,
+     "location": "Tokyo, Japan",
+     "remote": false,
+     "url": "https://careers.datadoghq.com/detail/6761448/?gh_jid=6761448",
+     "postedAt": "2025-04-14T00:15:47.000Z",
+     "reqId": "R13117"
     }
    ]
   },
