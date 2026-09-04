@@ -1,0 +1,649 @@
+<title>The Stage Two Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+
+<style>
+  /* Complete light palette. Dark blocks below redefine tokens only. */
+  :root {
+    --ground:      #F5F7F8;
+    --surface:     #FFFFFF;
+    --surface-2:   #EDF0F3;
+    --ink:         #16202B;
+    --ink-2:       #4C5A68;
+    --ink-3:       #7A8794;
+    --rule:        #DBE1E7;
+    --rule-strong: #C3CCD5;
+    --accent:      #1F4E9C;
+    --accent-soft: #E6EDF8;
+    --signal:      #96551A;
+    --signal-soft: #F7EEE2;
+    --good:        #2C6A4E;
+    --crit:        #97292A;
+    --shadow:      0 1px 2px rgba(22,32,43,.06), 0 4px 16px rgba(22,32,43,.05);
+
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono:  "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+    --measure: 68ch;
+    --pad: clamp(1.25rem, 4vw, 3rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0F141A;
+      --surface:     #161E26;
+      --surface-2:   #1D262F;
+      --ink:         #E7EDF2;
+      --ink-2:       #A4B1BD;
+      --ink-3:       #78858F;
+      --rule:        #29333D;
+      --rule-strong: #3A4650;
+      --accent:      #82AAE8;
+      --accent-soft: #182534;
+      --signal:      #D5A166;
+      --signal-soft: #2A2116;
+      --good:        #6DBF95;
+      --crit:        #E28585;
+      --shadow:      0 1px 2px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:      #0F141A;
+    --surface:     #161E26;
+    --surface-2:   #1D262F;
+    --ink:         #E7EDF2;
+    --ink-2:       #A4B1BD;
+    --ink-3:       #78858F;
+    --rule:        #29333D;
+    --rule-strong: #3A4650;
+    --accent:      #82AAE8;
+    --accent-soft: #182534;
+    --signal:      #D5A166;
+    --signal-soft: #2A2116;
+    --good:        #6DBF95;
+    --crit:        #E28585;
+    --shadow:      0 1px 2px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 1100px; margin: 0 auto; padding: var(--pad) var(--pad) 5rem; }
+
+  /* ---- type scale ---- */
+  h1, h2, h3 { font-family: var(--serif); font-weight: 500; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); line-height: 1.08; letter-spacing: -.015em; }
+  h2 { font-size: clamp(1.5rem, 3vw, 1.95rem); line-height: 1.15; letter-spacing: -.01em; }
+  h3 { font-size: 1.12rem; line-height: 1.3; font-weight: 600; }
+  p  { margin: 0; max-width: var(--measure); }
+  a  { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: .7rem; font-weight: 500;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-3);
+  }
+  .lede { font-size: 1.08rem; color: var(--ink-2); max-width: 62ch; }
+  .note { font-size: .875rem; color: var(--ink-2); max-width: var(--measure); }
+  code {
+    font-family: var(--mono); font-size: .855em;
+    background: var(--surface-2); padding: .12em .38em; border-radius: 3px;
+  }
+
+  /* ---- masthead ---- */
+  header.masthead {
+    display: flex; flex-direction: column; gap: 1rem;
+    padding-bottom: 1.75rem; border-bottom: 2px solid var(--ink);
+  }
+  .masthead-top { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: baseline; }
+  .clock {
+    font-family: var(--mono); font-size: .78rem; color: var(--ink-2);
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+  }
+  .clock b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  /* ---- sections ---- */
+  section { margin-top: 3.5rem; scroll-margin-top: 1rem; }
+  .sec-head { display: flex; align-items: baseline; gap: .85rem; margin-bottom: 1.1rem; flex-wrap: wrap; }
+  .sec-head .eyebrow { flex: none; }
+  .stack { display: flex; flex-direction: column; gap: 1rem; }
+  .stack-tight { display: flex; flex-direction: column; gap: .5rem; }
+
+  /* ---- the pipeline diagram ---- */
+  .pipeline { margin-top: 1.5rem; }
+  .stages {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: .5rem;
+  }
+  .stage {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-top: 3px solid var(--rule-strong);
+    padding: .85rem .8rem 1rem; display: flex; flex-direction: column; gap: .45rem;
+    min-height: 100%;
+  }
+  .stage.acted { border-top-color: var(--accent); }
+  .stage-n {
+    font-family: var(--mono); font-size: .68rem; color: var(--ink-3);
+    letter-spacing: .1em;
+  }
+  .stage-name { font-weight: 600; font-size: .93rem; line-height: 1.25; }
+  .stage-note { font-size: .78rem; color: var(--ink-2); line-height: 1.4; }
+  .stage-tool {
+    margin-top: auto; font-family: var(--mono); font-size: .68rem; font-weight: 500;
+    letter-spacing: .04em; color: var(--accent); background: var(--accent-soft);
+    padding: .22rem .45rem; align-self: flex-start; border-radius: 2px;
+  }
+  .stage-tool.none { color: var(--ink-3); background: transparent; padding-left: 0; }
+  .ledger-bar {
+    margin-top: .5rem; border: 1px dashed var(--rule-strong); background: var(--surface);
+    padding: .6rem .8rem; display: flex; gap: .65rem; align-items: baseline; flex-wrap: wrap;
+    font-size: .82rem; color: var(--ink-2);
+  }
+  .ledger-bar .tag {
+    font-family: var(--mono); font-size: .68rem; font-weight: 500; letter-spacing: .04em;
+    color: var(--accent); background: var(--accent-soft); padding: .22rem .45rem; border-radius: 2px;
+  }
+  @media (max-width: 720px) {
+    .stages { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 440px) {
+    .stages { grid-template-columns: 1fr; }
+  }
+
+  /* ---- tables ---- */
+  .scroll-x { overflow-x: auto; border: 1px solid var(--rule); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .875rem; }
+  th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th {
+    font-family: var(--mono); font-size: .68rem; font-weight: 600; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--ink-3); background: var(--surface-2);
+    border-bottom: 1px solid var(--rule-strong); white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .row-key td { background: var(--accent-soft); }
+  .row-dead td { color: var(--ink-3); }
+
+  /* ---- checklist ---- */
+  ol.checks, ul.plain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .7rem; }
+  ol.checks li {
+    display: grid; grid-template-columns: 1.6rem 1fr; gap: .6rem;
+    padding-bottom: .7rem; border-bottom: 1px solid var(--rule); max-width: var(--measure);
+  }
+  ol.checks li:last-child { border-bottom: none; padding-bottom: 0; }
+  ol.checks .box {
+    width: 1.05rem; height: 1.05rem; border: 1.5px solid var(--rule-strong);
+    border-radius: 2px; margin-top: .28rem;
+  }
+  ol.checks .due {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+    color: var(--crit); text-transform: uppercase; display: block; margin-top: .15rem;
+  }
+  ol.checks .due.soft { color: var(--ink-3); }
+
+  /* ---- tool blocks ---- */
+  .tools { display: flex; flex-direction: column; gap: 1.5rem; }
+  .tool { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; align-items: start; }
+  .tool-n {
+    font-family: var(--serif); font-size: 2rem; line-height: 1; color: var(--rule-strong);
+    font-weight: 600; text-align: right; padding-top: .1rem;
+  }
+  .tool-body { display: flex; flex-direction: column; gap: .55rem; min-width: 0; }
+  pre {
+    margin: 0; font-family: var(--mono); font-size: .78rem; line-height: 1.65;
+    background: var(--surface-2); border-left: 2px solid var(--accent);
+    padding: .7rem .85rem; overflow-x: auto; color: var(--ink);
+  }
+  pre .c { color: var(--ink-3); }
+
+  /* ---- cadence ---- */
+  .cadence { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .phase { background: var(--surface); padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .5rem; }
+  .phase h3 { font-family: var(--sans); font-size: .82rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+  .phase ul { margin: 0; padding-left: 1.05rem; display: flex; flex-direction: column; gap: .3rem; font-size: .9rem; color: var(--ink-2); }
+  .phase ul strong { color: var(--ink); font-weight: 600; }
+
+  /* ---- signal ladder ---- */
+  .ladder { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .rung {
+    background: var(--surface); padding: .65rem .85rem;
+    display: grid; grid-template-columns: 2.4rem 13.5rem 1fr; gap: .85rem; align-items: baseline;
+    font-size: .875rem;
+  }
+  .rung .p {
+    font-family: var(--mono); font-size: .78rem; font-weight: 600;
+    font-variant-numeric: tabular-nums; color: var(--ink-3);
+  }
+  .rung.top .p { color: var(--signal); }
+  .rung .ev { font-family: var(--mono); font-size: .74rem; font-weight: 500; color: var(--ink); letter-spacing: .01em; }
+  .rung .wy { color: var(--ink-2); }
+  .rung.top { background: var(--signal-soft); }
+  @media (max-width: 700px) {
+    .rung { grid-template-columns: 2.2rem 1fr; }
+    .rung .wy { grid-column: 2; }
+  }
+
+  /* ---- callout ---- */
+  .callout {
+    border: 1px solid var(--rule); border-left: 3px solid var(--signal);
+    background: var(--surface); padding: 1rem 1.15rem;
+    display: flex; flex-direction: column; gap: .5rem;
+  }
+  .callout .eyebrow { color: var(--signal); }
+  .callout p { max-width: 64ch; font-size: .92rem; }
+
+  .live {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px; background: var(--rule); border: 1px solid var(--rule);
+  }
+  .live div { background: var(--surface); padding: .8rem .9rem; }
+  .live dt { font-family: var(--mono); font-size: .67rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .live dd {
+    margin: .3rem 0 0; font-family: var(--serif); font-size: 1.7rem; line-height: 1;
+    font-variant-numeric: tabular-nums; font-weight: 500;
+  }
+  .live small { display: block; margin-top: .3rem; font-size: .76rem; color: var(--ink-2); line-height: 1.35; }
+
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="eyebrow">Operating plan / Sales Development</span>
+      <div class="clock">
+        <span>Sign by <b>8 Sep</b></span>
+        <span>Build until <b>27 Sep</b></span>
+        <span>Day one <b>28 Sep 2026</b></span>
+      </div>
+    </div>
+    <h1>The Stage Two Playbook</h1>
+    <p class="lede">
+      Everything you get paid for runs through one definition: a meeting you booked,
+      that the prospect attended, that the AE moved to Develop. This is the plan for
+      each of those terms, the four tools that act on them, and what has to happen
+      before the 28th.
+    </p>
+  </header>
+
+  <section id="equation">
+    <div class="sec-head">
+      <span class="eyebrow">01 / The mechanics</span>
+      <h2>Your pay is a five-term product</h2>
+    </div>
+    <p>
+      Miss on any single term and the whole month collapses, which is why volume alone
+      does not carry the role. Most SDR tooling attacks the first two stages. The tools
+      below are weighted toward the last two, because those are the ones your commission
+      agreement actually names.
+    </p>
+
+    <div class="pipeline">
+      <div class="stages">
+        <div class="stage acted">
+          <span class="stage-n">STAGE 1</span>
+          <span class="stage-name">Accounts worked</span>
+          <span class="stage-note">Who is on a competitor ATS, and who changed this week.</span>
+          <span class="stage-tool">TOOL 1 · radar</span>
+        </div>
+        <div class="stage">
+          <span class="stage-n">STAGE 2</span>
+          <span class="stage-name">Reply</span>
+          <span class="stage-note">The message itself. No tool saves you here.</span>
+          <span class="stage-tool none">your craft</span>
+        </div>
+        <div class="stage acted">
+          <span class="stage-n">STAGE 3</span>
+          <span class="stage-name">Meeting booked</span>
+          <span class="stage-note">Calendar mechanics, and a confirmation that carries content.</span>
+          <span class="stage-tool">TOOL 2 · brief</span>
+        </div>
+        <div class="stage acted">
+          <span class="stage-n">STAGE 4</span>
+          <span class="stage-name">Prospect attends</span>
+          <span class="stage-note">Benchmark show rate is 75 to 80%. Below that, the confirmation flow is broken.</span>
+          <span class="stage-tool">TOOL 2 · brief</span>
+        </div>
+        <div class="stage acted">
+          <span class="stage-n">STAGE 5</span>
+          <span class="stage-name">AE moves to Develop</span>
+          <span class="stage-note">Decided on whatever context the AE has ten minutes before the call.</span>
+          <span class="stage-tool">TOOL 3 · handoff</span>
+        </div>
+      </div>
+      <div class="ledger-bar">
+        <span class="tag">TOOL 4 · ledger</span>
+        <span>Records every stage transition underneath all five, because attainment is computed from a Salesforce field you do not control.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="before">
+    <div class="sec-head">
+      <span class="eyebrow">02 / Before day one</span>
+      <h2>The window closes on the 27th</h2>
+    </div>
+
+    <div class="callout">
+      <span class="eyebrow">Why the date is hard</span>
+      <p>
+        CIIA Section 2.2 assigns to Greenhouse any invention "connected with any work
+        performed by me for Company." A tool built in October to do the job belongs to
+        them. Built before the 28th and listed on the Prior Inventions page, it stays
+        yours. Using it at work still grants a perpetual free licence under 2.3(b) and
+        triggers a written-notice duty, but ownership does not move.
+      </p>
+    </div>
+
+    <ol class="checks" style="margin-top:1.5rem">
+      <li><span class="box"></span><span>
+        <strong>Raise the New York non-compete carve-out before returning the signed offer.</strong>
+        Exhibit D already exempts non-exempt or hourly employees in Massachusetts, Oregon,
+        Rhode Island, Virginia and Nevada, and sub-$120k employees in DC, Oregon and
+        Washington. You are hourly, non-exempt and at roughly $80k. Ask for New York on
+        the same basis, in the same email as your acceptance.
+        <span class="due">Due 8 September</span>
+      </span></li>
+      <li><span class="box"></span><span>
+        <strong>Tick "See below" on Prior Inventions and list every project.</strong>
+        ats-radar, vivarium, cultivar, small-wonders, kinsite, granulab, ant-raid,
+        echo-app, arcane, workflo. One line each: name, one-line description, year started.
+        Ticking "No Prior Inventions" is a representation and warranty that none exist.
+        <span class="due">Before first day</span>
+      </span></li>
+      <li><span class="box"></span><span>
+        <strong>Get written consent for the outside client work.</strong>
+        512 Capital, Arcane, jess-fillyo, workflo, kinsite. CIIA Section 4 says
+        "without Company's written consent," so send People Ops the list and the hours
+        and get a yes on paper. None of it is HR tech, which is the answer to the
+        question they will actually ask.
+        <span class="due">Before first day</span>
+      </span></li>
+      <li><span class="box"></span><span>
+        <strong>Let the collector run every morning between now and then.</strong>
+        Scheduled at 06:30 as <code>ats-radar-daily</code>. Three weeks of change data
+        by day one, a full quarter by December. This is the only item on the list that
+        cannot be caught up later.
+        <span class="due soft">Running since 3 September</span>
+      </span></li>
+      <li><span class="box"></span><span>
+        <strong>Cancel the Hunter seat on Pete's team.</strong>
+        Renews 30 September at 3:55pm Eastern, two days after you start. Not yours to
+        keep running.
+        <span class="due soft">By 29 September</span>
+      </span></li>
+    </ol>
+  </section>
+
+  <section id="ask">
+    <div class="sec-head">
+      <span class="eyebrow">03 / Week one</span>
+      <h2>Six things to get from Amanda</h2>
+    </div>
+    <p class="note" style="margin-bottom:1rem">
+      The commission agreement leaves out most of the numbers that determine your pay.
+      Ask in the first one-to-one, and ask for the answers in writing.
+    </p>
+    <ul class="plain">
+      <li class="note"><strong>Your monthly quota.</strong> The plan says "as defined by the Employee's manager and Segment" and points at Salesforce. Get the number, and confirm it is set in advance rather than retroactively.</li>
+      <li class="note"><strong>The Ramping Period.</strong> Referenced in Sections II.D, III and V, defined nowhere. How long, what the ramped targets are, and what the "applicable target percentage" is during ramp.</li>
+      <li class="note"><strong>"Created opportunity" versus "Stage Two Opportunity."</strong> Quota runs on Stage Two. The 70 to 99% shortfall payment pays per "created opportunity," which is undefined and looser. This changes your math in exactly the months you care most.</li>
+      <li class="note"><strong>What happens when an AE sits on it.</strong> A meeting only counts once someone else changes a picklist. Ask what the recourse is.</li>
+      <li class="note"><strong>Sales Contract Bonus timing.</strong> It needs 70% attainment "in that same month," but a deal you source in October may close in February. Same month as the close, or as the sourcing?</li>
+      <li class="note"><strong>The 2027 plan.</strong> The current agreement terminates 31 December 2026 and does not auto-renew. Your $2,000 a month rides on whatever replaces it.</li>
+    </ul>
+  </section>
+
+  <section id="tools">
+    <div class="sec-head">
+      <span class="eyebrow">04 / The kit</span>
+      <h2>Four tools, already built</h2>
+    </div>
+    <p style="margin-bottom:1.5rem">
+      All of it reads public job boards and writes text. Nothing touches Greenhouse's
+      Salesforce, and nothing sends email on its own.
+    </p>
+
+    <div class="tools">
+      <div class="tool">
+        <div class="tool-n">1</div>
+        <div class="tool-body">
+          <h3>Displacement radar</h3>
+          <p class="note">
+            Every major ATS publishes its customers' job boards as a free unauthenticated
+            JSON feed. Poll them daily and you know who runs a competitor, how fast they
+            are hiring, and what changed overnight. Vendors sell the state and lag 90 to
+            180 days on mid-market records. You own the change, same day.
+          </p>
+          <pre><span class="c"># runs itself at 06:30; these are for when you want it now</span>
+npm run collect     <span class="c"># poll every target</span>
+npm run report      <span class="c"># ranked call list</span>
+npm run diff        <span class="c"># what changed since yesterday</span></pre>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div class="tool-n">2</div>
+        <div class="tool-body">
+          <h3>Show-rate pack</h3>
+          <p class="note">
+            Three touches plus a pre-call one-pager built from the prospect's own board.
+            An instant personal confirmation cuts no-shows by around 40%; a personalised
+            pre-call asset moves close rates on positive replies from 8.4% to 31.2%. On
+            twelve booked meetings against a quota of ten, the gap between a 70% and an
+            88% show rate is the gap between missing and clearing.
+          </p>
+          <pre>npm run brief -- --account ramp.com --contact "Jane Doe" \
+  --when "Tue Oct 14, 2:00pm ET" --ae "Sam Rivera"</pre>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div class="tool-n">3</div>
+        <div class="tool-body">
+          <h3>AE handoff brief</h3>
+          <p class="note">
+            One page: who, why now, what they actually said, their board from the outside,
+            and four questions drawn from what that board shows. The first-order effect is
+            more meetings advanced. The second-order effect is that AEs talk about which
+            SDR makes their life easier, and that is how territory gets allocated.
+          </p>
+          <pre>npm run handoff -- --account ramp.com --contact "Jane Doe" \
+  --trigger "Closed their Head of Talent Ops req 3 weeks ago" \
+  --notes "On Ashby. Reporting across sources is the pain."</pre>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div class="tool-n">4</div>
+        <div class="tool-body">
+          <h3>Attribution ledger</h3>
+          <p class="note">
+            Append-only log with the commission agreement's arithmetic built in: the 70%
+            floor, the 150 / 175 / 200% accelerator bands, and the Sales Contract Bonus
+            caps. Reconcile it against Salesforce before every payroll date.
+          </p>
+          <pre>npm run ledger -- add --account ramp.com --contact "Jane Doe" --when 2026-10-14
+npm run ledger -- advanced k3f9x2 --ae "Sam Rivera"
+npm run ledger -- month 2026-10   <span class="c"># attainment, show rate, what you are owed</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signals">
+    <div class="sec-head">
+      <span class="eyebrow">05 / What to act on</span>
+      <h2>The signal ladder</h2>
+    </div>
+    <p style="margin-bottom:1.25rem">
+      The radar emits eight change events, priority-ranked. The top one is the reason the
+      daily collection matters: a senior talent req closing means they hired, senior hires
+      start four to eight weeks out, and the report hands you a dated reminder that lands
+      in week two of the new person's tenure while they are still writing the list of
+      things that are broken.
+    </p>
+    <div class="ladder">
+      <div class="rung top"><span class="p">10</span><span class="ev">TALENT_LEADER_HIRED</span><span class="wy">A senior talent req closed. Emits a call-on date 35 days out.</span></div>
+      <div class="rung"><span class="p">9</span><span class="ev">ATS_MIGRATION</span><span class="wy">They moved platforms. Just churned off a competitor, or mid-evaluation.</span></div>
+      <div class="rung"><span class="p">8</span><span class="ev">TALENT_LEADER_POSTED</span><span class="wy">The buyer is being recruited right now.</span></div>
+      <div class="rung"><span class="p">7</span><span class="ev">REPOST</span><span class="wy">Closed a req and posted it again. They cannot fill it.</span></div>
+      <div class="rung"><span class="p">6</span><span class="ev">VELOCITY_SPIKE</span><span class="wy">Hiring accelerating past what their process handles.</span></div>
+      <div class="rung"><span class="p">5</span><span class="ev">TA_TEAM_GROWING</span><span class="wy">Two or more new recruiter reqs.</span></div>
+      <div class="rung"><span class="p">4</span><span class="ev">BOARD_APPEARED</span><span class="wy">Started hiring properly where there was nothing.</span></div>
+      <div class="rung"><span class="p">3</span><span class="ev">BOARD_EMPTIED</span><span class="wy">Freeze or cleanup. Worth knowing before you call.</span></div>
+    </div>
+
+    <h3 style="margin-top:2rem;margin-bottom:.85rem">What it found on the first run</h3>
+    <dl class="live">
+      <div><dt>Resolved</dt><dd>53<span style="color:var(--ink-3);font-size:1rem">/65</span></dd><small>Detected in 16 seconds, zero errors</small></div>
+      <div><dt>Open reqs tracked</dt><dd>6,552</dd><small>Across every target board</small></div>
+      <div><dt>Displacement targets</dt><dd>21</dd><small>Running a competitor ATS</small></div>
+      <div><dt>Hiring a talent lead</dt><dd>2</dd><small>Ramp and Notion, both on Ashby</small></div>
+    </dl>
+    <p class="note" style="margin-top:1rem">
+      Ramp: 143 reqs, 53 stuck past 60 days, hiring a Senior Manager, Head of Talent
+      Operations. Notion: 133 reqs, 38 stuck, hiring a Head of Technical Recruiting.
+      Both are on Ashby. Swap the seed list for your real territory on day one and
+      re-run with <code>npm run collect:force</code>.
+    </p>
+  </section>
+
+  <section id="math">
+    <div class="sec-head">
+      <span class="eyebrow">06 / The numbers</span>
+      <h2>What each meeting is worth</h2>
+    </div>
+    <p style="margin-bottom:1.1rem">
+      Assuming a quota of ten, which is a placeholder until Amanda gives you the real
+      one. The shape is what matters: nothing below seven, then linear, then three
+      accelerator bands above quota.
+    </p>
+    <div class="scroll-x">
+      <table>
+        <thead>
+          <tr>
+            <th>Advanced opportunities</th>
+            <th class="num">Attainment</th>
+            <th class="num">Variable pay</th>
+            <th>Which clause</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-dead"><td>6</td><td class="num">60%</td><td class="num">$0</td><td>Below the 70% floor</td></tr>
+          <tr class="row-key"><td>7</td><td class="num">70%</td><td class="num">$1,400</td><td>Section III, discretionary</td></tr>
+          <tr><td>9</td><td class="num">90%</td><td class="num">$1,800</td><td>Section III, discretionary</td></tr>
+          <tr class="row-key"><td>10</td><td class="num">100%</td><td class="num">$2,000</td><td>Monthly Role Bonus</td></tr>
+          <tr><td>12</td><td class="num">120%</td><td class="num">$2,600</td><td>+ 150% band</td></tr>
+          <tr><td>15</td><td class="num">150%</td><td class="num">$3,650</td><td>+ 150% and 175% bands</td></tr>
+          <tr><td>16</td><td class="num">160%</td><td class="num">$4,050</td><td>+ 200% band opens</td></tr>
+          <tr><td>20</td><td class="num">200%</td><td class="num">$5,650</td><td>All three bands</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:.9rem">
+      One meeting is the difference between $0 and $1,400 at the bottom of that table.
+      That single row is the entire argument for tool 2. Median Greenhouse contract value
+      runs about $26,600, so the Sales Contract Bonus at 1% adds roughly $270 per closed
+      deal; the $5,000 per-deal cap would need a half-million-dollar contract and is not
+      reachable at your tier. The money is in meeting volume and the accelerators.
+    </p>
+  </section>
+
+  <section id="cadence">
+    <div class="sec-head">
+      <span class="eyebrow">07 / Operating rhythm</span>
+      <h2>First ninety days</h2>
+    </div>
+    <div class="cadence">
+      <div class="phase">
+        <h3>Every morning, ten minutes</h3>
+        <ul>
+          <li>Read the overnight diff. <strong>Work the priority 10s and 9s first</strong>, they are dated and they expire.</li>
+          <li>Check the ledger for meetings still marked booked from yesterday. Resolve them.</li>
+          <li>Then close the laptop and dial.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <h3>Week one</h3>
+        <ul>
+          <li>Get the six answers from Amanda. Put the real quota into <code>config/comp.json</code>.</li>
+          <li>Replace the seed target list with your actual territory.</li>
+          <li>Ask whether custom tooling is welcome. Most sales orgs love it; a few have policies. Frame it as built before you started, reads public data only.</li>
+          <li>Learn the product well enough to talk to a technical talent-ops buyer. You can read Greenhouse's own API docs, which most SDRs never do.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <h3>First thirty days</h3>
+        <ul>
+          <li>Send the handoff brief for <strong>every single meeting</strong>, without exception. This is how you become the SDR the AEs ask for.</li>
+          <li>Run the full three-touch confirmation on every booking. Track your show rate weekly.</li>
+          <li>Log every opportunity the same day. The ledger is worthless if it is retroactive.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <h3>Days thirty to ninety</h3>
+        <ul>
+          <li>You now have a quarter of change data nobody else on the team has. Start working <code>--days 30</code> diffs for reposts.</li>
+          <li>Tune the scoring in <code>report.mjs</code> against what actually converted.</li>
+          <li>Reconcile the ledger against Salesforce before every payroll date.</li>
+          <li>Push for the Senior SDR tier. It moves the Monthly Role Bonus to $2,200 and doubles the contract bonus rate.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="guardrails">
+    <div class="sec-head">
+      <span class="eyebrow">08 / Guardrails</span>
+      <h2>Two rules that do not bend</h2>
+    </div>
+    <div class="stack">
+      <div class="callout">
+        <span class="eyebrow">Data flows one direction</span>
+        <p>
+          Public web in, ranked list out. Nothing from Greenhouse's Salesforce, customer
+          records or internal data ever enters this repo. CIIA 1.1 says company information
+          "cannot be downloaded or retained for my personal use," and CIIA 9 lets them
+          inspect a personal machine used for company data. Keep the tools reading public
+          APIs and that exposure never exists. Never use a personal device for Greenhouse work.
+        </p>
+      </div>
+      <div class="callout">
+        <span class="eyebrow">The real risk is building instead of selling</span>
+        <p>
+          You have fourteen active projects. The failure mode for a builder in a sales job
+          is that tooling feels productive right up until the month closes short. These
+          four tools are maybe a fifth of what makes an SDR successful. The rest is call
+          volume, talk tracks, the same six objections until they are reflex, and being
+          the person AEs want to work with. The tools are finished. Go make calls.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="note">
+      Built 3 September 2026, twenty-five days before the start date, and committed with
+      that date so the git history stands as the record. Repo at <code>~/ats-radar</code>;
+      the README carries the API gotchas, the data traps, and what is deliberately unfinished.
+    </p>
+  </footer>
+
+</div>
