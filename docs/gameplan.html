@@ -413,7 +413,7 @@
   <section id="tools">
     <div class="sec-head">
       <span class="eyebrow">04 / The kit</span>
-      <h2>Four tools, already built</h2>
+      <h2>Six tools, already built</h2>
     </div>
     <p style="margin-bottom:1.5rem">
       All of it reads public job boards and writes text. Nothing touches Greenhouse's
@@ -441,6 +441,22 @@ npm run diff        <span class="c"># what changed since yesterday</span></pre>
       <div class="tool">
         <div class="tool-n">2</div>
         <div class="tool-body">
+          <h3>Territory ingest</h3>
+          <p class="note">
+            Amanda will hand you company names, not domains, and the collector needs to
+            find board tokens. This reads whatever shape the CRM exports, strips the legal
+            suffixes a board token never carries, resolves each company to its ATS, and
+            routes the failures to a fix-by-hand file. A website column is optional: board
+            tokens come from the company name at least as often as from the domain.
+          </p>
+          <pre>npm run ingest -- --file territory.csv --dry-run   <span class="c"># look first</span>
+npm run ingest -- --file territory.csv --replace</pre>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div class="tool-n">3</div>
+        <div class="tool-body">
           <h3>Show-rate pack</h3>
           <p class="note">
             Three touches plus a pre-call one-pager built from the prospect's own board.
@@ -455,14 +471,17 @@ npm run diff        <span class="c"># what changed since yesterday</span></pre>
       </div>
 
       <div class="tool">
-        <div class="tool-n">3</div>
+        <div class="tool-n">4</div>
         <div class="tool-body">
           <h3>AE handoff brief</h3>
           <p class="note">
             One page: who, why now, what they actually said, their board from the outside,
-            and four questions drawn from what that board shows. The first-order effect is
-            more meetings advanced. The second-order effect is that AEs talk about which
-            SDR makes their life easier, and that is how territory gets allocated.
+            and four questions drawn from what that board shows. The battlecard for
+            whichever ATS they run is attached automatically, including where that
+            competitor genuinely beats Greenhouse, because a prospect evaluating Ashby has
+            already read Ashby's website. The second-order effect is the bigger one: AEs
+            talk about which SDR makes their life easier, and that is how territory gets
+            allocated.
           </p>
           <pre>npm run handoff -- --account ramp.com --contact "Jane Doe" \
   --trigger "Closed their Head of Talent Ops req 3 weeks ago" \
@@ -471,7 +490,7 @@ npm run diff        <span class="c"># what changed since yesterday</span></pre>
       </div>
 
       <div class="tool">
-        <div class="tool-n">4</div>
+        <div class="tool-n">5</div>
         <div class="tool-body">
           <h3>Attribution ledger</h3>
           <p class="note">
@@ -482,6 +501,22 @@ npm run diff        <span class="c"># what changed since yesterday</span></pre>
           <pre>npm run ledger -- add --account ramp.com --contact "Jane Doe" --when 2026-10-14
 npm run ledger -- advanced k3f9x2 --ae "Sam Rivera"
 npm run ledger -- month 2026-10   <span class="c"># attainment, show rate, what you are owed</span></pre>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div class="tool-n">6</div>
+        <div class="tool-body">
+          <h3>Loop closing</h3>
+          <p class="note">
+            The one nobody else on the team can run, because nobody else has been
+            collecting since September. Joins your ledger against the snapshot history to
+            find which signal actually produced advanced opportunities, whether 35 days is
+            the right call-on delay, and where the funnel really leaks. It refuses to print
+            a percentage below five samples, so it will tell you nothing useful until about
+            December. That is the honest answer, not a limitation.
+          </p>
+          <pre>npm run learn</pre>
         </div>
       </div>
     </div>
@@ -512,16 +547,17 @@ npm run ledger -- month 2026-10   <span class="c"># attainment, show rate, what 
 
     <h3 style="margin-top:2rem;margin-bottom:.85rem">What it found on the first run</h3>
     <dl class="live">
-      <div><dt>Resolved</dt><dd>53<span style="color:var(--ink-3);font-size:1rem">/65</span></dd><small>Detected in 16 seconds, zero errors</small></div>
-      <div><dt>Open reqs tracked</dt><dd>6,552</dd><small>Across every target board</small></div>
-      <div><dt>Displacement targets</dt><dd>21</dd><small>Running a competitor ATS</small></div>
+      <div><dt>Resolved</dt><dd>62<span style="color:var(--ink-3);font-size:1rem">/65</span></dd><small>Detected in 17 seconds, zero errors</small></div>
+      <div><dt>Open reqs tracked</dt><dd>6,568</dd><small>Across every target board</small></div>
+      <div><dt>Displacement targets</dt><dd>30</dd><small>Running a competitor ATS</small></div>
       <div><dt>Hiring a talent lead</dt><dd>2</dd><small>Ramp and Notion, both on Ashby</small></div>
     </dl>
     <p class="note" style="margin-top:1rem">
       Ramp: 143 reqs, 53 stuck past 60 days, hiring a Senior Manager, Head of Talent
       Operations. Notion: 133 reqs, 38 stuck, hiring a Head of Technical Recruiting.
-      Both are on Ashby. Swap the seed list for your real territory on day one and
-      re-run with <code>npm run collect:force</code>.
+      Both are on Ashby. Swap the seed list for your real territory on day one with
+      <code>npm run ingest</code>. Six ATS platforms are detected: Greenhouse, Lever,
+      Ashby, Workable, SmartRecruiters and Recruitee.
     </p>
   </section>
 
@@ -584,7 +620,8 @@ npm run ledger -- month 2026-10   <span class="c"># attainment, show rate, what 
         <h3>Week one</h3>
         <ul>
           <li>Get the six answers from Amanda. Put the real quota into <code>config/comp.json</code>.</li>
-          <li>Replace the seed target list with your actual territory.</li>
+          <li>Run <code>npm run ingest</code> on the territory export. Check
+            <code>data/unresolved.csv</code> and fix those by hand.</li>
           <li>Ask whether custom tooling is welcome. Most sales orgs love it; a few have policies. Frame it as built before you started, reads public data only.</li>
           <li>Learn the product well enough to talk to a technical talent-ops buyer. You can read Greenhouse's own API docs, which most SDRs never do.</li>
         </ul>
