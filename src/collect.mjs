@@ -24,14 +24,33 @@ const opt = (n, d) => {
 const localDate = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 
+/**
+ * `domain,name` or, to pin a board the detector cannot guess, `domain,name,ats,token`.
+ *
+ * Front is the case that forced this. Their Ashby board is `frontcareers`, which is
+ * derivable from neither `front.com` nor "Front", so no amount of candidate generation
+ * finds it and the account sits unresolved forever. data/unresolved.csv has always told
+ * you to read the apply link off the careers page and add the token by hand; this is
+ * the by-hand.
+ *
+ * The ATS and token are read off the END of the row, and only when the second-to-last
+ * field names a real adapter. Company names contain commas ("Hugging Face, Inc.") and
+ * splitting from the front would eat them.
+ */
 async function loadTargets() {
-  const raw = await readFile(TARGETS, 'utf8');
-  return raw.split(/\r?\n/)
+  const known = new Set(Object.keys(adapterById));
+  return (await readFile(TARGETS, 'utf8')).split(/\r?\n/)
     .map(l => l.trim())
     .filter(l => l && !l.startsWith('#') && !/^domain\s*,/i.test(l))
     .map(line => {
-      const [domain, ...rest] = line.split(',');
-      return { domain: domain.trim().toLowerCase(), name: rest.join(',').trim() };
+      const parts = line.split(',').map(s => s.trim());
+      const domain = (parts.shift() ?? '').toLowerCase();
+      let ats = null, token = null;
+      if (parts.length >= 3 && known.has(parts[parts.length - 2].toLowerCase())) {
+        token = parts.pop();
+        ats = parts.pop().toLowerCase();
+      }
+      return { domain, name: parts.join(', '), ats, token };
     })
     .filter(t => t.domain);
 }
@@ -59,8 +78,23 @@ async function main() {
   const migrations = [];
   const errors = [];
 
-  const results = await pool(list, CONCURRENCY, async ({ domain, name }) => {
+  const results = await pool(list, CONCURRENCY, async ({ domain, name, ats: pinAts, token: pinToken }) => {
     const known = registry.accounts[domain];
+
+    // A pin is a hand-verified fact, so it outranks detection and never expires. It is
+    // also honoured when the board comes back empty: an empty board is a real state for
+    // a real customer, and re-detecting would just lose the token again.
+    if (pinAts && pinToken) {
+      const adapter = adapterById[pinAts];
+      const res = await adapter.fetchBoard(pinToken);
+      const now = new Date().toISOString();
+      registry.accounts[domain] = {
+        ...(known ?? {}), name: name || known?.name || '', ats: pinAts, token: pinToken,
+        detectedAt: known?.detectedAt ?? now, lastVerified: now, unresolvedSince: null, pinned: true,
+      };
+      return { domain, name, ats: pinAts, token: pinToken, jobs: res.jobs, total: res.total, pinned: true };
+    }
+
     const stale = !known || forceDetect || daysSince(known.lastVerified) >= REVERIFY_DAYS;
 
     // Fast path: token already known and recently verified, so one request.
@@ -103,6 +137,7 @@ async function main() {
   });
 
   const accounts = {};
+  const unresolvedDomains = [];
   let totalJobs = 0;
   const byAts = {};
 
@@ -114,6 +149,7 @@ async function main() {
     const v = r.value;
     if (!v.ats) {
       byAts.unresolved = (byAts.unresolved ?? 0) + 1;
+      unresolvedDomains.push(v.domain);
       return;
     }
     byAts[v.ats] = (byAts[v.ats] ?? 0) + 1;
@@ -121,6 +157,10 @@ async function main() {
     accounts[v.domain] = {
       name: v.name || registry.accounts[v.domain]?.name || '',
       ats: v.ats, token: v.token, jobCount: v.total, jobs: v.jobs,
+      // The diff needs to tell "they started hiring" from "we finally found their
+      // board". Without this a hand-pinned account reads as BOARD_APPEARED the next
+      // morning, which is a call made on a change that never happened.
+      ...(v.pinned ? { pinned: true } : {}),
     };
   });
 
@@ -139,6 +179,10 @@ async function main() {
     },
     migrations,
     errors,
+    // Which domains we looked at and found nothing for. Absent from `accounts` used to
+    // mean three different things at once: unresolved, failed to fetch, or not a target
+    // yet. The diff cannot tell a real BOARD_APPEARED from the other two without this.
+    unresolvedDomains,
     accounts,
   };
 

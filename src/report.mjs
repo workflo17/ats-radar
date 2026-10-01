@@ -7,19 +7,41 @@
  */
 import { writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, latestSnapshot, accountFacts, STALE_DAYS, EVERGREEN_DAYS } from './lib/facts.mjs';
+import { ROOT, latestSnapshot, accountFacts, STALE_DAYS, EVERGREEN_DAYS, isMain } from './lib/facts.mjs';
 
 const REPORTS = path.join(ROOT, 'data', 'reports');
-const HOME_ATS = 'greenhouse';
+export const HOME_ATS = 'greenhouse';
 
-function score(f) {
-  let s = 0;
-  s += Math.min(f.buyers.length, 3) * 5;                      // a talent-leader req is the strongest single tell
-  s += Math.min(f.talent.length - f.buyers.length, 4) * 2;    // a growing TA team outgrows its tooling
-  if (f.jobCount >= 25) s += 2;
-  if (f.jobCount >= 100) s += 2;
-  if (f.staleRatio > 0.4) s += 3;                             // they cannot fill what they post
-  return s;
+/**
+ * The score, itemised. Exported so the dashboard can show its working rather than
+ * printing a number nobody can argue with. `score()` is the sum of exactly this.
+ */
+export function scoreBreakdown(f) {
+  const otherTA = Math.min(f.talent.length - f.buyers.length, 4);
+  return [
+    { points: Math.min(f.buyers.length, 3) * 5, of: 15,
+      why: f.buyers.length
+        ? `${f.buyers.length} open req${f.buyers.length > 1 ? 's' : ''} for a talent leader, counted up to 3, 5 points each`
+        : 'no open talent-leader req',
+      note: 'The strongest single tell. A new head of talent audits the stack in their first 90 days.' },
+    { points: otherTA > 0 ? otherTA * 2 : 0, of: 8,
+      why: otherTA > 0
+        ? `${otherTA} other recruiting req${otherTA > 1 ? 's' : ''} open, counted up to 4, 2 points each`
+        : 'recruiting team not visibly growing',
+      note: 'A TA function adding people is a function outgrowing its tooling.' },
+    { points: f.jobCount >= 25 ? 2 : 0, of: 2, why: `${f.jobCount} open reqs${f.jobCount >= 25 ? ', at or above 25' : ', under 25'}`,
+      note: 'Below about 25 reqs a spreadsheet still works and the pain is not yet real.' },
+    { points: f.jobCount >= 100 ? 2 : 0, of: 2, why: f.jobCount >= 100 ? 'board is past 100 reqs' : 'board is under 100 reqs',
+      note: 'Past 100 the coordination cost is what breaks, not the applicant tracking.' },
+    { points: f.staleRatio > 0.4 ? 3 : 0, of: 3,
+      why: `${Math.round(f.staleRatio * 100)}% of the board is open past ${STALE_DAYS} days${f.staleRatio > 0.4 ? ', above the 40% line' : ', under the 40% line'}`,
+      note: 'They cannot fill what they post. That is a sourcing and process conversation.' },
+  ];
+}
+
+/** Exported so the dashboard ranks accounts the same way the call list does. */
+export function score(f) {
+  return scoreBreakdown(f).reduce((s, r) => s + r.points, 0);
 }
 
 function line(domain, f, s) {
@@ -36,11 +58,16 @@ function line(domain, f, s) {
   ].join('  ') + (tags.length ? '  | ' + tags.join(' | ') : '');
 }
 
-async function main() {
-  const snap = await latestSnapshot();
-  const rows = Object.entries(snap.accounts)
+/** Every account in the snapshot, scored and ranked. One definition, two consumers. */
+export function rankAccounts(snap) {
+  return Object.entries(snap.accounts)
     .map(([domain, a]) => { const f = accountFacts(a); return { domain, f, s: score(f) }; })
     .sort((x, y) => y.s - x.s || y.f.jobCount - x.f.jobCount);
+}
+
+async function main() {
+  const snap = await latestSnapshot();
+  const rows = rankAccounts(snap);
 
   const targets = rows.filter(r => r.f.ats !== HOME_ATS);
   const customers = rows.filter(r => r.f.ats === HOME_ATS);
@@ -89,4 +116,7 @@ async function main() {
   console.log(`\nreport -> data/reports/${snap.date}.md`);
 }
 
-main().catch(e => { console.error(e.message); process.exit(1); });
+// Importable by dashboard.mjs, which reuses the scoring. Only run the CLI directly.
+if (isMain(import.meta.url)) {
+  main().catch(e => { console.error(e.message); process.exit(1); });
+}

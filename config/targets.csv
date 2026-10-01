@@ -1,5 +1,12 @@
 # ats-radar target list
 # domain,name
+# domain,name,ats,token    <- pins a board the detector cannot guess
+#
+# The detector builds candidate tokens from the domain and the company name. When a
+# company uses neither (front.com serves its Ashby board as "frontcareers"), open the
+# careers page, read the apply link, and pin it with the last two columns. A pin is
+# never re-detected and never expires. Valid ats values: greenhouse, lever, ashby,
+# workable, smartrecruiters, recruitee.
 #
 # SEED LIST ONLY. Replace with your actual Greenhouse territory on day one.
 # Anything here that resolves to a non-Greenhouse ATS is a displacement target.
@@ -36,7 +43,7 @@ contentful.com,Contentful
 sanity.io,Sanity
 algolia.com,Algolia
 twilio.com,Twilio
-front.com,Front
+front.com,Front,ashby,frontcareers
 intercom.com,Intercom
 zapier.com,Zapier
 calendly.com,Calendly

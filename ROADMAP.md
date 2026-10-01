@@ -28,6 +28,11 @@ After that, operate and tune.
 | **AE handoff** | `handoff` | One-page brief so the AE has context to move it to Develop, with the competitor battlecard attached automatically |
 | **Ledger** | `ledger` | Append-only opportunity log with the commission agreement's arithmetic |
 | **Loop closing** | `learn` | Joins the ledger against snapshot history to find which signals actually convert |
+| **Call-on queue** | `queue` | Files every dated signal and resurfaces it when due, overdue, or inside two weeks |
+| **Health** | `health` | Snapshot age, fetch errors, placeholder config, unresolved meetings. Silent when clean |
+| **Menu** | `START-HERE.cmd` | Seven options over all of the above, no command line |
+| **Dashboard** | `dashboard` | The morning on one page in Greenhouse's palette; the stuck-hiring comb is the argument |
+| **Recommendation** | `approach.mjs` | A to D grade on pain and timing, why them, why now, the angle, the opener, a named peer, and whether it is even new business |
 
 Six ATS adapters: Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee.
 Battlecards for all of those plus Workday, iCIMS and a no-ATS-detected case.

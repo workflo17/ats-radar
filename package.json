@@ -22,6 +22,9 @@
     "fixture": "node test/make-fixture.mjs",
     "test": "node test/comp-math.mjs",
     "ingest": "node src/ingest.mjs",
-    "learn": "node src/learn.mjs"
+    "learn": "node src/learn.mjs",
+    "queue": "node src/queue.mjs",
+    "health": "node src/health.mjs",
+    "dashboard": "node src/dashboard.mjs"
   }
 }

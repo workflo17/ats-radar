@@ -11,6 +11,8 @@ node "src\collect.mjs" >> "logs\daily.log" 2>&1
 node "src\report.mjs"  >> "logs\daily.log" 2>&1
 REM diff needs two snapshots; it exits non-zero and says so on day one.
 node "src\diff.mjs"    >> "logs\daily.log" 2>&1
+REM The page read at 8am. Built last so it has the day's report, diff and queue in it.
+node "src\dashboard.mjs" >> "logs\daily.log" 2>&1
 
 REM Back the time series up offsite. Snapshots are the whole asset: the change
 REM signals only exist because yesterday's file is still around. This also keeps

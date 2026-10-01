@@ -3,6 +3,7 @@
   "role": "SDR",
   "monthlyRoleBonus": 2000,
   "quota": 10,
+  "quotaConfirmed": false,
   "quotaByMonth": {
     "2026-10": 10,
     "2026-11": 10,

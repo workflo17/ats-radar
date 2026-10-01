@@ -1,8 +1,11 @@
 # ats-radar
 
-[github.com/workflo17/ats-radar](https://github.com/workflo17/ats-radar) (private). Roadmap and the ownership deadline that orders it: [ROADMAP.md](ROADMAP.md).
+[github.com/workflo17/ats-radar](https://github.com/workflo17/ats-radar) (private). Roadmap and the
+ownership deadline that orders it: [ROADMAP.md](ROADMAP.md). **Step-by-step instructions for
+using these day to day: [RUNBOOK.md](RUNBOOK.md)**, or double-click `START-HERE.cmd` for a menu.
+This file is the reference for how they work; the runbook is the one to read first.
 
-Four tools for the Greenhouse SDR job, built on one idea: every major ATS publishes
+Nine commands for the Greenhouse SDR job, built on one idea: every major ATS publishes
 its customers' job boards as a free, unauthenticated JSON API, so you can see which
 ATS a company runs and watch their hiring change day by day.
 
@@ -13,6 +16,10 @@ ATS a company runs and watch their hiring change day by day.
 | Show-rate pack: the three touches that get a prospect to actually attend | `npm run brief` |
 | AE handoff brief: the page that gets a meeting moved to Develop | `npm run handoff` |
 | Attribution ledger: your own record, with the comp plan's math in it | `npm run ledger` |
+| Call-on queue: the dated follow-ups the radar generates, resurfaced when due | `npm run queue` |
+| Health: is the collector actually running, and what is still a placeholder | `npm run health` |
+| Dashboard: the whole morning on one page, in Greenhouse's own palette | `npm run dashboard` |
+| Recommendation: grade, why them, why now, what to lead with | `src/approach.mjs`, used by the dashboard |
 | Loop closing: which signals actually convert | `npm run learn` |
 
 They map to the four terms your pay actually runs through. A Stage Two Opportunity
@@ -46,6 +53,29 @@ npm run diff -- --days 30    # what changed in a month (best for reposts)
 scratch. Replace `config/targets.csv` with your real territory on day one; the seed
 list is 65 recognizable tech companies, there only to prove the pipeline.
 
+### Pinning a board the detector cannot find
+
+`config/targets.csv` takes `domain,name` or `domain,name,ats,token`. The second form
+skips detection and never expires.
+
+```
+front.com,Front,ashby,frontcareers
+```
+
+Front is the case that justified it: `frontcareers` is derivable from neither `front.com`
+nor "Front", so candidate generation can never reach it and the account sits unresolved
+forever. Pinning it moved the seed list from 54 resolved to 55, and their board has 18
+open reqs on a competitor ATS.
+
+The ATS and token are read off the end of the row, and only when the second-to-last field
+names a real adapter, because company names contain commas and splitting from the front
+eats them.
+
+A pin also stays silent in the next diff. Taking manual control changes what you believe,
+not what the company runs, so a newly pinned account emits neither `BOARD_APPEARED` nor
+`ATS_MIGRATION`. Front had been misfiled under Workable on an empty board; without that
+rule, correcting it read back as "they just churned off a competitor" at priority 9.
+
 ### How detection works
 
 Given `figma.com`, `src/detect.mjs` generates candidate board tokens (`figma`, plus
@@ -59,15 +89,26 @@ time, so a hit usually costs one round of probes rather than a full cross produc
 |---|---|---|
 | Greenhouse | 404 | yes |
 | Ashby | 404 | yes |
-| Workable | 404 | yes |
 | Recruitee | 404 (subdomain does not resolve) | yes |
 | Lever | 200 with `[]` | **no**, require count > 0 |
 | SmartRecruiters | 200 with `totalFound: 0` | **no**, require count > 0 |
+| Workable | 404 | **no**, and a nonsense token is not the test that matters |
 
 Verified against `zzznotacompany9` on 2026-09-03. Treating a bare 200 as confirmation
 would file a large share of the target list under whichever of those two got probed
 first. On the first real run this caught `retool.com`, which SmartRecruiters answered
 200-with-zero-results for; it is recorded unresolved, not as a customer.
+
+**Workable needed the same rule for a different reason.** It does 404 a nonsense
+token, which is why it sat in the safe column until 2026-09-16. The case the nonsense
+probe never reaches is a *real brand* holding a dormant Workable account:
+`accounts/scale` answers 200 with `{"name":"Scale","jobs":[]}` while Scale AI's 221
+reqs sit on Greenhouse. Workable is probed before SmartRecruiters, so on 2026-09-16
+four accounts flipped to Workable on empty boards, Scale AI among them, and the diff
+reported them as `ATS_MIGRATION` at priority 9. An empty board now counts as
+ambiguous, the same rule Lever and SmartRecruiters already had. The lesson: the
+question is not "does a fake token 404", it is "can this API say yes about a company
+that is not a customer".
 
 Resolutions cache in `data/registry.json` and re-verify every 7 days, because an ATS
 change is itself one of the strongest signals available.
@@ -90,7 +131,15 @@ From two or more snapshots (`diff`), ranked by priority:
 | 4 | `BOARD_APPEARED` | Started hiring properly where there was nothing. |
 | 3 | `BOARD_EMPTIED` | Freeze or cleanup. Worth knowing before you call. |
 
-### Two data traps this handles
+### Data traps this handles
+
+**Requisition ids are not ids.** Greenhouse hands Stripe the literal string
+`See Opening ID` for all 651 of their reqs, and Brex reuses one id across every location
+a role is open in: 261 reqs, 80 distinct ids. Keyed naively, one survivor per id then
+matches every new posting that shares it, which reported 114 Stripe reposts in the
+2026-09-16 diff and buried the two events worth calling under 190 rows. An identifier now
+counts only when it names exactly one req on each side of the comparison, with an exact
+title match under the same rule as the fallback. Same diff, 193 events down to 58.
 
 **Posting age.** Greenhouse returns both `updated_at` and `first_published`. The
 adapter uses `first_published`, because `updated_at` resets on any edit and would
@@ -110,9 +159,13 @@ The field is exposed as `remoteEligibleShare` and stays out of prospect-facing c
 ## Tool 2: show-rate pack
 
 ```bash
-npm run brief -- --account ramp.com --contact "Jane Doe" --role "Head of Talent" \
-                 --when "Tue Oct 14, 2:00pm ET" --ae "Sam Rivera"
+npm run brief -- --account Ramp --contact "Jane Doe" --role "Head of Talent" \
+                 --when "Tue Oct 14, 2:00pm ET" --ae "Sam Rivera" --copy
 ```
+
+`--account` takes a name or a domain. `--copy` puts the first message on the clipboard,
+because the ten-minute window is the point and it closes while you scroll a markdown file
+looking for the right fenced block.
 
 Your quota only counts meetings the prospect attends. The benchmark show rate is 75
 to 80%, an instant personal confirmation cuts no-shows by around 40%, and a
@@ -213,10 +266,107 @@ It refuses to show a percentage below n=5, because a rate computed on four rows 
 noise wearing a suit. With an empty ledger it says so and explains what it will report
 once there is data, rather than printing an empty table.
 
+## Dashboard
+
+```bash
+npm run dashboard      # -> data/dashboard.html, opened by menu option 1
+```
+
+One page, rebuilt by the 06:30 job, in four sections: **Now** (health, then the calls
+worth making), **Soon** (the call-on queue), **Where to dig** (the territory, filterable
+and sortable), and **How this works** (the pipeline, explained with the morning's own
+numbers).
+
+The organising rule is that a claim is always visible, the evidence behind it is one
+click away, and the rule that produced it is findable. Every signal card opens to its
+trail: which req closed, when it was last seen, which rule its title matched, why the
+call-on date is 35 days out, and the two snapshot files it was read from. Every account
+opens to its scorecard: the five components, what each scored, and why that component
+exists at all. The last section explains collect, detect, snapshot, compare and rank
+using today's real figures, plus an honest list of what the system cannot see.
+
+The palette and type are Greenhouse's own, read off their live design tokens on
+2026-09-16: evergreen `#15372c` for ink, green-700 `#008561` for accounts already on
+Greenhouse, blue-500 `#3574d6` for everyone on a rival ATS, marigold for warnings. Their
+faces are Untitled Sans and Untitled Serif, which are licensed, so this uses Instrument
+Sans and Instrument Serif, the same pairing as the LinkedIn kit.
+
+The chart worth explaining is **where hiring is stuck**. One tick per open role, placed
+by how many days it has been open, with the 60-day line marked and anything past a year
+pushed to the right as an evergreen pipeline post. A dense cluster left of the line is a
+company hiring normally. A long tail to the right is a company that cannot fill what it
+posts, which is the whole pitch, drawn. It is the one chart here that is not a summary:
+it plots all 145 of Ramp's reqs individually.
+
+Below 760px the comb is hidden rather than squeezed, because 145 ticks in 98px is a
+smear, not a chart. The generated file is git-ignored: it is derived from committed data
+and regenerating it takes a second.
+
+## The recommendation
+
+Every account on the dashboard carries a grade and a plan. `src/approach.mjs` builds it,
+and three research findings from 2026-09-16 shape it.
+
+**New business or not, first.** On the day this was written, three of the four
+highest-priority signals in the territory were at Datadog, Twilio and Figma, all of them
+already running Greenhouse. A talent leader hired at a customer is a real event, worth
+flagging to whoever owns the account, but it is not a meeting an SDR can book and it does
+not count toward quota. Every recommendation says which it is before it says anything
+else, and the headline counts only bookable calls. It read "Four calls worth making
+today" before this landed; it reads "One" now, which is the true number.
+
+**Two axes, not one.** The 30-point score asks how much visible pain a board is in. The
+grade asks whether to call. **Pain** out of 10 is what the board shows. **Timing** out of
+10 is whether there is a dated reason to call this week. A board can hurt a great deal
+and have no reason to be called today, and a trigger at a company with no visible pain is
+a call with nothing to talk about. A is 13 or more, B is 8 to 12, C is 4 to 7, D is under
+4 or under 15 open reqs, which usually means a company below the 150 employees
+Greenhouse's ICP starts at.
+
+**Stack the signals and name a peer.** Signal-personalised outreach replies at around 18%
+against 3.43% for generic, and trigger plus research plus a named peer reference sits in
+the 15 to 25% band. So each recommendation stacks every signal it has, and names a
+comparable company from the same territory that already runs Greenhouse, sized within
+half to double their req count. That peer is the one input a generic tool cannot produce,
+because it needs the rest of the territory resolved first.
+
+The generated opener is checked against the words that cost 30 to 50% of opens when they
+read as a pitch, and flagged rather than silently handed over. It will not write the
+message. Generic AI outreach is the most saturated category in the market; the leverage
+is in compressing the research, not generating the words.
+
+Competitive positioning is internal. The recommendation draws on `config/battlecards.json`
+for the angle, the question that opens it, and the thing not to say, and it is wired into
+the dashboard and the AE handoff but never into `brief.mjs`, which a prospect reads.
+
+## Call-on queue and health
+
+```bash
+npm run queue                  overdue, due today, and the next two weeks
+npm run queue -- done a1b2c3   you called them
+npm run health                 is the collector running, what is still a placeholder
+```
+
+`TALENT_LEADER_HIRED` computes a call-on date 35 days out and used to write it into a
+markdown file nobody reopens 35 days later, so the best signal in the system expired
+unread. The diff now files every dated signal into `data/callons.jsonl`, append-only and
+idempotent, and the morning menu shows what is due before anything else.
+
+`health` exists because on 2026-09-16 the collector had been dead for eight days and
+nothing noticed. The scheduled task was set to refuse to start on battery, the laptop was
+on battery at 06:30, and Windows declined it every morning in silence while the report
+still rendered and the diff still ran against whatever two files were newest. It checks
+snapshot age, fetch errors, whether quota is still the placeholder, whether the seed
+target list is still in place, and meetings whose date has passed while still marked
+booked. It prints nothing when there is nothing to say, because a check that prints a
+wall of green teaches you to skip it.
+
 ## Data layout
 
 ```
-config/targets.csv          domain,name — your territory
+config/targets.csv          domain,name  (your territory)
+                            domain,name,ats,token to pin a board by hand
+data/callons.jsonl          append-only queue of dated follow-ups
 config/comp.json            quota, role bonus, accelerators, caps
 data/registry.json          domain -> {ats, token, detectedAt, lastVerified, history}
 data/snapshots/YYYY-MM-DD.json   full job list per account, one file per day

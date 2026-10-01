@@ -85,6 +85,9 @@ export function accountFacts(account) {
     // Ramp's NYC HQ as isRemote, so 92% of that board reads remote while 110 of 143
     // reqs are in New York. Never put this in prospect-facing copy as "remote".
     remoteEligibleShare: jobs.length ? jobs.filter(j => j.remote).length / jobs.length : 0,
+    // Every posting, unsorted. The dashboard draws one tick per req by age, so it
+    // needs the whole board rather than the five examples a call needs.
+    jobs,
     newest: [...jobs].sort((a, b) => Date.parse(b.postedAt ?? 0) - Date.parse(a.postedAt ?? 0)).slice(0, 5),
     // Examples for a call: real stuck reqs, oldest first, evergreen excluded.
     oldest: [...stale].sort((a, b) => Date.parse(a.postedAt ?? 0) - Date.parse(b.postedAt ?? 0)).slice(0, 5),

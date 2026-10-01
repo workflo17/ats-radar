@@ -93,7 +93,14 @@ export const adapters = [
       const { status, json } = await getJson(
         `https://apply.workable.com/api/v1/widget/accounts/${encodeURIComponent(token)}`
       );
-      if (status === 404 || !json?.jobs) return { present: false, ambiguous: false, jobs: [], total: 0 };
+      if (status === 404 || !Array.isArray(json?.jobs)) return { present: false, ambiguous: false, jobs: [], total: 0 };
+      // A nonsense token 404s here, but a real brand with a dormant Workable account
+      // answers 200 with an empty jobs array: apply.workable.com/.../accounts/scale
+      // returns {"name":"Scale","jobs":[]} while Scale AI's 221 reqs sit on Greenhouse.
+      // Workable is probed before SmartRecruiters, so accepting an empty board filed
+      // four accounts under the wrong ATS on 2026-09-16, one of them a Greenhouse
+      // customer. Same rule as Lever and SmartRecruiters: no jobs, no proof.
+      if (json.jobs.length === 0) return { present: false, ambiguous: true, jobs: [], total: 0 };
       const jobs = json.jobs.map(j => ({
         id: String(j.shortcode ?? j.id),
         title: j.title ?? '',

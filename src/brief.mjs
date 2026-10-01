@@ -13,7 +13,9 @@
  * It writes text. It never sends anything. Sending from the company domain through
  * anything unapproved is an IT and deliverability problem you do not want to own.
  */
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, rm } from 'node:fs/promises';
+import { spawn } from 'node:child_process';
+import os from 'node:os';
 import path from 'node:path';
 import { ROOT, findAccount, argv, STALE_DAYS, daysOld } from './lib/facts.mjs';
 
@@ -67,18 +69,25 @@ async function main() {
     `Source: ${f.ats} board as of ${f.snapshot.date}. Every number below is on their public careers page.`,
     ``, `---`, ``);
 
-  // 1. Immediate confirmation. Send inside ten minutes of the booking.
-  blocks.push(`## 1. Send immediately after booking`, ``,
-    `An instant personal confirmation, rather than a bare calendar invite, is the single`,
-    `largest lever on show rate. Send this within ten minutes.`, ``,
-    '```', `Subject: Confirmed for ${when}`, ``,
+  // 1. Immediate confirmation. Send inside ten minutes of the booking. Kept in its own
+  // variable because --copy puts exactly this on the clipboard: the ten-minute window
+  // is the point, and it closes while you are scrolling a markdown file for the right
+  // fenced block.
+  const message1 = [
+    `Subject: Confirmed for ${when}`, ``,
     `${first},`, ``,
     `Locked in for ${when}. ${ae} will be on with me.`, ``,
     `I pulled your careers page before we talk. You have ${f.jobCount} roles open` +
       (f.staleCount ? `, and ${f.staleCount} of them have been live more than ${STALE_DAYS} days.` : `.`),
     `That is what I want to dig into.`, ``,
     `Anything specific you want covered? Happy to shape it around whatever is`,
-    `actually painful right now.`, ``, `${me}`, '```', ``);
+    `actually painful right now.`, ``, `${me}`,
+  ].join('\n');
+
+  blocks.push(`## 1. Send immediately after booking`, ``,
+    `An instant personal confirmation, rather than a bare calendar invite, is the single`,
+    `largest lever on show rate. Send this within ten minutes.`, ``,
+    '```', message1, '```', ``);
 
   // 2. Day before, carrying the asset.
   blocks.push(`## 2. Send the day before`, ``,
@@ -115,6 +124,42 @@ async function main() {
   await writeFile(out, md);
   console.log(md);
   console.log(`\n\nwritten -> data/briefs/brief-${slug}.md`);
+  if (a.copy) {
+    const ok = await toClipboard(message1);
+    console.log(ok
+      ? 'message 1 is on your clipboard. Paste it into Gmail and send.'
+      : 'could not reach the clipboard; copy message 1 out of the file above.');
+  }
+}
+
+/**
+ * Windows clipboard. Never throws: a failed copy is not a failed brief.
+ *
+ * Not clip.exe. Piped UTF-16LE without a byte-order mark, clip reads the console
+ * codepage and "José" arrives as "Jos?"; with a BOM the encoding survives but U+FEFF
+ * lands on the clipboard as a real leading character, verified at length 10 for a
+ * 9-character string. An invisible zero-width character at the front of every email
+ * you send is not a trade worth making, so this goes through Set-Clipboard instead,
+ * which takes UTF-8 and adds nothing.
+ */
+async function toClipboard(text) {
+  const tmp = path.join(os.tmpdir(), `ats-radar-clip-${process.pid}.txt`);
+  try {
+    await writeFile(tmp, text, 'utf8');
+    const quoted = tmp.replace(/'/g, "''");
+    return await new Promise(resolve => {
+      const p = spawn('powershell', [
+        '-NoProfile', '-Command',
+        `Get-Content -Raw -Encoding UTF8 -LiteralPath '${quoted}' | Set-Clipboard`,
+      ], { stdio: 'ignore' });
+      p.on('error', () => resolve(false));
+      p.on('close', code => resolve(code === 0));
+    });
+  } catch {
+    return false;
+  } finally {
+    await rm(tmp, { force: true }).catch(() => {});
+  }
 }
 
 function questionFor(f) {
