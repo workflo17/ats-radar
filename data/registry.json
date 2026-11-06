@@ -6,7 +6,7 @@
    "ats": "greenhouse",
    "token": "figma",
    "detectedAt": "2026-09-04T01:14:23.958Z",
-   "lastVerified": "2026-11-05T11:30:02.006Z",
+   "lastVerified": "2026-11-06T11:30:02.074Z",
    "unresolvedSince": null
   },
   "stripe.com": {
@@ -14,7 +14,7 @@
    "ats": "greenhouse",
    "token": "stripe",
    "detectedAt": "2026-09-04T01:14:23.964Z",
-   "lastVerified": "2026-11-05T11:30:02.012Z",
+   "lastVerified": "2026-11-06T11:30:10.232Z",
    "unresolvedSince": null
   },
   "airtable.com": {
@@ -22,7 +22,7 @@
    "ats": "greenhouse",
    "token": "airtable",
    "detectedAt": "2026-09-04T01:14:24.180Z",
-   "lastVerified": "2026-11-05T11:30:02.285Z",
+   "lastVerified": "2026-11-06T11:30:02.372Z",
    "unresolvedSince": null
   },
   "ramp.com": {
@@ -30,7 +30,7 @@
    "ats": "ashby",
    "token": "ramp",
    "detectedAt": "2026-09-04T01:14:26.629Z",
-   "lastVerified": "2026-11-05T11:30:02.090Z",
+   "lastVerified": "2026-11-06T11:30:02.172Z",
    "unresolvedSince": null
   },
   "notion.so": {
@@ -38,14 +38,14 @@
    "ats": "ashby",
    "token": "notion",
    "detectedAt": "2026-09-04T01:14:27.102Z",
-   "lastVerified": "2026-11-05T11:30:02.272Z",
+   "lastVerified": "2026-11-06T11:30:02.290Z",
    "unresolvedSince": null
   },
   "retool.com": {
    "name": "Retool",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:03.582Z",
+   "lastVerified": "2026-11-06T11:30:03.788Z",
    "unresolvedSince": "2026-09-04T01:14:27.298Z",
    "ambiguous": [
     "smartrecruiters:retool"
@@ -56,7 +56,7 @@
    "ats": "ashby",
    "token": "linear",
    "detectedAt": "2026-09-04T01:14:30.965Z",
-   "lastVerified": "2026-11-05T11:30:02.015Z",
+   "lastVerified": "2026-11-06T11:30:02.114Z",
    "unresolvedSince": null
   },
   "gopuff.com": {
@@ -64,7 +64,7 @@
    "ats": "lever",
    "token": "gopuff",
    "detectedAt": "2026-09-04T01:14:31.051Z",
-   "lastVerified": "2026-11-05T11:30:03.612Z",
+   "lastVerified": "2026-11-06T11:30:03.227Z",
    "unresolvedSince": null
   },
   "vanta.com": {
@@ -72,7 +72,7 @@
    "ats": "ashby",
    "token": "vanta",
    "detectedAt": "2026-09-04T01:14:51.161Z",
-   "lastVerified": "2026-11-05T11:30:02.361Z",
+   "lastVerified": "2026-11-06T11:30:02.495Z",
    "unresolvedSince": null
   },
   "deel.com": {
@@ -80,7 +80,7 @@
    "ats": "ashby",
    "token": "deel",
    "detectedAt": "2026-09-04T01:14:51.350Z",
-   "lastVerified": "2026-11-05T11:30:02.514Z",
+   "lastVerified": "2026-11-06T11:30:02.622Z",
    "unresolvedSince": null
   },
   "gusto.com": {
@@ -88,7 +88,7 @@
    "ats": "greenhouse",
    "token": "gusto",
    "detectedAt": "2026-09-04T01:14:51.374Z",
-   "lastVerified": "2026-11-05T11:30:02.643Z",
+   "lastVerified": "2026-11-06T11:30:02.855Z",
    "unresolvedSince": null
   },
   "checkr.com": {
@@ -96,14 +96,14 @@
    "ats": "greenhouse",
    "token": "checkr",
    "detectedAt": "2026-09-04T01:14:51.794Z",
-   "lastVerified": "2026-11-05T11:30:02.763Z",
+   "lastVerified": "2026-11-06T11:30:03.280Z",
    "unresolvedSince": null
   },
   "rippling.com": {
    "name": "Rippling",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:03.810Z",
+   "lastVerified": "2026-11-06T11:30:03.979Z",
    "unresolvedSince": "2026-09-16T23:06:02.546Z",
    "ambiguous": [
     "workable:rippling",
@@ -116,7 +116,7 @@
    "ats": "greenhouse",
    "token": "brex",
    "detectedAt": "2026-09-04T01:14:52.288Z",
-   "lastVerified": "2026-11-05T11:30:03.083Z",
+   "lastVerified": "2026-11-06T11:30:03.552Z",
    "unresolvedSince": null
   },
   "mercury.com": {
@@ -124,7 +124,7 @@
    "ats": "greenhouse",
    "token": "mercury",
    "detectedAt": "2026-09-04T01:14:52.524Z",
-   "lastVerified": "2026-11-05T11:30:03.057Z",
+   "lastVerified": "2026-11-06T11:30:03.773Z",
    "unresolvedSince": null
   },
   "plaid.com": {
@@ -132,7 +132,7 @@
    "ats": "ashby",
    "token": "plaid",
    "detectedAt": "2026-09-04T01:14:53.022Z",
-   "lastVerified": "2026-11-05T11:30:02.834Z",
+   "lastVerified": "2026-11-06T11:30:03.544Z",
    "unresolvedSince": null
   },
   "databricks.com": {
@@ -140,7 +140,7 @@
    "ats": "greenhouse",
    "token": "databricks",
    "detectedAt": "2026-09-04T01:14:53.732Z",
-   "lastVerified": "2026-11-05T11:30:03.372Z",
+   "lastVerified": "2026-11-06T11:30:04.119Z",
    "unresolvedSince": null
   },
   "vercel.com": {
@@ -148,7 +148,7 @@
    "ats": "greenhouse",
    "token": "vercel",
    "detectedAt": "2026-09-04T01:14:54.692Z",
-   "lastVerified": "2026-11-05T11:30:03.814Z",
+   "lastVerified": "2026-11-06T11:30:05.892Z",
    "unresolvedSince": null
   },
   "netlify.com": {
@@ -156,7 +156,7 @@
    "ats": "greenhouse",
    "token": "netlify",
    "detectedAt": "2026-09-04T01:14:54.990Z",
-   "lastVerified": "2026-11-05T11:30:03.853Z",
+   "lastVerified": "2026-11-06T11:30:04.509Z",
    "unresolvedSince": null
   },
   "gitlab.com": {
@@ -164,14 +164,14 @@
    "ats": "greenhouse",
    "token": "gitlab",
    "detectedAt": "2026-09-04T01:14:55.003Z",
-   "lastVerified": "2026-11-05T11:30:03.584Z",
+   "lastVerified": "2026-11-06T11:30:04.242Z",
    "unresolvedSince": null
   },
   "hashicorp.com": {
    "name": "HashiCorp",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:38.624Z",
+   "lastVerified": "2026-11-06T11:30:04.982Z",
    "unresolvedSince": "2026-09-16T23:06:03.062Z",
    "ambiguous": [
     "workable:hashicorp",
@@ -184,7 +184,7 @@
    "ats": "ashby",
    "token": "amplitude",
    "detectedAt": "2026-09-29T10:30:07.020Z",
-   "lastVerified": "2026-11-05T11:30:04.065Z",
+   "lastVerified": "2026-11-06T11:30:04.798Z",
    "unresolvedSince": null,
    "history": [
     {
@@ -199,7 +199,7 @@
    "ats": "greenhouse",
    "token": "mixpanel",
    "detectedAt": "2026-09-04T01:14:55.400Z",
-   "lastVerified": "2026-11-05T11:30:04.159Z",
+   "lastVerified": "2026-11-06T11:30:05.036Z",
    "unresolvedSince": null
   },
   "scale.com": {
@@ -207,7 +207,7 @@
    "ats": "greenhouse",
    "token": "scaleai",
    "detectedAt": "2026-09-16T22:57:58.320Z",
-   "lastVerified": "2026-11-05T11:30:03.329Z",
+   "lastVerified": "2026-11-06T11:30:03.941Z",
    "unresolvedSince": null,
    "history": []
   },
@@ -216,7 +216,7 @@
    "ats": "ashby",
    "token": "sentry",
    "detectedAt": "2026-09-04T01:14:55.646Z",
-   "lastVerified": "2026-11-05T11:30:03.863Z",
+   "lastVerified": "2026-11-06T11:30:04.456Z",
    "unresolvedSince": null
   },
   "webflow.com": {
@@ -224,7 +224,7 @@
    "ats": "greenhouse",
    "token": "webflow",
    "detectedAt": "2026-09-04T01:14:55.704Z",
-   "lastVerified": "2026-11-05T11:30:04.313Z",
+   "lastVerified": "2026-11-06T11:30:05.349Z",
    "unresolvedSince": null
   },
   "contentful.com": {
@@ -232,7 +232,7 @@
    "ats": "greenhouse",
    "token": "contentful",
    "detectedAt": "2026-09-04T01:14:55.874Z",
-   "lastVerified": "2026-11-05T11:30:04.366Z",
+   "lastVerified": "2026-11-06T11:30:05.410Z",
    "unresolvedSince": null
   },
   "posthog.com": {
@@ -240,7 +240,7 @@
    "ats": "ashby",
    "token": "posthog",
    "detectedAt": "2026-09-04T01:14:55.881Z",
-   "lastVerified": "2026-11-05T11:30:04.166Z",
+   "lastVerified": "2026-11-06T11:30:05.035Z",
    "unresolvedSince": null
   },
   "algolia.com": {
@@ -248,7 +248,7 @@
    "ats": "greenhouse",
    "token": "algolia",
    "detectedAt": "2026-09-04T01:14:55.993Z",
-   "lastVerified": "2026-11-05T11:30:04.446Z",
+   "lastVerified": "2026-11-06T11:30:05.692Z",
    "unresolvedSince": null
   },
   "twilio.com": {
@@ -256,7 +256,7 @@
    "ats": "greenhouse",
    "token": "twilio",
    "detectedAt": "2026-09-04T01:14:56.118Z",
-   "lastVerified": "2026-11-05T11:30:04.601Z",
+   "lastVerified": "2026-11-06T11:30:05.620Z",
    "unresolvedSince": null
   },
   "sanity.io": {
@@ -264,7 +264,7 @@
    "ats": "ashby",
    "token": "sanity",
    "detectedAt": "2026-09-04T01:14:56.125Z",
-   "lastVerified": "2026-11-05T11:30:04.408Z",
+   "lastVerified": "2026-11-06T11:30:05.321Z",
    "unresolvedSince": null
   },
   "intercom.com": {
@@ -272,7 +272,7 @@
    "ats": "greenhouse",
    "token": "intercom",
    "detectedAt": "2026-09-04T01:14:56.189Z",
-   "lastVerified": "2026-11-05T11:30:04.655Z",
+   "lastVerified": "2026-11-06T11:30:05.887Z",
    "unresolvedSince": null
   },
   "datadoghq.com": {
@@ -280,7 +280,7 @@
    "ats": "greenhouse",
    "token": "datadog",
    "detectedAt": "2026-09-04T01:14:56.201Z",
-   "lastVerified": "2026-11-05T11:30:04.072Z",
+   "lastVerified": "2026-11-06T11:30:04.777Z",
    "unresolvedSince": null
   },
   "calendly.com": {
@@ -288,7 +288,7 @@
    "ats": "greenhouse",
    "token": "calendly",
    "detectedAt": "2026-09-04T01:14:56.415Z",
-   "lastVerified": "2026-11-05T11:30:04.840Z",
+   "lastVerified": "2026-11-06T11:30:06.107Z",
    "unresolvedSince": null
   },
   "zapier.com": {
@@ -296,7 +296,7 @@
    "ats": "ashby",
    "token": "zapier",
    "detectedAt": "2026-09-04T01:14:56.547Z",
-   "lastVerified": "2026-11-05T11:30:04.712Z",
+   "lastVerified": "2026-11-06T11:30:05.885Z",
    "unresolvedSince": null
   },
   "miro.com": {
@@ -304,14 +304,14 @@
    "ats": "ashby",
    "token": "miro",
    "detectedAt": "2026-09-04T01:14:56.649Z",
-   "lastVerified": "2026-11-05T11:30:04.942Z",
+   "lastVerified": "2026-11-06T11:30:06.138Z",
    "unresolvedSince": null
   },
   "front.com": {
    "name": "Front",
    "ats": "ashby",
    "token": "frontcareers",
-   "lastVerified": "2026-11-05T11:30:04.631Z",
+   "lastVerified": "2026-11-06T11:30:05.611Z",
    "unresolvedSince": null,
    "ambiguous": [
     "workable:front",
@@ -325,7 +325,7 @@
    "ats": "ashby",
    "token": "loom",
    "detectedAt": "2026-09-04T01:14:56.982Z",
-   "lastVerified": "2026-11-05T11:30:04.914Z",
+   "lastVerified": "2026-11-06T11:30:06.098Z",
    "unresolvedSince": null
   },
   "duolingo.com": {
@@ -333,7 +333,7 @@
    "ats": "greenhouse",
    "token": "duolingo",
    "detectedAt": "2026-09-04T01:14:56.993Z",
-   "lastVerified": "2026-11-05T11:30:05.220Z",
+   "lastVerified": "2026-11-06T11:30:06.415Z",
    "unresolvedSince": null
   },
   "discord.com": {
@@ -341,7 +341,7 @@
    "ats": "greenhouse",
    "token": "discord",
    "detectedAt": "2026-09-04T01:14:56.995Z",
-   "lastVerified": "2026-11-05T11:30:05.219Z",
+   "lastVerified": "2026-11-06T11:30:06.509Z",
    "unresolvedSince": null
   },
   "reddit.com": {
@@ -349,14 +349,14 @@
    "ats": "greenhouse",
    "token": "reddit",
    "detectedAt": "2026-09-04T01:14:57.311Z",
-   "lastVerified": "2026-11-05T11:30:05.545Z",
+   "lastVerified": "2026-11-06T11:30:06.684Z",
    "unresolvedSince": null
   },
   "grammarly.com": {
    "name": "Grammarly",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:05.931Z",
+   "lastVerified": "2026-11-06T11:30:07.472Z",
    "unresolvedSince": "2026-09-16T23:06:05.532Z",
    "ambiguous": [
     "workable:grammarly",
@@ -369,7 +369,7 @@
    "ats": "ashby",
    "token": "quora",
    "detectedAt": "2026-09-04T01:14:57.688Z",
-   "lastVerified": "2026-11-05T11:30:05.516Z",
+   "lastVerified": "2026-11-06T11:30:06.801Z",
    "unresolvedSince": null
   },
   "instacart.com": {
@@ -377,7 +377,7 @@
    "ats": "greenhouse",
    "token": "instacart",
    "detectedAt": "2026-09-04T01:14:57.696Z",
-   "lastVerified": "2026-11-05T11:30:05.745Z",
+   "lastVerified": "2026-11-06T11:30:07.035Z",
    "unresolvedSince": null
   },
   "robinhood.com": {
@@ -385,7 +385,7 @@
    "ats": "greenhouse",
    "token": "robinhood",
    "detectedAt": "2026-09-04T01:14:57.951Z",
-   "lastVerified": "2026-11-05T11:30:05.983Z",
+   "lastVerified": "2026-11-06T11:30:07.311Z",
    "unresolvedSince": null
   },
   "coinbase.com": {
@@ -393,14 +393,14 @@
    "ats": "greenhouse",
    "token": "coinbase",
    "detectedAt": "2026-09-04T01:14:58.028Z",
-   "lastVerified": "2026-11-05T11:30:06.202Z",
+   "lastVerified": "2026-11-06T11:30:07.578Z",
    "unresolvedSince": null
   },
   "eventbrite.com": {
    "name": "Eventbrite",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:06.650Z",
+   "lastVerified": "2026-11-06T11:30:07.848Z",
    "unresolvedSince": "2026-09-16T23:06:06.605Z",
    "ambiguous": [
     "workable:eventbrite",
@@ -413,7 +413,7 @@
    "ats": "greenhouse",
    "token": "chime",
    "detectedAt": "2026-09-04T01:14:58.204Z",
-   "lastVerified": "2026-11-05T11:30:06.260Z",
+   "lastVerified": "2026-11-06T11:30:07.774Z",
    "unresolvedSince": null
   },
   "affirm.com": {
@@ -421,14 +421,14 @@
    "ats": "greenhouse",
    "token": "affirm",
    "detectedAt": "2026-09-04T01:14:58.319Z",
-   "lastVerified": "2026-11-05T11:30:06.482Z",
+   "lastVerified": "2026-11-06T11:30:07.800Z",
    "unresolvedSince": null
   },
   "doordash.com": {
    "name": "DoorDash",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:06.814Z",
+   "lastVerified": "2026-11-06T11:30:28.652Z",
    "unresolvedSince": "2026-09-16T23:06:06.636Z",
    "ambiguous": [
     "workable:doordash",
@@ -441,7 +441,7 @@
    "ats": "greenhouse",
    "token": "faire",
    "detectedAt": "2026-09-04T01:14:58.633Z",
-   "lastVerified": "2026-11-05T11:30:06.854Z",
+   "lastVerified": "2026-11-06T11:30:08.169Z",
    "unresolvedSince": null
   },
   "benchling.com": {
@@ -449,7 +449,7 @@
    "ats": "ashby",
    "token": "benchling",
    "detectedAt": "2026-09-04T01:14:58.688Z",
-   "lastVerified": "2026-11-05T11:30:06.755Z",
+   "lastVerified": "2026-11-06T11:30:08.066Z",
    "unresolvedSince": null
   },
   "carta.com": {
@@ -457,14 +457,14 @@
    "ats": "greenhouse",
    "token": "carta",
    "detectedAt": "2026-09-04T01:14:58.860Z",
-   "lastVerified": "2026-11-05T11:30:07.108Z",
+   "lastVerified": "2026-11-06T11:30:08.511Z",
    "unresolvedSince": null
   },
   "marqeta.com": {
    "name": "Marqeta",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:18.968Z",
+   "lastVerified": "2026-11-06T11:30:25.371Z",
    "unresolvedSince": "2026-09-04T01:14:58.903Z",
    "ambiguous": [
     "smartrecruiters:marqeta"
@@ -474,7 +474,7 @@
    "name": "Whatnot",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:07.789Z",
+   "lastVerified": "2026-11-06T11:30:09.431Z",
    "unresolvedSince": "2026-09-16T23:06:07.993Z",
    "ambiguous": [
     "workable:whatnot",
@@ -487,7 +487,7 @@
    "ats": "smartrecruiters",
    "token": "gong",
    "detectedAt": "2026-09-16T22:58:07.833Z",
-   "lastVerified": "2026-11-05T11:30:07.494Z",
+   "lastVerified": "2026-11-06T11:30:09.057Z",
    "unresolvedSince": null,
    "history": []
   },
@@ -496,7 +496,7 @@
    "ats": "ashby",
    "token": "attio",
    "detectedAt": "2026-09-04T01:14:59.694Z",
-   "lastVerified": "2026-11-05T11:30:08.053Z",
+   "lastVerified": "2026-11-06T11:30:10.175Z",
    "unresolvedSince": null
   },
   "canva.com": {
@@ -504,7 +504,7 @@
    "ats": "smartrecruiters",
    "token": "canva",
    "detectedAt": "2026-09-16T22:58:02.803Z",
-   "lastVerified": "2026-11-05T11:30:05.592Z",
+   "lastVerified": "2026-11-06T11:30:06.784Z",
    "unresolvedSince": null,
    "history": []
   },
@@ -512,7 +512,7 @@
    "name": "Clay",
    "ats": "recruitee",
    "token": "clay",
-   "lastVerified": "2026-11-05T11:30:07.919Z",
+   "lastVerified": "2026-11-06T11:30:09.915Z",
    "unresolvedSince": null,
    "ambiguous": [
     "smartrecruiters:clay"
@@ -530,7 +530,7 @@
    "name": "Lever",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:09.240Z",
+   "lastVerified": "2026-11-06T11:30:11.674Z",
    "unresolvedSince": "2026-09-16T23:06:10.506Z",
    "ambiguous": [
     "lever:lever",
@@ -543,7 +543,7 @@
    "name": "Workable",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-05T11:30:25.906Z",
+   "lastVerified": "2026-11-06T11:30:12.548Z",
    "unresolvedSince": "2026-09-04T01:15:01.165Z",
    "ambiguous": [
     "smartrecruiters:workable"
@@ -554,7 +554,7 @@
    "ats": "smartrecruiters",
    "token": "smartrecruiters",
    "detectedAt": "2026-09-16T22:58:09.641Z",
-   "lastVerified": "2026-11-05T11:30:09.190Z",
+   "lastVerified": "2026-11-06T11:30:11.048Z",
    "unresolvedSince": null,
    "history": [],
    "ambiguous": [
@@ -567,7 +567,7 @@
    "ats": "greenhouse",
    "token": "greenhouse",
    "detectedAt": "2026-09-04T01:15:01.182Z",
-   "lastVerified": "2026-11-05T11:30:09.433Z",
+   "lastVerified": "2026-11-06T11:30:11.336Z",
    "unresolvedSince": null
   },
   "ashbyhq.com": {
@@ -575,7 +575,7 @@
    "ats": "ashby",
    "token": "ashby",
    "detectedAt": "2026-09-04T01:15:01.668Z",
-   "lastVerified": "2026-11-05T11:30:08.242Z",
+   "lastVerified": "2026-11-06T11:30:10.398Z",
    "unresolvedSince": null
   },
   "outreach.io": {
@@ -583,7 +583,7 @@
    "ats": "lever",
    "token": "outreach",
    "detectedAt": "2026-09-04T01:15:05.577Z",
-   "lastVerified": "2026-11-05T11:30:08.179Z",
+   "lastVerified": "2026-11-06T11:30:10.984Z",
    "unresolvedSince": null
   }
  }
