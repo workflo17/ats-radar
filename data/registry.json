@@ -45,7 +45,7 @@
    "name": "Retool",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:04.306Z",
+   "lastVerified": "2026-11-25T11:41:10.599Z",
    "unresolvedSince": "2026-09-04T01:14:27.298Z",
    "ambiguous": [
     "smartrecruiters:retool"
@@ -103,12 +103,8 @@
    "name": "Rippling",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:04.204Z",
+   "lastVerified": "2026-11-25T11:42:12.243Z",
    "unresolvedSince": "2026-09-16T23:06:02.546Z",
-   "ambiguous": [
-    "workable:rippling",
-    "smartrecruiters:rippling"
-   ],
    "detectedAt": "2026-09-04T16:49:54.608Z"
   },
   "brex.com": {
@@ -171,12 +167,8 @@
    "name": "HashiCorp",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:05.235Z",
+   "lastVerified": "2026-11-25T11:44:40.379Z",
    "unresolvedSince": "2026-09-16T23:06:03.062Z",
-   "ambiguous": [
-    "workable:hashicorp",
-    "smartrecruiters:hashicorp"
-   ],
    "detectedAt": "2026-09-04T16:49:57.590Z"
   },
   "amplitude.com": {
@@ -288,7 +280,7 @@
    "ats": "greenhouse",
    "token": "calendly",
    "detectedAt": "2026-09-04T01:14:56.415Z",
-   "lastVerified": "2026-11-24T11:30:05.725Z",
+   "lastVerified": "2026-11-25T11:45:09.478Z",
    "unresolvedSince": null
   },
   "zapier.com": {
@@ -356,11 +348,10 @@
    "name": "Grammarly",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:06.869Z",
+   "lastVerified": "2026-11-25T11:51:24.946Z",
    "unresolvedSince": "2026-09-16T23:06:05.532Z",
    "ambiguous": [
-    "workable:grammarly",
-    "smartrecruiters:grammarly"
+    "workable:grammarly"
    ],
    "detectedAt": "2026-09-04T16:49:59.583Z"
   },
@@ -400,11 +391,10 @@
    "name": "Eventbrite",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:07.867Z",
+   "lastVerified": "2026-11-25T11:52:40.337Z",
    "unresolvedSince": "2026-09-16T23:06:06.605Z",
    "ambiguous": [
-    "workable:eventbrite",
-    "smartrecruiters:eventbrite"
+    "workable:eventbrite"
    ],
    "detectedAt": "2026-09-04T16:50:00.148Z"
   },
@@ -428,12 +418,8 @@
    "name": "DoorDash",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:08.156Z",
+   "lastVerified": "2026-11-25T11:54:31.564Z",
    "unresolvedSince": "2026-09-16T23:06:06.636Z",
-   "ambiguous": [
-    "workable:doordash",
-    "smartrecruiters:doordash"
-   ],
    "detectedAt": "2026-09-04T16:50:00.297Z"
   },
   "faire.com": {
@@ -464,22 +450,15 @@
    "name": "Marqeta",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:09.573Z",
-   "unresolvedSince": "2026-09-04T01:14:58.903Z",
-   "ambiguous": [
-    "smartrecruiters:marqeta"
-   ]
+   "lastVerified": "2026-11-25T11:56:39.592Z",
+   "unresolvedSince": "2026-09-04T01:14:58.903Z"
   },
   "whatnot.com": {
    "name": "Whatnot",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:09.154Z",
+   "lastVerified": "2026-11-25T11:57:48.964Z",
    "unresolvedSince": "2026-09-16T23:06:07.993Z",
-   "ambiguous": [
-    "workable:whatnot",
-    "smartrecruiters:whatnot"
-   ],
    "detectedAt": "2026-09-04T16:50:01.291Z"
   },
   "gong.io": {
@@ -534,10 +513,9 @@
    "name": "Lever",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:11.649Z",
+   "lastVerified": "2026-11-25T11:58:37.119Z",
    "unresolvedSince": "2026-09-16T23:06:10.506Z",
    "ambiguous": [
-    "lever:lever",
     "workable:lever",
     "smartrecruiters:lever"
    ],
@@ -547,7 +525,7 @@
    "name": "Workable",
    "ats": null,
    "token": null,
-   "lastVerified": "2026-11-24T11:30:10.749Z",
+   "lastVerified": "2026-11-25T11:58:42.773Z",
    "unresolvedSince": "2026-09-04T01:15:01.165Z",
    "ambiguous": [
     "smartrecruiters:workable"
