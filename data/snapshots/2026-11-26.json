@@ -1,0 +1,251 @@
+{
+ "date": "2026-11-26",
+ "collectedAt": "2026-11-26T12:00:00.361Z",
+ "stats": {
+  "targets": 65,
+  "resolved": 0,
+  "unresolved": 10,
+  "errors": 55,
+  "totalJobs": 0,
+  "byAts": {
+   "unresolved": 10
+  },
+  "durationSec": 1708
+ },
+ "migrations": [],
+ "errors": [
+  {
+   "domain": "figma.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "stripe.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "ramp.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "linear.app",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "gopuff.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "notion.so",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "airtable.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "vanta.com",
+   "error": "fetch failed"
+  },
+  {
+   "domain": "deel.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "gusto.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "checkr.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "plaid.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "brex.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "mercury.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "scale.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "databricks.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "gitlab.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "vercel.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "netlify.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "sentry.io",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "datadoghq.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "amplitude.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "mixpanel.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "posthog.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "webflow.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "contentful.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "sanity.io",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "algolia.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "twilio.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "front.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "intercom.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "zapier.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "calendly.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "loom.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "miro.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "canva.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "duolingo.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "discord.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "reddit.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "quora.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "instacart.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "robinhood.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "coinbase.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "chime.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "affirm.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "benchling.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "faire.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "carta.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "gong.io",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "outreach.io",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "clay.com",
+   "error": "fetch failed"
+  },
+  {
+   "domain": "attio.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "ashbyhq.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "smartrecruiters.com",
+   "error": "The operation was aborted due to timeout"
+  },
+  {
+   "domain": "greenhouse.io",
+   "error": "The operation was aborted due to timeout"
+  }
+ ],
+ "unresolvedDomains": [
+  "retool.com",
+  "rippling.com",
+  "hashicorp.com",
+  "grammarly.com",
+  "eventbrite.com",
+  "doordash.com",
+  "marqeta.com",
+  "whatnot.com",
+  "lever.co",
+  "workable.com"
+ ],
+ "accounts": {}
+}
